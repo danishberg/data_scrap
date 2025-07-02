@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3>Scraping Control Panel</h3>
+            </div>
+            <div class="card-body">
+                <form id="scrapingForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">Sources:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="google_search" id="source1" checked>
+                                <label class="form-check-label" for="source1">Google Search</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="google_maps" id="source2">
+                                <label class="form-check-label" for="source2">Google Maps</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="yellowpages" id="source3">
+                                <label class="form-check-label" for="source3">Yellow Pages</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="yelp" id="source4">
+                                <label class="form-check-label" for="source4">Yelp</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Search Terms:</label>
+                                <textarea class="form-control" id="searchTerms" rows="3">scrap metal recycling
+metal recycling centers
+scrap yards</textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Locations:</label>
+                                <textarea class="form-control" id="locations" rows="3">New York, NY
+Los Angeles, CA
+Chicago, IL</textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Limit per source:</label>
+                                <input type="number" class="form-control" id="limit" value="10" min="1" max="1000">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary" id="startBtn">Start Scraping</button>
+                        <button type="button" class="btn btn-danger" id="stopBtn" disabled>Stop Scraping</button>
+                    </div>
+                </form>
+                
+                <div class="progress-container">
+                    <div class="d-flex justify-content-between">
+                        <span id="currentTask">Ready to start</span>
+                        <span id="progressText">0%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Status</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Status:</strong> <span id="status" class="status-stopped">Stopped</span></p>
+                <p><strong>Results:</strong> <span id="resultsCount">0</span></p>
+                <p><strong>Start Time:</strong> <span id="startTime">-</span></p>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5>Live Logs</h5>
+            </div>
+            <div class="card-body" style="height: 300px; overflow-y: scroll;">
+                <div id="logs"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const socket = io();
+let isRunning = false;
+
+// Form submission
+document.getElementById('scrapingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    startScraping();
+});
+
+// Stop button
+document.getElementById('stopBtn').addEventListener('click', stopScraping);
+
+function startScraping() {
+    const sources = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+    const searchTerms = document.getElementById('searchTerms').value.split('\n').filter(term => term.trim());
+    const locations = document.getElementById('locations').value.split('\n').filter(loc => loc.trim());
+    const limit = parseInt(document.getElementById('limit').value);
+    
+    fetch('/api/start_scraping', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sources, search_terms: searchTerms, locations, limit })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert(data.error);
+        } else {
+            updateUI(true);
+        }
+    });
+}
+
+function stopScraping() {
+    fetch('/api/stop_scraping', { method: 'POST' })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message);
+    });
+}
+
+function updateUI(running) {
+    isRunning = running;
+    document.getElementById('startBtn').disabled = running;
+    document.getElementById('stopBtn').disabled = !running;
+    document.getElementById('status').textContent = running ? 'Running' : 'Stopped';
+    document.getElementById('status').className = running ? 'status-running' : 'status-stopped';
+}
+
+// Socket events
+socket.on('status_update', function(status) {
+    updateUI(status.running);
+    document.getElementById('currentTask').textContent = status.current_task;
+    document.getElementById('progressText').textContent = status.progress + '%';
+    document.getElementById('progressBar').style.width = status.progress + '%';
+    document.getElementById('resultsCount').textContent = status.results_count;
+    
+    if (status.start_time) {
+        document.getElementById('startTime').textContent = new Date(status.start_time).toLocaleTimeString();
+    }
+});
+
+socket.on('log_update', function(log) {
+    const logsDiv = document.getElementById('logs');
+    const logEntry = document.createElement('div');
+    logEntry.className = 'log-' + log.level;
+    logEntry.innerHTML = `<small>${log.timestamp}</small> ${log.message}`;
+    logsDiv.appendChild(logEntry);
+    logsDiv.scrollTop = logsDiv.scrollHeight;
+});
+</script>
+{% endblock %}

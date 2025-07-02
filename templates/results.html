@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Database Statistics</h5>
+            </div>
+            <div class="card-body">
+                <div id="dbStats">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5>Download Results</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="/api/download/csv" class="btn btn-outline-primary">Download CSV</a>
+                    <a href="/api/download/xlsx" class="btn btn-outline-success">Download Excel</a>
+                    <a href="/api/download/json" class="btn btn-outline-info">Download JSON</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5>Latest Results <span id="resultCount" class="badge bg-primary">0</span></h5>
+            </div>
+            <div class="card-body">
+                <div id="results">Loading...</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Load database stats
+fetch('/api/database_stats')
+.then(response => response.json())
+.then(data => {
+    const statsDiv = document.getElementById('dbStats');
+    if (data.error) {
+        statsDiv.innerHTML = '<p class="text-danger">Error loading stats</p>';
+    } else {
+        statsDiv.innerHTML = `
+            <p><strong>Total Centers:</strong> ${data.total_centers}</p>
+            <p><strong>With Phone:</strong> ${data.with_phone}</p>
+            <p><strong>With Email:</strong> ${data.with_email}</p>
+            <p><strong>With Website:</strong> ${data.with_website}</p>
+            <p><strong>With Coordinates:</strong> ${data.with_coordinates}</p>
+        `;
+    }
+});
+
+// Load results
+fetch('/api/results')
+.then(response => response.json())
+.then(data => {
+    const resultsDiv = document.getElementById('results');
+    const countSpan = document.getElementById('resultCount');
+    
+    if (data.error) {
+        resultsDiv.innerHTML = '<p class="text-danger">Error loading results</p>';
+    } else {
+        countSpan.textContent = data.count;
+        
+        if (data.results.length === 0) {
+            resultsDiv.innerHTML = '<p>No results yet. Start scraping to see data here.</p>';
+        } else {
+            resultsDiv.innerHTML = data.results.slice(0, 10).map(result => `
+                <div class="card results-card">
+                    <div class="card-body">
+                        <h6 class="card-title">${result.name || 'Unknown'}</h6>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                ${result.city || ''}, ${result.country || ''}<br>
+                                ${result.phone_primary || 'No phone'}<br>
+                                ${result.email_primary || 'No email'}
+                            </small>
+                        </p>
+                        ${result.materials ? `<p><strong>Materials:</strong> ${result.materials.join(', ')}</p>` : ''}
+                    </div>
+                </div>
+            `).join('');
+            
+            if (data.results.length > 10) {
+                resultsDiv.innerHTML += `<p class="text-muted">Showing first 10 of ${data.count} results. Download files for complete data.</p>`;
+            }
+        }
+    }
+});
+</script>
+{% endblock %}

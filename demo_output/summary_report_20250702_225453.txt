@@ -1,0 +1,35 @@
+SCRAP METAL CENTERS DATA COLLECTION SUMMARY
+==================================================
+
+Generated: 2025-07-02 22:54:53
+
+OVERALL STATISTICS:
+Total Centers Found: 5
+Centers with Phone: 5 (100.0%)
+Centers with Email: 5 (100.0%)
+Centers with Website: 5 (100.0%)
+Centers with Address: 5 (100.0%)
+Centers with Coordinates: 5 (100.0%)
+
+DISTRIBUTION BY COUNTRY:
+US: 2 centers
+CA: 1 centers
+AU: 1 centers
+GB: 1 centers
+
+TOP MATERIALS HANDLED:
+copper: 5 centers
+aluminum: 5 centers
+steel: 2 centers
+iron: 2 centers
+brass: 2 centers
+stainless steel: 2 centers
+lead: 2 centers
+automotive parts: 1 centers
+catalytic converters: 1 centers
+radiators: 1 centers
+electronics: 1 centers
+e-waste: 1 centers
+precious metals: 1 centers
+zinc: 1 centers
+cast iron: 1 centers
