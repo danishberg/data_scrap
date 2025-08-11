@@ -2944,100 +2944,19 @@ def validate_final_company_record(record: CompanyRecord) -> bool:
 
 # ------------- SCRAPING-FIRST MODE (Real Website Data) -------------
 
-def is_geographically_relevant(url: str, target_city: str, target_state: str, target_country: str) -> bool:
-    """Check if a URL is geographically relevant to the target location"""
-    try:
-        # Quick domain-based geographic check
-        domain = url.lower()
-        
-        # If we have city/state, look for them in the domain or path
-        if target_city and target_state:
-            city_clean = target_city.lower().replace(' ', '').replace('-', '')
-            state_clean = target_state.lower().replace(' ', '')
-            
-            # Check for city/state in domain or path
-            if (city_clean in domain or state_clean in domain or 
-                target_city.lower() in url.lower() or target_state.lower() in url.lower()):
-                return True
-                
-        # Always allow if we can't determine geography
-        return True
-        
-    except Exception:
-        return True  # Default to allowing if check fails
-
-def get_nearby_locations(city: str, state: str, country: str) -> List[Dict[str, str]]:
-    """Get nearby locations for geographic expansion"""
-    locations = []
-    
-    if city and state:
-        # Add primary location
-        locations.append({"city": city, "state": state, "priority": 1})
-        
-        # Major cities by state (for geographic expansion)
-        major_cities = {
-            "California": ["Los Angeles", "San Francisco", "San Diego", "Sacramento", "San Jose", "Fresno", "Long Beach", "Oakland", "Bakersfield", "Anaheim"],
-            "Texas": ["Houston", "Dallas", "San Antonio", "Austin", "Fort Worth", "El Paso", "Arlington", "Corpus Christi", "Plano", "Lubbock"],
-            "New York": ["New York", "Buffalo", "Rochester", "Yonkers", "Syracuse", "Albany", "New Rochelle", "Mount Vernon", "Schenectady", "Utica"],
-            "Florida": ["Jacksonville", "Miami", "Tampa", "Orlando", "St. Petersburg", "Hialeah", "Tallahassee", "Fort Lauderdale", "Port St. Lucie", "Cape Coral"],
-            "Illinois": ["Chicago", "Aurora", "Rockford", "Joliet", "Naperville", "Springfield", "Peoria", "Elgin", "Waukegan", "Cicero"],
-            "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading", "Scranton", "Bethlehem", "Lancaster", "Harrisburg", "Altoona"],
-            "Ohio": ["Columbus", "Cleveland", "Cincinnati", "Toledo", "Akron", "Dayton", "Parma", "Canton", "Youngstown", "Lorain"],
-            "Georgia": ["Atlanta", "Augusta", "Columbus", "Savannah", "Athens", "Sandy Springs", "Roswell", "Macon", "Johns Creek", "Albany"],
-            "North Carolina": ["Charlotte", "Raleigh", "Greensboro", "Durham", "Winston-Salem", "Fayetteville", "Cary", "Wilmington", "High Point", "Asheville"],
-            "Michigan": ["Detroit", "Grand Rapids", "Warren", "Sterling Heights", "Lansing", "Ann Arbor", "Flint", "Dearborn", "Livonia", "Westland"]
-        }
-        
-        # Add other major cities in the same state
-        if state in major_cities:
-            for major_city in major_cities[state][:5]:  # Top 5 cities
-                if major_city.lower() != city.lower():
-                    locations.append({"city": major_city, "state": state, "priority": 2})
-        
-        # Add state-wide search
-        locations.append({"city": "", "state": state, "priority": 3})
-        
-        # Add neighboring states for large requests
-        state_neighbors = {
-            "California": ["Nevada", "Arizona", "Oregon"],
-            "Texas": ["Oklahoma", "Arkansas", "Louisiana", "New Mexico"],
-            "New York": ["New Jersey", "Connecticut", "Pennsylvania", "Massachusetts"],
-            "Florida": ["Georgia", "Alabama"],
-            "Illinois": ["Indiana", "Wisconsin", "Iowa", "Missouri"],
-            "Pennsylvania": ["New York", "New Jersey", "Ohio", "West Virginia", "Maryland"],
-        }
-        
-        if state in state_neighbors:
-            for neighbor_state in state_neighbors[state][:2]:  # Top 2 neighboring states
-                locations.append({"city": "", "state": neighbor_state, "priority": 4})
-    
-    elif state:
-        # State-only search
-        locations.append({"city": "", "state": state, "priority": 1})
-    else:
-        # Country-only search
-        locations.append({"city": "", "state": "", "priority": 1})
-    
-    return locations
-
 def discover_real_business_websites(country: str, state: str, city: str, target: int = 100) -> List[str]:
     """
-    Find real business websites using geographic expansion and massive parallel processing.
-    Expands search geographically if not enough companies found locally.
+    Find real business websites using targeted search queries and direct business directories.
     Returns list of actual company website URLs.
     """
     logger.info("=== DISCOVERING REAL BUSINESS WEBSITES ===")
-    logger.info(f"🎯 Target: {target} companies (will expand geographically if needed)")
-    
-    # Import parallel processing tools
-    from concurrent.futures import ThreadPoolExecutor, as_completed
     
     # Temporarily set debug logging
     original_level = logger.level
     logger.setLevel(logging.DEBUG)
     
+    location = f"{city}, {state}" if city and state else state if state else country
     discovered_urls = set()
-    all_locations = get_nearby_locations(city, state, country)
     
     # Step 1: Direct business directory URLs (most reliable)
     logger.info("🎯 Step 1: Targeting known business directories...")
@@ -3049,83 +2968,68 @@ def discover_real_business_websites(country: str, state: str, city: str, target:
     
     logger.info(f"✅ Found {len(discovered_urls)} directory URLs")
     
-    # GEOGRAPHIC EXPANSION STRATEGY - Search multiple locations if needed
-    logger.info("🌍 Step 2: Geographic expansion search strategy...")
-    
-    for location_info in all_locations:
-        if len(discovered_urls) >= target * 4:  # We have enough candidates
-            break
+    # If we don't have enough from directories, try targeted searches  
+    if len(discovered_urls) < target:
+        logger.info("🔍 Step 2: Searching for additional business websites...")
+        
+        # Comprehensive search queries optimized for business discovery
+        search_queries = [
+            # Core business searches
+            f'{city} {state} scrap metal recycling',
+            f'{city} {state} auto salvage yard',
+            f'{city} {state} junkyard', 
+            f'{city} {state} metal recycling center',
+            f'{city} {state} copper recycling',
+            f'{city} {state} aluminum recycling',
+            f'{city} {state} steel recycling',
             
-        current_city = location_info["city"]
-        current_state = location_info["state"] 
-        priority = location_info["priority"]
-        
-        location_name = f"{current_city}, {current_state}" if current_city and current_state else current_state if current_state else country
-        logger.info(f"🎯 Searching location: {location_name} (Priority {priority})")
-        
-        # Comprehensive business type coverage
-        base_queries = [
-            "scrap metal recycling", 
-            "auto salvage yard",
-            "metal recycling center",
-            "junkyard auto parts",
-            "scrap yard",
-            "salvage yard", 
-            "auto wrecking yard",
-            "metal scrap buyer",
-            "recycling facility",
-            "scrap metal dealer",
-            "metal recovery center",
-            "copper recycling",
-            "aluminum recycling", 
-            "steel recycling",
-            "iron recycling",
-            "brass recycling",
-            "catalytic converter recycling",
-            "auto parts recycling",
-            "appliance recycling", 
-            "electronic waste recycling",
-            "battery recycling",
-            "demolition recycling",
-            "industrial metal recycling",
-            "construction metal recycling",
-            "metal processing facility",
-            "scrap metal processing",
-            "metal reclamation",
-            "secondary metals",
-            "metal waste management"
+            # Quoted location searches (more precise)
+            f'"{city}, {state}" scrap metal',
+            f'"{city}, {state}" metal recycling',
+            f'"{city}, {state}" salvage yard',
+            f'"{city}, {state}" auto parts',
+            f'"{city}, {state}" copper buyer',
+            f'"{city}, {state}" aluminum buyer',
+            
+            # Business-specific terms
+            f'{city} scrap metal buyer',
+            f'{city} metal recycling prices',
+            f'{city} junkyard auto parts',
+            f'{city} catalytic converter recycling',
+            f'{city} battery recycling',
+            f'{city} electronics recycling',
+            f'{city} appliance recycling',
+            f'{city} construction metal recycling',
+            f'{city} industrial scrap metal',
+            f'{city} demolition recycling',
+            
+            # Industry-specific searches
+            f'{city} {state} scrap yard',
+            f'{city} {state} metal dealer',
+            f'{city} {state} metal buyer',
+            f'{city} {state} recycling facility',
+            f'{city} {state} waste metal',
+            f'{city} {state} used auto parts',
         ]
         
-        # Create location-specific queries
-        working_queries = []
-        if current_city and current_state:
-            # City + state queries (most specific)
-            for base in base_queries[:12]:  # Use more queries for primary locations
-                working_queries.extend([
-                    f'"{current_city}, {current_state}" {base}',
-                    f'{current_city} {current_state} {base}',
-                    f'{current_city} {base}' 
-                ])
-            # Add business directory searches
-            working_queries.extend([
-                f'scrap metal buyers {current_city} {current_state}',
-                f'metal recycling companies {current_city} {current_state}',
-                f'auto salvage {current_city} {current_state}',
-                f'recycling centers {current_city} {current_state}',
-                f'junkyards {current_city} {current_state}',
-                f'metal dealers {current_city} {current_state}'
-            ])
-        elif current_state:
-            # State-only queries
-            for base in base_queries[:8]:
-                working_queries.extend([
-                    f'{current_state} {base}',
-                    f'"{current_state}" {base}'
-                ])
-        else:
-            # Country-only queries  
-            for base in base_queries[:6]:
-                working_queries.append(f'{country} {base}')
+        # Multi-engine search strategy for maximum coverage
+        logger.info("🔥 Using multi-engine search for maximum coverage...")
+        
+        # Simplified, effective queries (like the one that worked)
+        working_queries = [
+            f'{city} {state} auto salvage yard',    # This one worked!
+            f'{city} {state} junkyard',
+            f'{city} {state} scrap metal',
+            f'{city} {state} metal recycling',
+            f'{city} {state} salvage yard',
+            f'{city} {state} auto parts',
+            f'{city} {state} scrap yard',
+            f'{city} {state} recycling center',
+            f'{city} auto salvage',
+            f'{city} junkyard',
+            f'{city} scrap metal',
+            f'{city} metal recycling',
+        ]
         
         # Search engines in order of preference (most reliable first)
         search_engines = [
@@ -3135,114 +3039,47 @@ def discover_real_business_websites(country: str, state: str, city: str, target:
             ("bing", "Bing")
         ]
         
-        # PARALLEL SEARCH for maximum speed (handles 500+ company requests)
-        def search_single_query(query_engine_pair):
-            """Search a single query with a specific engine"""
-            query, engine_name, engine_desc = query_engine_pair
+        for query in working_queries[:8]:  # Focus on queries that work
+            if len(discovered_urls) >= target * 2:
+                break
+                
+            logger.info(f"🔍 Multi-Search: {query}")
             
-            try:
-                urls = []
-                if engine_name == "ddg_api":
-                    urls = ddg_api_search(query, max_results=25)
-                elif engine_name == "google": 
-                    urls = google_search(query, max_results=20)
-                elif engine_name == "ddg_html": 
-                    urls = ddg_html_search(query, max_pages=2)
-                elif engine_name == "bing":
-                    urls = bing_search(query, max_pages=2)
-                
-                # Filter and normalize URLs
-                valid_urls = []
-                for url in urls:
-                    normalized = normalize_candidate_url(url)
-                    if normalized and is_business_website(normalized):
-                        # Add basic geographic validation
-                        if is_geographically_relevant(normalized, city, state, country):
-                            valid_urls.append(normalized)
-                
-                logger.debug(f"📡 {engine_desc}: {len(valid_urls)} valid URLs for '{query[:30]}...'")
-                return valid_urls
-                
-            except Exception as e:
-                logger.debug(f"{engine_desc} error for '{query}': {e}")
-                return []
-        
-        # MASSIVE PARALLEL SEARCH for this location
-        search_tasks = []
-        # Scale searches based on target and priority
-        max_queries_for_location = min(len(working_queries), 
-                                     20 if priority == 1 else 15 if priority == 2 else 10 if priority == 3 else 5)
-        
-        for query in working_queries[:max_queries_for_location]:
             for engine_name, engine_desc in search_engines:
-                search_tasks.append((query, engine_name, engine_desc, current_city, current_state))
-        
-        # Execute searches in parallel for this location
-        max_workers = min(12 if target >= 200 else 8, len(search_tasks))
-        logger.info(f"🚀 Running {len(search_tasks)} searches for {location_name} with {max_workers} workers...")
-        
-        location_urls = set()
-        
-        def search_with_location(task):
-            """Search with location context for better geographic filtering"""
-            query, engine_name, engine_desc, loc_city, loc_state = task
-            
-            try:
-                urls = []
-                if engine_name == "ddg_api":
-                    urls = ddg_api_search(query, max_results=30)
-                elif engine_name == "google": 
-                    urls = google_search(query, max_results=25)
-                elif engine_name == "ddg_html": 
-                    urls = ddg_html_search(query, max_pages=2)
-                elif engine_name == "bing":
-                    urls = bing_search(query, max_pages=2)
-                
-                # Filter and normalize URLs with location context
-                valid_urls = []
-                for url in urls:
-                    normalized = normalize_candidate_url(url)
-                    if normalized and is_business_website(normalized):
-                        # Enhanced geographic validation for this specific location
-                        if is_geographically_relevant(normalized, loc_city, loc_state, country):
-                            valid_urls.append(normalized)
-                
-                logger.debug(f"📡 {engine_desc}: {len(valid_urls)} valid URLs for '{query[:30]}...' in {location_name}")
-                return valid_urls
-                
-            except Exception as e:
-                logger.debug(f"{engine_desc} error for '{query}' in {location_name}: {e}")
-                return []
-        
-        with ThreadPoolExecutor(max_workers=max_workers) as search_executor:
-            search_futures = [search_executor.submit(search_with_location, task) for task in search_tasks]
-            
-            for future in as_completed(search_futures):
-                if len(location_urls) >= target // (2 if priority == 1 else 3):  # Get proportional URLs per location
-                    # Cancel remaining searches for this location if we have enough
-                    for f in search_futures:
-                        f.cancel()
+                if len(discovered_urls) >= target * 2:
                     break
                     
                 try:
-                    valid_urls = future.result()
-                    for url in valid_urls:
-                        location_urls.add(url)
-                        if len(location_urls) >= target // (2 if priority == 1 else 3):
-                            break
-                            
+                    urls = []
+                    if engine_name == "ddg_api":
+                        urls = ddg_api_search(query, max_results=20)
+                    elif engine_name == "google": 
+                        urls = google_search(query, max_results=15)
+                    elif engine_name == "ddg_html": 
+                        urls = ddg_html_search(query, max_pages=2)
+                    elif engine_name == "bing":
+                        urls = bing_search(query, max_pages=2)
+                    
+                    logger.debug(f"📡 {engine_desc}: {len(urls)} URLs for '{query[:30]}...'")
+                    
+                    added_count = 0
+                    for url in urls:
+                        normalized = normalize_candidate_url(url)
+                        if normalized and is_business_website(normalized):
+                            if normalized not in discovered_urls:
+                                discovered_urls.add(normalized)
+                                added_count += 1
+                                logger.debug(f"✅ Added: {normalized}")
+                                if len(discovered_urls) >= target * 2:
+                                    break
+                    
+                    if added_count > 0:
+                        logger.info(f"✅ {engine_desc}: Added {added_count} URLs")
+                        break  # Move to next query if we found results
+                        
                 except Exception as e:
-                    logger.debug(f"Search task failed for {location_name}: {e}")
+                    logger.debug(f"{engine_desc} error for '{query}': {e}")
                     continue
-        
-        # Add this location's URLs to discovered URLs
-        discovered_urls.update(location_urls)
-        logger.info(f"✅ Found {len(location_urls)} URLs for {location_name} (Total: {len(discovered_urls)})")
-        
-        # Stop if we have enough URLs overall
-        if len(discovered_urls) >= target * 3:
-            logger.info(f"🎯 Reached sufficient URL count: {len(discovered_urls)} URLs")
-            break
     
     # Pre-validate URLs to avoid wasting time on non-existent domains
     logger.info("🔍 Pre-validating URLs to remove invalid domains...")
@@ -3274,12 +3111,8 @@ def discover_real_business_websites(country: str, state: str, city: str, target:
     # Filter out invalid URLs
     valid_urls = [url for url in discovered_urls if quick_url_check(url)]
     
-    # Scale URL collection based on target size
-    multiplier = 4 if target >= 200 else 3 if target >= 100 else 2
-    final_urls = valid_urls[:target * multiplier]
-    
+    final_urls = valid_urls[:target * 3]  # Get more URLs for parallel processing
     logger.info(f"✅ Discovered {len(final_urls)} validated business websites (filtered from {len(discovered_urls)})")
-    logger.info(f"🎯 Discovery optimized for target of {target} companies")
     
     # Restore original logging level
     logger.setLevel(original_level)
@@ -3810,7 +3643,7 @@ def extract_address_info(soup: BeautifulSoup) -> Dict[str, str]:
     return address_info
 
 def parse_address_text(text: str) -> Optional[Dict[str, str]]:
-    """Parse address components from free text with improved city validation"""
+    """Parse address components from free text"""
     if not text or len(text) < 10:
         return None
     
@@ -3818,7 +3651,7 @@ def parse_address_text(text: str) -> Optional[Dict[str, str]]:
     zip_pattern = r'\b\d{5}(?:-\d{4})?\b'
     zip_matches = re.findall(zip_pattern, text)
     
-    # State abbreviations and full names
+    # State abbreviations
     states = {
         'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
         'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD',
@@ -3827,99 +3660,34 @@ def parse_address_text(text: str) -> Optional[Dict[str, str]]:
         'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'
     }
     
-    def is_valid_city(city_text: str) -> bool:
-        """Validate that city text looks like a real city name"""
-        if not city_text or len(city_text) < 3:
-            return False
-        
-        # Filter out obvious non-city words
-        invalid_patterns = [
-            r'^(on|in|at|the|and|or|but|if|to|of|for|with|by)$',
-            r'^[a-z]{1,2}$',  # Single/double lowercase letters
-            r'^\d+$',         # Pure numbers
-            r'^(re|et|us|so|no|go|do|be|we|he|me|it)$'  # Common short words
-        ]
-        
-        city_clean = city_text.strip().lower()
-        for pattern in invalid_patterns:
-            if re.match(pattern, city_clean):
-                return False
-        
-        # Must contain at least one letter
-        if not re.search(r'[a-zA-Z]', city_text):
-            return False
-            
-        # Should not be all uppercase unless it's reasonable length
-        if city_text.isupper() and len(city_text) < 3:
-            return False
-            
-        return True
+    # Look for address patterns
+    address_pattern = r'(\d+\s+[A-Za-z0-9\s]+(?:Street|St|Avenue|Ave|Road|Rd|Drive|Dr|Lane|Ln|Boulevard|Blvd|Way|Court|Ct|Place|Pl)\.?)\s*,?\s*([A-Za-z\s]+),?\s*([A-Z]{2})\s*(\d{5}(?:-\d{4})?)'
     
-    # Enhanced address pattern with better city capture
-    address_patterns = [
-        # Full address pattern
-        r'(\d+\s+[A-Za-z0-9\s\-\.]+(?:Street|St|Avenue|Ave|Road|Rd|Drive|Dr|Lane|Ln|Boulevard|Blvd|Way|Court|Ct|Place|Pl|Highway|Hwy)\.?)\s*,?\s*([A-Za-z][A-Za-z\s\-\.]{2,25}?)\s*,\s*([A-Z]{2})\s*(\d{5}(?:-\d{4})?)',
-        # City, State ZIP pattern
-        r'([A-Za-z][A-Za-z\s\-\.]{2,25}?)\s*,\s*([A-Z]{2})\s*(\d{5}(?:-\d{4})?)',
-        # Address with city state (no ZIP required)
-        r'(\d+\s+[A-Za-z0-9\s\-\.]+(?:Street|St|Avenue|Ave|Road|Rd|Drive|Dr|Lane|Ln|Boulevard|Blvd|Way|Court|Ct|Place|Pl)\.?)\s*,?\s*([A-Za-z][A-Za-z\s\-\.]{2,25}?)\s*,?\s*([A-Z]{2})\b'
-    ]
+    match = re.search(address_pattern, text, re.IGNORECASE)
+    if match:
+        return {
+            'street_address': match.group(1).strip(),
+            'city': match.group(2).strip(),
+            'state': match.group(3).upper(),
+            'postal_code': match.group(4),
+            'country': 'United States'
+        }
     
-    for pattern in address_patterns:
-        matches = re.finditer(pattern, text, re.IGNORECASE)
-        for match in matches:
-            groups = match.groups()
-            
-            if len(groups) >= 3:
-                if len(groups) == 4:  # Full address with ZIP
-                    street, city, state, postal = groups
-                    if is_valid_city(city) and state.upper() in states:
-                        return {
-                            'street_address': street.strip(),
-                            'city': city.strip(),
-                            'state': state.upper(),
-                            'postal_code': postal,
-                            'country': 'United States'
-                        }
-                elif len(groups) == 3:
-                    if re.search(r'\d{5}', groups[2]):  # Has ZIP
-                        city, state, postal = groups
-                        if is_valid_city(city) and state.upper() in states:
-                            return {
-                                'city': city.strip(),
-                                'state': state.upper(),
-                                'postal_code': postal,
-                                'country': 'United States'
-                            }
-                    else:  # No ZIP
-                        street, city, state = groups
-                        if is_valid_city(city) and state.upper() in states:
-                            return {
-                                'street_address': street.strip(),
-                                'city': city.strip(),
-                                'state': state.upper(),
-                                'country': 'United States'
-                            }
-    
-    # Fallback: If we have ZIP, try to find state and reasonable city
+    # Simpler patterns
     if zip_matches:
+        # Find state near ZIP
         for zip_code in zip_matches:
             zip_index = text.find(zip_code)
             if zip_index > 0:
-                # Look in text before ZIP for city and state
-                before_zip = text[max(0, zip_index-50):zip_index]
-                
-                # Look for State ZIP pattern
-                state_zip_match = re.search(r'([A-Za-z][A-Za-z\s\-\.]{2,25}?)\s*,?\s*([A-Z]{2})\s*$', before_zip.strip())
-                if state_zip_match:
-                    city, state = state_zip_match.groups()
-                    if is_valid_city(city) and state.upper() in states:
-                        return {
-                            'city': city.strip(),
-                            'state': state.upper(),
-                            'postal_code': zip_code,
-                            'country': 'United States'
-                        }
+                # Look for state abbreviation before ZIP
+                before_zip = text[max(0, zip_index-10):zip_index].strip()
+                state_match = re.search(r'\b([A-Z]{2})\b', before_zip)
+                if state_match and state_match.group(1) in states:
+                    return {
+                        'state': state_match.group(1),
+                        'postal_code': zip_code,
+                        'country': 'United States'
+                    }
     
     return None
 
@@ -4051,12 +3819,9 @@ def run_scraping_first_mode(country: str, state: str, city: str, target: int = 5
     logger.info(f"🎯 Target: {target} companies for {city}, {state}, {country}")
     logger.info("🌐 Finding real business websites and extracting actual data")
     
-    # Step 1: Discover real business websites with smart scaling
-    logger.info(f"\n📡 Step 1: Discovering real business websites...")
-    
-    # Scale discovery based on target size
-    discovery_multiplier = 6 if target >= 200 else 5 if target >= 100 else 4 if target >= 50 else 3
-    business_urls = discover_real_business_websites(country, state, city, target * discovery_multiplier)
+    # Step 1: Discover real business websites
+    logger.info("\n📡 Step 1: Discovering real business websites...")
+    business_urls = discover_real_business_websites(country, state, city, target * 3)  # Get more URLs than needed
     
     if not business_urls:
         logger.error("❌ No business websites found!")
@@ -4082,11 +3847,9 @@ def run_scraping_first_mode(country: str, state: str, city: str, target: int = 5
     # Use ThreadPoolExecutor for parallel processing
     from concurrent.futures import ThreadPoolExecutor, as_completed
     
-    # Scale workers based on target size for better performance
-    max_workers = min(25 if target >= 200 else 20 if target >= 100 else 15, len(business_urls))
-    logger.info(f"🔥 Processing {len(business_urls)} websites with {max_workers} parallel workers...")
+    logger.info(f"🔥 Processing {len(business_urls)} websites with {min(15, len(business_urls))} parallel workers...")
     
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    with ThreadPoolExecutor(max_workers=min(15, len(business_urls))) as executor:
         # Submit all URLs for processing
         future_to_url = {executor.submit(process_single_url, url): url for url in business_urls}
         

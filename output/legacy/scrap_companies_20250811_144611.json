@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Sam's Auto Salvage",
+    "website": "https://www.salvage-parts.com/junk-yards/samaposs-auto-salvage",
+    "street_address": "8002 Furay Ave",
+    "city": "Houston",
+    "region": "TX",
+    "postal_code": "77016",
+    "country": "United States",
+    "phones": [
+      "(832) 790-5103",
+      "(281) 458-8888",
+      "(832) 786-8687"
+    ],
+    "emails": [],
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Auto Parts",
+      "Scrap Metal"
+    ],
+    "material_prices": [],
+    "description": "Explore contact info, hours, phone number, and reviews for Sam's Auto Salvage, situated in Houston, Texas."
+  },
+  {
+    "name": "Prestige Auto & Metal Recycling",
+    "website": "https://www.recyclingmonster.com/recycling-center/prestige-auto-metal-recycling/54919",
+    "street_address": "7615 E. Mount Houston Rd Ste B",
+    "city": "Houston",
+    "region": "TX",
+    "postal_code": "",
+    "country": "United States",
+    "phones": [
+      "(832) 770-9953"
+    ],
+    "emails": [
+      "info@prestigescrapmetal.com"
+    ],
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Steel",
+      "Electronic",
+      "Scrap Metal",
+      "Copper",
+      "Aluminum"
+    ],
+    "material_prices": [],
+    "description": "Prestige Auto & Metal Recycling, Recycling Center at 7615 E. Mount Houston Rd Ste B, Houston, Texas, United States - Open hours, accepting materials, scrap prices, phone number and location address"
+  }
+]

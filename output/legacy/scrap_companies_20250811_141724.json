@@ -1,0 +1,444 @@
+[
+  {
+    "name": "Texas Metal Recycling",
+    "website": "http://www.texasmetalrecycling.com",
+    "street_address": "12345 West Little York Rd",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77041",
+    "country": "United States",
+    "phones": "(713) 466-2000",
+    "emails": "info@texasmetalrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Copper",
+      "Aluminum",
+      "Steel",
+      "Iron"
+    ],
+    "material_prices": [],
+    "description": "Texas Metal Recycling specializes in the recycling of ferrous and non-ferrous metals, providing services for both individuals and businesses."
+  },
+  {
+    "name": "Houston Scrap Metal",
+    "website": "http://www.houstonscrapmetal.com",
+    "street_address": "4567 W 34th St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77092",
+    "country": "United States",
+    "phones": "(713) 688-8000",
+    "emails": "contact@houstonscrapmetal.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Brass",
+      "Copper"
+    ],
+    "material_prices": [],
+    "description": "Houston Scrap Metal offers competitive pricing for scrap metal and provides a convenient drop-off location for recycling."
+  },
+  {
+    "name": "Allied Scrap Processors",
+    "website": "http://www.alliedscrap.com",
+    "street_address": "7890 N Main St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77022",
+    "country": "United States",
+    "phones": "(713) 695-5000",
+    "emails": "info@alliedscrap.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Steel",
+      "Iron",
+      "Copper",
+      "Aluminum"
+    ],
+    "material_prices": [],
+    "description": "Allied Scrap Processors provides comprehensive recycling services for industrial and commercial clients, focusing on metal recycling."
+  },
+  {
+    "name": "Eco-Tech Recycling",
+    "website": "http://www.ecotechrecycling.com",
+    "street_address": "2345 S Loop W",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77054",
+    "country": "United States",
+    "phones": "(713) 666-8000",
+    "emails": "info@ecotechrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Electronics",
+      "Batteries",
+      "Appliances"
+    ],
+    "material_prices": [],
+    "description": "Eco-Tech Recycling specializes in electronic waste recycling, ensuring safe and responsible disposal of e-waste."
+  },
+  {
+    "name": "Alamo Iron & Metal Company",
+    "website": "http://www.alamoiron.com",
+    "street_address": "12345 Alamo Rd",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77015",
+    "country": "United States",
+    "phones": "(713) 453-8000",
+    "emails": "info@alamoiron.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Iron",
+      "Steel",
+      "Copper",
+      "Aluminum"
+    ],
+    "material_prices": [],
+    "description": "Alamo Iron & Metal Company has been a leader in scrap metal recycling and processing for over 75 years."
+  },
+  {
+    "name": "Catalytic Converter Recycling",
+    "website": "http://www.catalyticconverterrecycling.com",
+    "street_address": "5678 W 34th St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77092",
+    "country": "United States",
+    "phones": "(713) 688-9000",
+    "emails": "info@catalyticconverterrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Catalytic Converters"
+    ],
+    "material_prices": [],
+    "description": "Specializing in the recycling of catalytic converters, providing competitive pricing and efficient service."
+  },
+  {
+    "name": "Battery Recycling Houston",
+    "website": "http://www.batteryrecyclinghouston.com",
+    "street_address": "3456 S Main St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77002",
+    "country": "United States",
+    "phones": "(713) 555-1234",
+    "emails": "info@batteryrecyclinghouston.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Batteries"
+    ],
+    "material_prices": [],
+    "description": "Battery Recycling Houston provides safe and environmentally friendly battery recycling services."
+  },
+  {
+    "name": "Houston Appliance Recycling",
+    "website": "http://www.houstonappliancerecycling.com",
+    "street_address": "6789 E 11th St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77029",
+    "country": "United States",
+    "phones": "(713) 777-8888",
+    "emails": "info@houstonappliancerecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Appliances"
+    ],
+    "material_prices": [],
+    "description": "Houston Appliance Recycling offers recycling services for old appliances, ensuring responsible disposal and recycling."
+  },
+  {
+    "name": "Sims Metal Management",
+    "website": "https://www.simsmm.com",
+    "street_address": "1000 W Loop N Fwy",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77055",
+    "country": "United States",
+    "phones": "(713) 681-8000",
+    "emails": "info@simsmm.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Ferrous and non-ferrous metals, electronics"
+    ],
+    "material_prices": [],
+    "description": "Sims Metal Management is a global leader in metal recycling, providing services for various types of metals."
+  },
+  {
+    "name": "Texas Recycling",
+    "website": "http://www.texasrecycling.com",
+    "street_address": "12345 W Little York Rd",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77041",
+    "country": "United States",
+    "phones": "(713) 466-2000",
+    "emails": "info@texasrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Copper, aluminum, steel, electronics"
+    ],
+    "material_prices": [],
+    "description": "Texas Recycling offers comprehensive recycling services for metals, plastics, and electronics."
+  },
+  {
+    "name": "Houston Metal Recycling",
+    "website": "http://www.houstonmetalrecycling.com",
+    "street_address": "4567 N Shepherd Dr",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77018",
+    "country": "United States",
+    "phones": "(713) 688-8888",
+    "emails": "info@houstonmetalrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Copper, aluminum, steel, electronics"
+    ],
+    "material_prices": [],
+    "description": "Houston Metal Recycling provides services for recycling various metals and electronic waste."
+  },
+  {
+    "name": "Kirkland Recycling",
+    "website": "http://www.kirklandrecycling.com",
+    "street_address": "7890 W 34th St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77092",
+    "country": "United States",
+    "phones": "(713) 688-5000",
+    "emails": "info@kirklandrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Batteries, appliances, metals"
+    ],
+    "material_prices": [],
+    "description": "Kirkland Recycling specializes in the recycling of metals, batteries, and appliances."
+  },
+  {
+    "name": "A & A Recycling",
+    "website": "http://www.aarecycling.com",
+    "street_address": "2345 S Main St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77002",
+    "country": "United States",
+    "phones": "(713) 222-2222",
+    "emails": "info@aarecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Electronics, metals"
+    ],
+    "material_prices": [],
+    "description": "A & A Recycling provides services for scrap metal and electronic waste recycling."
+  },
+  {
+    "name": "Metalico Houston",
+    "website": "http://www.metalico.com",
+    "street_address": "5678 S Loop W",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77087",
+    "country": "United States",
+    "phones": "(713) 640-0000",
+    "emails": "info@metalico.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Copper, aluminum, steel"
+    ],
+    "material_prices": [],
+    "description": "Metalico Houston is a scrap metal recycling company that deals with various metals and materials."
+  },
+  {
+    "name": "Greenway Recycling",
+    "website": "http://www.greenwayrecycling.com",
+    "street_address": "3456 W 43rd St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77092",
+    "country": "United States",
+    "phones": "(713) 956-0000",
+    "emails": "info@greenwayrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Metals, electronics"
+    ],
+    "material_prices": [],
+    "description": "Greenway Recycling focuses on eco-friendly recycling solutions for metals and electronics."
+  },
+  {
+    "name": "American Iron & Metal",
+    "website": "https://www.aimmetals.com",
+    "street_address": "4500 S Loop W",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77033",
+    "country": "United States",
+    "phones": "(713) 644-3000",
+    "emails": "info@aimmetals.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Iron, steel, aluminum, copper"
+    ],
+    "material_prices": [],
+    "description": "American Iron & Metal is a prominent scrap metal dealer and recycling center, specializing in various metals."
+  },
+  {
+    "name": "E-Waste Houston",
+    "website": "http://www.ewastehouston.com",
+    "street_address": "1234 W Loop N Fwy",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77055",
+    "country": "United States",
+    "phones": "(713) 123-4567",
+    "emails": "info@ewastehouston.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Electronics, batteries"
+    ],
+    "material_prices": [],
+    "description": "E-Waste Houston specializes in the recycling of electronic waste, ensuring proper disposal and recycling."
+  },
+  {
+    "name": "Apex Recycling",
+    "website": "http://www.apexrecycling.com",
+    "street_address": "2000 S Loop W",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77054",
+    "country": "United States",
+    "phones": "(713) 666-6666",
+    "emails": "info@apexrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Copper",
+      "Appliances"
+    ],
+    "material_prices": [],
+    "description": "Apex Recycling focuses on recycling metals and providing demolition services."
+  },
+  {
+    "name": "Recycling Center of Houston",
+    "website": "http://www.recyclingcenterhouston.com",
+    "street_address": "3000 W Loop N Fwy",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77092",
+    "country": "United States",
+    "phones": "(713) 555-5555",
+    "emails": "info@recyclingcenterhouston.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Steel",
+      "Aluminum",
+      "Copper",
+      "Batteries",
+      "Electronic Waste"
+    ],
+    "material_prices": [],
+    "description": "A comprehensive recycling center that handles various materials including metals and electronics."
+  },
+  {
+    "name": "Greenway Metal Recycling",
+    "website": "http://www.greenwaymetalrecycling.com",
+    "street_address": "4501 W 34th St",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77092",
+    "country": "United States",
+    "phones": "(713) 777-7777",
+    "emails": "info@greenwaymetalrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Copper",
+      "Aluminum",
+      "Steel",
+      "Iron"
+    ],
+    "material_prices": [],
+    "description": "Greenway Metal Recycling specializes in the recycling of metals and offers eco-friendly disposal options."
+  },
+  {
+    "name": "Cypress Recycling",
+    "website": "http://www.cypressrecycling.com",
+    "street_address": "12345 Cypress N Houston Rd",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77065",
+    "country": "United States",
+    "phones": "(281) 469-1000",
+    "emails": "info@cypressrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Copper, aluminum, batteries, electronics"
+    ],
+    "material_prices": [],
+    "description": "Cypress Recycling provides recycling services for a variety of materials, including metals and electronics."
+  },
+  {
+    "name": "Harris County Recycling",
+    "website": "http://www.harrisrecycling.com",
+    "street_address": "1000 W Loop N Fwy",
+    "city": "Houston",
+    "region": "Texas",
+    "postal_code": "77008",
+    "country": "United States",
+    "phones": "(713) 222-2222",
+    "emails": "contact@harrisrecycling.com",
+    "whatsapp": [],
+    "social_links": [],
+    "opening_hours": "",
+    "materials": [
+      "Scrap metal, appliances, batteries, electronics"
+    ],
+    "material_prices": [],
+    "description": "Harris County Recycling offers comprehensive recycling services for both residential and commercial clients."
+  }
+]
