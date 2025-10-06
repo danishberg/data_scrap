@@ -1,0 +1,22 @@
+{
+  "stage": 1,
+  "language": "ru",
+  "total_urls": 0,
+  "target_limit": 20,
+  "collection_time_seconds": 223.290379,
+  "collected_at": "2025-10-06T11:46:41.897433",
+  "sources": {
+    "newsapi": 0,
+    "rss": 0,
+    "metallurgy": 0,
+    "business": 0
+  },
+  "urls": [],
+  "quality_metrics": {
+    "relevance_filtering_applied": true,
+    "duplicates_removed": 0,
+    "quality_threshold_used": true,
+    "parallel_collection": true,
+    "average_urls_per_minute": 0.0
+  }
+}

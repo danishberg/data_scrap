@@ -1,0 +1,1771 @@
+{
+  "stage": 2,
+  "language": "ru",
+  "total_articles_parsed": 4,
+  "total_articles_saved": 4,
+  "total_articles_processed": 3,
+  "segmented_at": "2025-10-06T14:13:07.567267",
+  "from_stage1": "raw_urls_production_20251006_140740.json",
+  "parsing_stats": {
+    "rss": 4,
+    "industry": 0,
+    "newspaper": 0
+  },
+  "category_distribution": {
+    "type:other": 34,
+    "material:ferrous": 4,
+    "type:prices": 5,
+    "region:asia": 8,
+    "type:environment": 12,
+    "region:europe": 6,
+    "region:russia": 42,
+    "type:logistics": 4,
+    "material:precious": 2,
+    "type:production": 11,
+    "region:america": 19,
+    "type:policy": 11,
+    "material:scrap": 14,
+    "type:market_analysis": 6,
+    "type:trade": 7,
+    "material:non_ferrous": 2,
+    "type:technology": 2
+  },
+  "categories": {
+    "type:other": [
+      {
+        "id": 1,
+        "title": "Переезд в облако рекламного движка с baremetal",
+        "url": "https://habr.com/ru/companies/vk/articles/951638/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", !\r\n VK , RPS. bare-metal : 128 CPU 512 , . , 24 .\r\n , . VK : MySQL- P2P- -, downtime 2 , 4.\r\nVK , 500 . , , : RPS × × .\r\n :\r\n 300 , 150. .\r\n bare-metal . : . \r\n 10 , 2500 60% . 2024 , .\r\n 24 . , . …",
+        "published_at": "2025-09-30T13:46:23",
+        "language": "ru"
+      },
+      {
+        "id": 3,
+        "title": "Названа самая популярная специальность в ИИ",
+        "url": "https://hi-tech.mail.ru/news/133372-nazvana-samaya-populyarnaya-spetsialnost-v-ii/",
+        "source": "Mail.ru",
+        "content_preview": "2024 3,5 2018 . : . ProcessTech Saransk hh.ru «».\r\n« — , — Process Mining hh.ru . — « », , , ».\r\n: 2024 , 2025- -5 - (63%), - (61%), - (43%), - (41%), (36%) (33%).\r\n« , 2030 Process Mining 9,2 , — , …",
+        "published_at": "2025-09-06T08:52:04",
+        "language": "ru"
+      },
+      {
+        "id": 4,
+        "title": "Что почитать на выходных — 192",
+        "url": "https://ilyabirman.ru/meanwhile/all/weekend-reading-192/",
+        "source": "Ilyabirman.ru",
+        "content_preview": ":\r\n<ol><li>   . , ,       , (  , , ).</li><li> : . , - , .</li><li>The hardest working font in Manhattan.  ,   «»,   .</li><li>Something Is Rotten in the State of Cupertino.   -.</li><li>  ,   .     …",
+        "published_at": "2025-10-03T15:48:25",
+        "language": "ru"
+      },
+      {
+        "id": 10,
+        "title": "Плесень в квартире осенью: Каким народным хитростям нельзя верить, ведь они сделают только хуже",
+        "url": "https://life.ru/p/1793209",
+        "source": "Life.ru",
+        "content_preview": ", . . , , . , , , ? , . , , ?\r\n. © Shutterstock / FOTODOM / New Africa\r\n. , , , . , , . , . , , . . , , . , , . , . , , . , . , , « » .\r\n: . ! , , . , , . , . , . , , . , . , , . . , . , . - «» . , ,…",
+        "published_at": "2025-09-27T10:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 12,
+        "title": "Выпущен дешевый Raspberry Pi в необычном форм-факторе. Он самый компактный во всем семействе",
+        "url": "https://www.cnews.ru/news/top/2025-09-24_vypushchen_deshevyj_raspberry_pi_v",
+        "source": "Cnews.ru",
+        "content_preview": "Raspberry Pi Compute Module 0. , Zero 2W, -. $18.\r\n Raspberry Pi\r\n Raspberry Pi Raspberry Pi Compute Module 0 (CM0). , RP3A0, CM4 CM5, 2023 2024 . .\r\nITHome, Raspberry Pi «» Zero 2W, 2021 . \r\n . (Chi…",
+        "published_at": "2025-09-24T09:32:00",
+        "language": "ru"
+      },
+      {
+        "id": 14,
+        "title": "Iphone 17 Pro Max и Фокстрот: преимущества, которые оценят поклонники Apple",
+        "url": "https://epravda.com.ua/rus/press/iphone-17-pro-max-i-fokstrot-preimushchestva-kotorye-ocenyat-poklonniki-apple-812437/",
+        "source": "Epravda.com.ua",
+        "content_preview": "Apple iPhone 17 Pro Max, . , , \"\" .\r\niPhone 17 Pro Max \r\n Apple 2025 , . , , .\r\nApple , , .\r\niPhone 17 Pro Max A19 Pro, 3- . 6- CPU 12 , 16- Neural Engine , . . 40% , .\r\n . Apple N1 Wi-Fi 7, . , AirD…",
+        "published_at": "2025-10-03T15:04:00",
+        "language": "ru"
+      },
+      {
+        "id": 17,
+        "title": "Как лучше собирать бюджетный игровой ПК в 2025 году: с видеокартой или без?",
+        "url": "https://habr.com/ru/companies/x-com/articles/952750/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", . . , , , . : CPU + ? , .\r\n AMD Ryzen 5 8600G\r\n :\r\n<ul><li>: AMD Ryzen 5 8600G\r\n</li><li>: \r\n</li><li> : MSI PRO B650M-B\r\n</li><li> : Corsair Vengeance DDR5-6000 16 (2×8 )\r\n</li><li>: Kingston SNV3…",
+        "published_at": "2025-10-02T09:31:51",
+        "language": "ru"
+      },
+      {
+        "id": 19,
+        "title": "Заморозили и полетело: всё, что нужно знать про Frozen-коллекции в C#",
+        "url": "https://habr.com/ru/companies/otus/articles/950946/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", !\r\n  ,   . ReadOnlyDictionary Immutable*.   , ,   lookup. .NET 8    : System.Collections.Frozen.\r\n  Frozen .    ,     TryGetValue/Contains  . ,    lookup. , , ,   , .\r\n.NET 9  : alternate lookup. R…",
+        "published_at": "2025-10-01T09:50:46",
+        "language": "ru"
+      },
+      {
+        "id": 20,
+        "title": "Автоматизация Laravel: как сделать процесс разработки быстрым и надежным",
+        "url": "https://habr.com/ru/articles/952250/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "Laravel , : . , , , .\r\n Laravel, , , Docker Compose . , .\r\n Docker compose\r\n Laravel Docker Compose. , . , .\r\n :\r\n<table><tr><th></th><th></th></tr><tr><td>php-fpm\r\n</td><td> PHP- \r\n</td></tr><tr><td…",
+        "published_at": "2025-10-01T06:30:17",
+        "language": "ru"
+      },
+      {
+        "id": 21,
+        "title": "Цифровая радиотехника, первые шаги. Repka Pi + SDR = Сканируем Радиоэфир",
+        "url": "https://habr.com/ru/articles/950960/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "SDR -  (. Software-defined radio, SDR, . )    () , ,     , , ,  ,     .\r\n SDR , - .\r\nSDR - (), . SDR- Repka Pi, .\r\n SDR , , , , . . , . , .\r\n , . SDR-, , .\r\n SDR, RTL-SDR Blog 4, . RTL-SDR .\r\n RTL-SD…",
+        "published_at": "2025-09-30T08:56:51",
+        "language": "ru"
+      },
+      {
+        "id": 22,
+        "title": "Обзор внешнего HDD ADATA HD330 1 ТБ: накопитель всегда с собой",
+        "url": "https://www.ixbt.com/live/platform/obzor-vneshnego-hdd-adata-hd330-1-tb-nakopitel-vsegda-s-soboy.html",
+        "source": "Ixbt.com",
+        "content_preview": "SSD , HDD . HDD A-Data HD330 1 , , . 1 Tb, , . (), .\r\n<table><tr><th></th><th>\r\n 1 B\r\n </th></tr>\r\n<tr><td></td><td>\r\n 6 /\r\n </td></tr><tr><td></td><td>\r\n USB 3.2 Gen1 micro-B\r\n </td></tr><tr><td>\r\n …",
+        "published_at": "2025-09-30T08:24:44",
+        "language": "ru"
+      },
+      {
+        "id": 23,
+        "title": "DX в процедурных макросах на Rust",
+        "url": "https://habr.com/ru/companies/otus/articles/949300/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", ! \r\n      ,  DX. \r\n   Rust   . : , derive proc_macro  .   ,   ,   Rust   . \r\n    : ,     . ,   use,   ,   .   Span::call_site . \r\n: attribute- \r\ndx-macros  , backend : #[from_env]struct Config, imp…",
+        "published_at": "2025-09-30T05:18:48",
+        "language": "ru"
+      },
+      {
+        "id": 25,
+        "title": "Зоопарк фреймворков для AI-агентов: как выбрать подходящий — делаем бенчмарк и большое сравнение",
+        "url": "https://habr.com/ru/articles/953226/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "! AI-, . , « ?». langchain , MCP A2A, - Swarm CrewAI, .\r\n , , , . , : LLM.\r\n .\r\n : LangChain, LangGraph, AutoGen, CrewAI, OpenAI Swarm, LlamaIndex, MetaGPT, ControlFlow, Haystack, Phidata, Pydantic A…",
+        "published_at": "2025-10-03T12:33:35",
+        "language": "ru"
+      },
+      {
+        "id": 26,
+        "title": "Amplicode – идеальное дополнение к IntelliJ IDEA Ultimate. Огромный гайд для Spring-разработчика",
+        "url": "https://habr.com/ru/companies/haulmont/articles/952644/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", Amplicode OpenIDE, IntelliJ IDEA Community Edition GigaIDE Spring Boot. Amplicode IntelliJ IDEA Ultimate , , IDE .\r\n Ultimate . Ultimate, , , . Amplicode : IDE , , Spring-.\r\nAmplicode Ultimate , : …",
+        "published_at": "2025-10-03T11:15:48",
+        "language": "ru"
+      },
+      {
+        "id": 28,
+        "title": "Сериалы октября: «Кибердеревня 2», новый «Ведьмак» и молодой Пеннивайз",
+        "url": "https://www.kinopoisk.ru/media/article/4011911/",
+        "source": "Kinopoisk.ru",
+        "content_preview": "«», «». «» , «» - . «: », « ». «», . HBO «» , « ». . \r\n: Kion 1 \r\n. , , . , , ( -.). . , , , , . , («»), (« »), . , «». \r\n : \r\n: Netflix 3 ( )\r\n. , -, «», « »«» ( , « »). 1950-, , , «». ( «» « »),   …",
+        "published_at": "2025-10-02T15:30:39",
+        "language": "ru"
+      },
+      {
+        "id": 30,
+        "title": "Разворачиваем базу знаний Outline c SSO и AI в облаке",
+        "url": "https://habr.com/ru/companies/cloud_ru/articles/950248/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", Cloud.ru. Notion, , , . SaaS- , : , . , .\r\n, , , -  SaaS .     , . - , - , .   - .\r\n- wiki- Outline, Notion. ,   . , .\r\n, , . , , 10 000 146 . , , free tier. AI , , , .\r\nC Ubuntu 22.04, IP-, Object…",
+        "published_at": "2025-10-02T10:20:33",
+        "language": "ru"
+      },
+      {
+        "id": 32,
+        "title": "Славные герои: «Союзмультфильм» выпустит продолжение «Умки», «Ну, погоди!» и «Простоквашино»",
+        "url": "https://news.mail.ru/society/68123444/",
+        "source": "Mail.ru",
+        "content_preview": "«»    , «». ,     , « »  ,     . ,   «» ,  —   .  —   «».\r\n1  2026   «», .    ,   «», « 2: ,  ».   ,  — ,  — ,   — . ,     2018   «».\r\n, «»   ,   .  2023 «»   .   ,   «», «», «»,     «»  «».       , …",
+        "published_at": "2025-09-30T21:03:29",
+        "language": "ru"
+      },
+      {
+        "id": 33,
+        "title": "Новая карта видеоконтента в России: что произошло с рекламой на YouTube, куда перешли пользователи и рекламные бюджеты",
+        "url": "https://habr.com/ru/companies/click/articles/952136/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "YouTube 15 . , . click.ru , , .\r\n 20242025 \r\n Mediascope, 2025 YouTube (DAU). :\r\n<ul><li>VK 41,1 (52% -3);\r\n</li><li>YouTube 28,9 (37%);\r\n</li><li>RUTUBE 9 (11%).\r\n</li></ul>\r\n (MAU). 2024 YouTube: 9…",
+        "published_at": "2025-09-30T13:32:56",
+        "language": "ru"
+      },
+      {
+        "id": 35,
+        "title": "ИИ в Западных корпорациях: Период отрезвления (сентябрь 2025)",
+        "url": "https://habr.com/ru/articles/950756/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ": 2025\r\n2025 . , : 78%   , -, 2024  $250 . : , $63,000 $85,000. , .\r\n , , . .\r\n (250+ )  : 2025-  14% 12%. MIT : 95% , .\r\n ?\r\n \"\". , ChatGPT . ,  42%   , - ,  82%  . \"\", , \"\", .\r\n - 2025-. :\r\n , .\r\n …",
+        "published_at": "2025-09-25T20:38:10",
+        "language": "ru"
+      },
+      {
+        "id": 37,
+        "title": "Агрегация и парсинг XML RSS ленты на Python",
+        "url": "https://habr.com/ru/companies/amvera/articles/947318/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", Python , RSS.\r\nRSS XML-, , , . RSS- . «» .\r\n Python, (, 4 ) BBC, «» Telegram-. , .\r\nAmvera, , IDE.\r\n Telegram (API_ID, API_HASH,BOT_TOKEN ) .\r\n, :\r\n<ul><li>requestsHTTP- RSS- ( XML).\r\n</li><li>xml.…",
+        "published_at": "2025-09-16T09:17:51",
+        "language": "ru"
+      },
+      {
+        "id": 38,
+        "title": "Нейро-дайджест: ключевые события мира AI за 1 неделю сентября 2025",
+        "url": "https://habr.com/ru/companies/timeweb/articles/943714/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "! «-» ., .\r\n : xAI Grok Code Fast 1, Microsoft LLM. nano-banana, Anthropic Claude Chrome, Krea -, YouTube .\r\n . !\r\n :\r\n LLM\r\n<ul><li>Grok-Code Fast 1 \r\n</li><li>LongCat-Flash MoE- \r\n</li><li> OpenAI …",
+        "published_at": "2025-09-04T14:05:37",
+        "language": "ru"
+      },
+      {
+        "id": 39,
+        "title": "Дефицит Lada Iskra наглядно: всего одна машина на автовозе",
+        "url": "https://www.ixbt.com/news/2025/09/09/deficit-lada-iskra-nagljadno-vsego-odna-mashina-na-avtovoze.html",
+        "source": "Ixbt.com",
+        "content_preview": "Lada Iskra . , , .\r\n, Lada Iskra . . \r\n , .\r\n ,  21 . 20 (, ) 1 — .  \r\nHyundai-LG \r\n<ul><li> Lada Iskra : : </li><li> 11:371 Hyundai-LG . </li><li> 11:182 1000 . Belgee X80 PHEV 15 . 440 </li><li> 11…",
+        "published_at": "2025-09-09T08:46:00",
+        "language": "ru"
+      },
+      {
+        "id": 42,
+        "title": "«Газета.Ru» рассказывает историю бандитской группировки на Филиппинах, названной в честь «Спутника-1»",
+        "url": "https://news.mail.ru/society/68173104/",
+        "source": "Mail.ru",
+        "content_preview": "4  1957    — «-1».     ,         —  .   Sputnik, «-1»,     .   «-1» «.Ru»    .\r\nSputnik, Sigue Sigue Sputnik  1960-  ,     , .   Sigue Sigue.   : Sigue Sigue Sputnik ( Sputnik SSS)  Sigue Sigue Comma…",
+        "published_at": "2025-10-04T05:06:14",
+        "language": "ru"
+      },
+      {
+        "id": 51,
+        "title": "Кто такой Ларри Эллисон. ИИ-инфраструктура, медиа, цифровой контроль",
+        "url": "https://colonelcassad.livejournal.com/10107890.html",
+        "source": "Livejournal.com",
+        "content_preview": ". - + + \r\n, ( ). - Stargate, (https://t.me/rybar/73595).\r\nTikTok .@Geopolitics_prime (https://t.me/geopolitics_prime/57424) :\r\n- 1944 , . Ampex — , Oracle.\r\nSoftware Development Labs ( Oracle). , Ora…",
+        "published_at": "2025-10-03T18:03:06",
+        "language": "ru"
+      },
+      {
+        "id": 52,
+        "title": "Издательство Питер. Колонка редактора, октябрь 25 г",
+        "url": "https://habr.com/ru/companies/piter/articles/953090/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", !\r\n , .\r\n: ChatGPT Copilot(): . \r\n - Copilot ChatGPT -, . , , . , .\r\n - . , . ChatGPT Copilot , . , .\r\n» » \r\n(): .\r\n, ! , , , . , , , , .\r\n , , , Python . , , .\r\n» » \r\n(): .\r\n , . , , Big Data . , …",
+        "published_at": "2025-10-03T12:42:19",
+        "language": "ru"
+      },
+      {
+        "id": 53,
+        "title": "Архитектура NGFW: опыт использования VPP и DPDK, частые ошибки разработчиков",
+        "url": "https://habr.com/ru/companies/kaspersky/articles/953078/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "! .  Symbian OS, . 2010 « », , NGFW. , . \r\n (NGFW), . , :\r\n<ul><li> (data plane) , DPDK/VPP;\r\n</li><li> data plane NGFW;\r\n</li><li> VPP;\r\n</li><li> VPP ;\r\n</li><li> DPI IDPS ( IDPS );\r\n</li><li> data…",
+        "published_at": "2025-10-03T12:18:50",
+        "language": "ru"
+      },
+      {
+        "id": 57,
+        "title": "\"Может стать конкурентным преимуществом\". Застройщики строят квартиры меньшей площади.",
+        "url": "https://biz.liga.net/all/all/article/mozhet-stat-konkurentnym-preimushtestvom-zastroishtiki-stroyat-kvartiry-menshei-ploshtadi",
+        "source": "Liga.net",
+        "content_preview": "2020 11%.\r\n, , 2020 68,2 . . 2024 61,6 ..\r\n , . . -, ? LIGA.net.\r\n, , . , , .\r\n - -. .\r\n - - . , Washington Concept House (Saga Development), Fresco Sofia ( \"\") NVER Taryan Group.\r\n , . UTG .\r\n , . .…",
+        "published_at": "2025-10-03T04:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 58,
+        "title": "Вавриш: Верховный Суд разблокировал строительство ЖК \"Новый Подол\" в Киеве",
+        "url": "https://biz.liga.net/all/nedvizhimost/novosti/vavrish-verhovnyi-sud-razblokiroval-stroitelstvo-zhk-novyi-podol-v-kieve",
+        "source": "Liga.net",
+        "content_preview": "\" \" / : \r\n\" \", .\r\n Saga Development .\r\n \" \" . , 1500 , , . 10,1 .\r\n 12 - - .\r\n , , 1963 , , , .\r\n , , - , , .\r\n SAGA Development , . , , .\r\n , , , \" \".\r\n \" \".",
+        "published_at": "2025-10-02T15:35:52",
+        "language": "ru"
+      },
+      {
+        "id": 59,
+        "title": "Производитель дирижаблей объявил о переходе на водородные двигатели",
+        "url": "https://www.ixbt.com/live/car/proizvoditel-dirizhabley-obyavil-o-perehode-na-vodorodnye-dvigateli.html",
+        "source": "Ixbt.com",
+        "content_preview": "Flying Whales 2030 . Aerospace Test &amp; Development Show 2025, 30  — 1  .\r\nFlying Whales LCA60T . 200 50 . 60 . 10 , .\r\n4 . . 2030 .\r\n - .  — , . .\r\nFlying Whales 2017 - . LCA60T .\r\n:\r\nAerospace Te…",
+        "published_at": "2025-10-02T14:43:32",
+        "language": "ru"
+      },
+      {
+        "id": 82,
+        "title": "Финансы",
+        "url": "https://www.kommersant.ru/finance?from=tag",
+        "source": "www.kommersant.ru",
+        "content_preview": "06.10.2025, 03:01 06.10.2025, 03:01 Доверяй, но проверяй Управляющие следят за политикой Банка России Финансы Виталий Гайдаев Газета «Коммерсантъ» №183/П от 06.10.2025, стр. 7 Архив газеты «Коммерсант",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 86,
+        "title": "Жители Малайзии сняли на фото крокодила с человеческими останками в брюхе",
+        "url": "https://rg.ru/2025/10/06/zhiteli-malajzii-sniali-na-foto-krokodila-s-chelovecheskimi-ostankami-v-briuhe.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:24 В мире изменить размер шрифт",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 102,
+        "title": "Грузия потребовала извинений от ЕС за поддержку демонстрантов",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144469-gruziya-potrebovala-izvinenii",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Местные выборы, прошедшие в Грузии в субботу в 64 муниципалитетах, завершились победой правящей партии «Грузинская мечта» во всех избирательных округах. В день голосования в столице проходили акции пр",
+        "published_at": "2025-10-05T00:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 105,
+        "title": "Шестеро пропавших на Камчатке туристов вышли на связь",
+        "url": "https://rg.ru/2025/10/06/reg-dfo/shestero-propavshih-na-kamchatke-turistov-vyshli-na-sviaz.html",
+        "source": "rg.ru",
+        "content_preview": "\"Туристы вышли на связь, с ними все в порядке, подъезжают к поселку Северные Коряки. По их словам, они сегодня и планировали вернуться\", - рассказали в спасательном ведомстве.\n\nКак уточняет министр по",
+        "published_at": "2025-10-06T00:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 110,
+        "title": "Во Франции объявили состав нового правительства под руководством Лекорню",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144463-sostav-novogo-pravitelstva",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Назначение Лекорню на пост премьер-министра последовало за отставкой правительства Франсуа Байру, которая произошла после того, как национальное собрание (нижняя палата парламента) 8 сентября 2025 г. ",
+        "published_at": "2025-10-05T00:00:00",
+        "language": "ru"
+      }
+    ],
+    "material:ferrous": [
+      {
+        "id": 2,
+        "title": "Black Iron покинет Украину, если не сможет продлить спецразрешение. В Раде готовят решение",
+        "url": "https://biz.liga.net/all/fmcg/novosti/black-iron-pokinet-ukrainu-esli-ne-smozhet-prodlit-spetsrazreshenie-v-rade-gotovyat-reshenie",
+        "source": "Liga.net",
+        "content_preview": ": Depositphotos\r\nBlack Iron, \" \" , . \" \" United by Mining.\r\n\" : [. 4537], . \", .\r\n : \" , . , \".\r\n , 10 , 200 (10% ).\r\n , .\r\n , , , , .\r\n , .\r\n\" , , , ( ) , , \", .\r\n , , , .\r\n<ul><li> 2024 Black Iron …",
+        "published_at": "2025-09-24T11:43:56",
+        "language": "ru"
+      },
+      {
+        "id": 66,
+        "title": "Михтеев: банки обнуляют лимиты по кредиткам из-за требований к долговой нагрузке",
+        "url": "https://ria.ru/20251004/mikhteev-2046304613.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Массовое обнуление лимитов по кредитным картам связано с ужесточением требований к предельной долговой нагрузке,  рассказал агентству “Прайм” генеральный директор Ассоциац",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 75,
+        "title": "Трамп призвал ускориться с реализацией его плана по урегулированию конфликта в Газе",
+        "url": "https://www.interfax.ru/world/1050977",
+        "source": "www.interfax.ru",
+        "content_preview": "Трамп призвал ускориться с реализацией его плана по урегулированию конфликта в Газе Москва. 6 октября. INTERFAX.RU - Президент США Дональд Трамп считает успешным ход урегулирования конфликта Израиля и",
+        "published_at": "2025-10-06T02:05:00",
+        "language": "ru"
+      },
+      {
+        "id": 108,
+        "title": "В Приморье произошел пожар на полигоне ТБО на площади 1 тыс. кв. м",
+        "url": "https://tass.ru/proisshestviya/25257947",
+        "source": "tass.ru",
+        "content_preview": "В Приморье произошел пожар на полигоне ТБО на площади 1 тыс. кв. м\n\nНа месте происшествия работают три единицы пожарной техники\n\nРедакция сайта ТАСС\n\nВЛАДИВОСТОК, 6 октября. /ТАСС/. Пожар на площади о",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "type:prices": [
+      {
+        "id": 5,
+        "title": "В Шерегеше назвали дату открытия сезона",
+        "url": "https://rg.ru/2025/10/02/reg-sibfo/navostrili-lyzhi.html",
+        "source": "Rg.ru",
+        "content_preview": "\" !\" - , - \"\". \"-\", . 2024-2025- ( ) 2,6 . - . 95 ( ), 77 , 50 -, , 23 16 . - Gesh local market, . , , , GrelkaFest2026 2026-.\r\n , F \"\". 179 , - 2027 . 618 , , , - . , , . , -. , , , .\r\n . 25 , , \" \"…",
+        "published_at": "2025-10-02T20:08:25",
+        "language": "ru"
+      },
+      {
+        "id": 24,
+        "title": "Снижаем стоимость инференса. Часть 2. IBM KServe ModelMesh, vLLM Production Stack и что внутри у нашего решения",
+        "url": "https://habr.com/ru/companies/cloud_ru/articles/949352/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", ! , DevOps- Evolution ML Inference Cloud.ru. \r\n  , , GPU. , . \r\n - , KServe ModelMesh vLLM Production Stack, , , Cloud.ru Shared GPU , . \r\nML-, DevOps MLOps-, , . , , «», . \r\n, \r\n : SMS MMS. , GPU …",
+        "published_at": "2025-10-03T14:00:12",
+        "language": "ru"
+      },
+      {
+        "id": 64,
+        "title": "Аналитик Черновол: спрос на золото в мире может превысить 5 тыс тонн в 2025 году",
+        "url": "https://ria.ru/20251004/zoloto-2046327159.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Мировой спрос на золото может превысить рекордную отметку в 5 тысяч тонн драгметалла по итогам года, считают опрошенные РИА Новости эксперты. \"Стоит ожидать роста спроса н",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 65,
+        "title": "Финансист Шнейдерман: на валютном рынке РФ воцарилась относительная стабильность",
+        "url": "https://ria.ru/20251004/rossiya-2046304151.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт — РИА Новости. Укрепление рубля на уходящей неделе связано с пересмотром ожиданий по ключевой ставке и слабостью доллара. Но этот тренд может быть переломлен, рассказал агентству “Прайм”",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 66,
+        "title": "Михтеев: банки обнуляют лимиты по кредиткам из-за требований к долговой нагрузке",
+        "url": "https://ria.ru/20251004/mikhteev-2046304613.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Массовое обнуление лимитов по кредитным картам связано с ужесточением требований к предельной долговой нагрузке,  рассказал агентству “Прайм” генеральный директор Ассоциац",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "region:asia": [
+      {
+        "id": 6,
+        "title": "Новейший китайский самолёт J-36 выполнил фигуру высшего пилотажа в ходе испытательного полёта",
+        "url": "https://overclockers.ru/blog/vokrugsveta/show/240027/Novejshij-kitajskij-samolet-J-36-sovershil-figuru-vysshego-pilotazha-v-hode-ispytatel-nogo-poleta",
+        "source": "Overclockers.ru",
+        "content_preview": "- J-36 . , , , , . Army Recognition.\r\n J-36. : \r\n J-36 Chengdu Aircraft Industry Group . . . Army Recognition, , F-22 Raptor, , . , .\r\n, J-36 , . , 26 2024 , . , , , , . Army Recognition , , J-20, , …",
+        "published_at": "2025-10-01T12:32:12",
+        "language": "ru"
+      },
+      {
+        "id": 7,
+        "title": "Labubu может стать \"китайским Микки Маусом\": производитель ориентируется на Disney",
+        "url": "https://biz.liga.net/all/all/novosti/labubu-mozhet-stat-kitaiskim-mikki-mausom-proizvoditel-orientiruetsya-na-disney",
+        "source": "Liga.net",
+        "content_preview": ": EPA / CLEMENS BILAN\r\nLabubu, Pop Mart, Disney . Pop Mart Reuters.\r\n\" Disney. , Disney , 100 \", .\r\n , 100 .\r\n , Labubu , , - .\r\n , , Labubu, , , , Disney .\r\n , , Pop Mart \" \", \" , , , , \" Labubu, 10…",
+        "published_at": "2025-09-30T10:51:00",
+        "language": "ru"
+      },
+      {
+        "id": 8,
+        "title": "Испытания китайских самолетов шестого поколения показали на видео",
+        "url": "https://lenta.ru/news/2025/09/29/ispytaniya-kitayskih-samoletov-shestogo-pokoleniya-pokazali-na-video/",
+        "source": "Lenta",
+        "content_preview": ", , . Telegram- ImpNavigator.\r\n , Shenyang Aircraft Corporation (J-50) Chengdu Aircraft Industry Group (J-36).\r\n 2024 . .\r\n J-50 . «». .\r\n Military Watch Magazine , F-47, - , .",
+        "published_at": "2025-09-29T12:47:28",
+        "language": "ru"
+      },
+      {
+        "id": 9,
+        "title": "Московские предприятия представили разработки на выставке в Шанхае",
+        "url": "https://tass.ru/ekonomika/25181267",
+        "source": "Tass.ru",
+        "content_preview": ", 27 . //. China International Industry Fair . MAX.\r\n\" - , , \" - .\r\n , \" \", , 230 , 124 .\r\n 4,6 . , . . - , , .\r\n , \"\". I 2025 11 - .",
+        "published_at": "2025-09-27T10:49:16",
+        "language": "ru"
+      },
+      {
+        "id": 13,
+        "title": "Тюменская область представила свой турпотенциал в Москве и Гуанчжоу",
+        "url": "https://rg.ru/2025/09/24/tiumenskaia-oblast-predstavila-svoj-turpotencial-v-moskve-i-guanchzhou.html",
+        "source": "Rg.ru",
+        "content_preview": "- China International Tourism Industry Expo CITIE - 2025 . CITIE 46 , . , Discover Russia, . . : , , .\r\n , CITIE .\r\n\" , , , , , \", - .\r\n, \" . \". . .\r\n\" : \" - \"-2025\" . , , . , 10 . . - 300 , . , \" \",…",
+        "published_at": "2025-09-24T09:23:53",
+        "language": "ru"
+      },
+      {
+        "id": 71,
+        "title": "Поставки кофе из Индонезии в Россию выросли многократно за два года",
+        "url": "https://ria.ru/20251005/postavki-2046458437.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 5 окт – РИА Новости. За последние два года поставки индонезийского кофе в Россию выросли многократно, заявил в интервью РИА Новости министр торговли Индонезии Буди Сантосо. \"За последние два",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 78,
+        "title": "Ким Чен Ын подчеркнул важность развития военно-морских сил КНДР",
+        "url": "https://www.interfax.ru/world/1050979",
+        "source": "www.interfax.ru",
+        "content_preview": "Ким Чен Ын подчеркнул важность развития военно-морских сил КНДР Москва. 6 октября. INTERFAX.RU - Лидер КНДР Ким Чен Ын заявил, что в нынешних условиях большое значение для защиты суверенитета и безопа",
+        "published_at": "2025-10-06T03:31:00",
+        "language": "ru"
+      },
+      {
+        "id": 119,
+        "title": "WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть",
+        "url": "https://tass.ru/mezhdunarodnaya-panorama/25258073",
+        "source": "tass.ru",
+        "content_preview": "Главная В мире WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть Газета пишет, что исламская республика также использует доходы от продажи нефти для покупки напрямую китайских товаро",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "type:environment": [
+      {
+        "id": 6,
+        "title": "Новейший китайский самолёт J-36 выполнил фигуру высшего пилотажа в ходе испытательного полёта",
+        "url": "https://overclockers.ru/blog/vokrugsveta/show/240027/Novejshij-kitajskij-samolet-J-36-sovershil-figuru-vysshego-pilotazha-v-hode-ispytatel-nogo-poleta",
+        "source": "Overclockers.ru",
+        "content_preview": "- J-36 . , , , , . Army Recognition.\r\n J-36. : \r\n J-36 Chengdu Aircraft Industry Group . . . Army Recognition, , F-22 Raptor, , . , .\r\n, J-36 , . , 26 2024 , . , , , , . Army Recognition , , J-20, , …",
+        "published_at": "2025-10-01T12:32:12",
+        "language": "ru"
+      },
+      {
+        "id": 56,
+        "title": "Разработка AI-ботов с .NET и Microsoft-экосистемой: от поддержки клиентов до агентного ИИ",
+        "url": "https://habr.com/ru/articles/953038/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "Microsoft \r\n, ! , AI- .NET Microsoft-. , , .\r\n.NET, Azure . 5 enterprise-, - , AI-. Microsoft Development Community .\r\n AI-\r\n AI-:\r\n1. AI-- \r\n : , , .\r\n:\r\n:\r\n2. \r\n :\r\n3. \r\n Teams , :\r\nMicrosoft- \r\n ,…",
+        "published_at": "2025-10-03T04:47:23",
+        "language": "ru"
+      },
+      {
+        "id": 61,
+        "title": "В ФАС заявили, что не допустят необоснованного роста платы за электричество",
+        "url": "https://ria.ru/20251003/fas-2046284141.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 3 окт - РИА Новости. Федеральная антимонопольная служба (ФАС) России проконтролирует, чтобы для граждан не было необоснованного роста платы за электроэнергию, сообщили РИА Новости в ведомстве.",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 63,
+        "title": "Правительство РФ установило временную экспортную пошлину на масличный лён",
+        "url": "https://ria.ru/20251004/poshlina-2046350774.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Правительство установило временную экспортную пошлину на масличный лён и утвердило региональные квоты на вывоз кукурузы, сообщила пресс-служба кабмина. \"Правительство ввел",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 65,
+        "title": "Финансист Шнейдерман: на валютном рынке РФ воцарилась относительная стабильность",
+        "url": "https://ria.ru/20251004/rossiya-2046304151.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт — РИА Новости. Укрепление рубля на уходящей неделе связано с пересмотром ожиданий по ключевой ставке и слабостью доллара. Но этот тренд может быть переломлен, рассказал агентству “Прайм”",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 73,
+        "title": "ЕС отверг обвинения во вмешательстве в выборы в Грузии",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144453-es-otverg-obvineniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Европейский союз (ЕС) «решительно отвергает и осуждает ",
+        "published_at": "2025-10-05T20:30:56.462000",
+        "language": "ru"
+      },
+      {
+        "id": 79,
+        "title": "«Хамас» опроверг сообщения о намерении сложить оружие",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144466-hamas-oproverg-soobscheniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Палестинская группировка «Хамас» официально опровергла ",
+        "published_at": "2025-10-05T22:15:18.050000",
+        "language": "ru"
+      },
+      {
+        "id": 81,
+        "title": "Президент Чехии призвал не торопиться с формированием нового правительства",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144460-prezident-chehii-prizval",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Президент Чехии Петр Павел заявил, что еще рано поручат",
+        "published_at": "2025-10-05T21:17:58.529000",
+        "language": "ru"
+      },
+      {
+        "id": 88,
+        "title": "«Хамас» готов передать всех живых израильских заложников в один этап",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144445-hamas-gotov",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Палестинская группировка «Хамас» может передать всех жи",
+        "published_at": "2025-10-05T19:53:47.761000",
+        "language": "ru"
+      },
+      {
+        "id": 93,
+        "title": "Площадь источника задымления на полигоне ТБО составляет 3,5 тысячи \"квадратов\"",
+        "url": "https://ria.ru/20251006/poligon-2046562631.html",
+        "source": "ria.ru",
+        "content_preview": "05:49 06.10.2025 https://ria.ru/20251006/poligon-2046562631.html Во Владивостоке оценили площадь источника задымления на полигоне ТБО Во Владивостоке оценили площадь источника задымления на полигоне Т",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 95,
+        "title": "Горящий полигон ТБО во Владивостоке остановил прием отходов",
+        "url": "https://ria.ru/20251006/vladivostok-2046562793.html",
+        "source": "ria.ru",
+        "content_preview": "ВЛАДИВОСТОК, 6 окт - РИА Новости. Полигон ТБО во Владивостоке, где тушат пожар на 1 тысячи \"квадратов\", остановил прием отходов, сообщили РИА Новости в Приморском экологическом операторе. Ранее в крае",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 108,
+        "title": "В Приморье произошел пожар на полигоне ТБО на площади 1 тыс. кв. м",
+        "url": "https://tass.ru/proisshestviya/25257947",
+        "source": "tass.ru",
+        "content_preview": "В Приморье произошел пожар на полигоне ТБО на площади 1 тыс. кв. м\n\nНа месте происшествия работают три единицы пожарной техники\n\nРедакция сайта ТАСС\n\nВЛАДИВОСТОК, 6 октября. /ТАСС/. Пожар на площади о",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "region:europe": [
+      {
+        "id": 11,
+        "title": "Германия рассматривет приобретение у Швеции самолётов ДРЛО GlobalEye для замены Boeing E-3A",
+        "url": "https://overclockers.ru/blog/Nacvark/show/239528/Germaniya-rassmatrivet-priobretenie-u-Shvecii-samoletov-DRLO-GlobalEye-dlya-zameny-Boeing-E-3A",
+        "source": "Overclockers.ru",
+        "content_preview": "() GlobalEye Saab. Defense Industry Europe, , .\r\n Boeing E-3A, - . , , , , , , .\r\n GlobalEye, - Bombardier Global 6000/6500 Erieye ER. , , GlobalEye .\r\n , Future Combat Air System (FCAS). , , , , Saa…",
+        "published_at": "2025-09-25T02:58:11",
+        "language": "ru"
+      },
+      {
+        "id": 54,
+        "title": "SPP Development Ukraine реализовала еще один проект поддержки общины на Львовщине",
+        "url": "https://epravda.com.ua/rus/tehnologiji/spp-development-ukraine-realizovala-eshche-odin-proekt-podderzhki-obshchiny-na-lvovshchine-812416/",
+        "source": "Epravda.com.ua",
+        "content_preview": "SPP Development Ukraine- , . , : -, \" \" , EdUP, - , \" \" UN Global Compact Ukraine , .\r\n - , .\r\n. :\r\n .\r\n, . , .\r\n\" - . , , \", - SPP Development Ukraine .\r\n , , , : \" , \".\r\nSPP Development Ukraine : .…",
+        "published_at": "2025-10-03T11:23:00",
+        "language": "ru"
+      },
+      {
+        "id": 73,
+        "title": "ЕС отверг обвинения во вмешательстве в выборы в Грузии",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144453-es-otverg-obvineniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Европейский союз (ЕС) «решительно отвергает и осуждает ",
+        "published_at": "2025-10-05T20:30:56.462000",
+        "language": "ru"
+      },
+      {
+        "id": 84,
+        "title": "ВСУ применили запрещённые боеприпасы с фосфором на красноармейском направлении",
+        "url": "https://ria.ru/20251006/vsu-2046563338.html",
+        "source": "ria.ru",
+        "content_preview": "Специальная военная операция на Украине 06:01 06.10.2025 https://ria.ru/20251006/vsu-2046563338.html ВСУ применили запрещённые боеприпасы на красноармейском направлении ВСУ применили запрещённые боепр",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 90,
+        "title": "Соскин: рост инцидентов с БПЛА в Европе ослабит желание помогать Киеву",
+        "url": "https://ria.ru/20251006/ukraina-2046562283.html",
+        "source": "ria.ru",
+        "content_preview": "05:46 06.10.2025 https://ria.ru/20251006/ukraina-2046562283.html \"Выиграть время\": в Киеве обратились к Зеленскому после инцидента с БПЛА \"Выиграть время\": в Киеве обратились к Зеленскому после инциде",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 113,
+        "title": "В Марокко открылся Международный фестиваль транссахарского кино с участием РФ",
+        "url": "https://tass.ru/kultura/25257553",
+        "source": "tass.ru",
+        "content_preview": "В Марокко открылся Международный фестиваль транссахарского кино с участием РФ\n\nВ конкурсной программе короткометражных фильмов Россию представляет работа \"Я не помню\", срежиссированная Евгением Цыгано",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "region:russia": [
+      {
+        "id": 13,
+        "title": "Тюменская область представила свой турпотенциал в Москве и Гуанчжоу",
+        "url": "https://rg.ru/2025/09/24/tiumenskaia-oblast-predstavila-svoj-turpotencial-v-moskve-i-guanchzhou.html",
+        "source": "Rg.ru",
+        "content_preview": "- China International Tourism Industry Expo CITIE - 2025 . CITIE 46 , . , Discover Russia, . . : , , .\r\n , CITIE .\r\n\" , , , , , \", - .\r\n, \" . \". . .\r\n\" : \" - \"-2025\" . , , . , 10 . . - 300 , . , \" \",…",
+        "published_at": "2025-09-24T09:23:53",
+        "language": "ru"
+      },
+      {
+        "id": 60,
+        "title": "Власти Бийска объяснили отсутствие бензина всплеском покупательской активности",
+        "url": "https://ria.ru/20251004/vlasti-2046362284.html",
+        "source": "ria.ru",
+        "content_preview": "НОВОСИБИРСК, 4 окт – РИА Новости. Власти Бийска объяснили отсутствие бензина на ряде автозаправок города повышенным всплеском покупательской активности и заверили, что уже выработаны решения по воспол",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 61,
+        "title": "В ФАС заявили, что не допустят необоснованного роста платы за электричество",
+        "url": "https://ria.ru/20251003/fas-2046284141.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 3 окт - РИА Новости. Федеральная антимонопольная служба (ФАС) России проконтролирует, чтобы для граждан не было необоснованного роста платы за электроэнергию, сообщили РИА Новости в ведомстве.",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 62,
+        "title": "Сантосо: переориентация экспорта нефти из РФ открывает возможности для Индонезии",
+        "url": "https://ria.ru/20251004/indonezija-2046322750.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 4 окт – РИА Новости. Переориентация экспорта российских нефтепродуктов в Азию открывает возможности для более тесного сотрудничества России и Индонезии, заявил в интервью РИА Новости министр",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 63,
+        "title": "Правительство РФ установило временную экспортную пошлину на масличный лён",
+        "url": "https://ria.ru/20251004/poshlina-2046350774.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Правительство установило временную экспортную пошлину на масличный лён и утвердило региональные квоты на вывоз кукурузы, сообщила пресс-служба кабмина. \"Правительство ввел",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 64,
+        "title": "Аналитик Черновол: спрос на золото в мире может превысить 5 тыс тонн в 2025 году",
+        "url": "https://ria.ru/20251004/zoloto-2046327159.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Мировой спрос на золото может превысить рекордную отметку в 5 тысяч тонн драгметалла по итогам года, считают опрошенные РИА Новости эксперты. \"Стоит ожидать роста спроса н",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 65,
+        "title": "Финансист Шнейдерман: на валютном рынке РФ воцарилась относительная стабильность",
+        "url": "https://ria.ru/20251004/rossiya-2046304151.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт — РИА Новости. Укрепление рубля на уходящей неделе связано с пересмотром ожиданий по ключевой ставке и слабостью доллара. Но этот тренд может быть переломлен, рассказал агентству “Прайм”",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 66,
+        "title": "Михтеев: банки обнуляют лимиты по кредиткам из-за требований к долговой нагрузке",
+        "url": "https://ria.ru/20251004/mikhteev-2046304613.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Массовое обнуление лимитов по кредитным картам связано с ужесточением требований к предельной долговой нагрузке,  рассказал агентству “Прайм” генеральный директор Ассоциац",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 67,
+        "title": "Louis Vuitton хочет зарегистрировать в РФ новые товарные знаки в виде логотипов",
+        "url": "https://ria.ru/20251003/rossija-2046293620.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 3 окт - РИА Новости. Ушедший из России бренд Louis Vuitton хочет зарегистрировать в стране новые товарные знаки в виде логотипов, выяснило РИА Новости, изучив электронную базу Роспатента. Согл",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 68,
+        "title": "Продажи Lada Iskra в РФ в сентябре выросли в 7 раз по сравнению с августом",
+        "url": "https://ria.ru/20251004/lada--2046337087.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Продажи новой модели \"АвтоВАЗа\" Lada Iskra в России по итогам сентября этого года выросли в 7 раз по сравнению с августом и составили 94 автомобиля, следует из собственных",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 69,
+        "title": "Американский бренд Polo зарегистрировал товарный знак в России",
+        "url": "https://ria.ru/20251004/polo--2046376490.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Американский бренд Polo зарегистрировал товарный знак в России для продажи косметической продукции, выяснило РИА Новости, изучив электронную базу Роспатента. Согласно доку",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 70,
+        "title": "Гендир \"Рольфа\" Виноградова: изменение утильсбора отразится на серых дилерах",
+        "url": "https://ria.ru/20251004/utilsbor-2046323022.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Масштаб влияния изменений в механизме утилизационного сбора, которые предлагает Минпромторг РФ, сильно преувеличен, в основном это коснется \"серых\" дилеров, которые исполь",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 71,
+        "title": "Поставки кофе из Индонезии в Россию выросли многократно за два года",
+        "url": "https://ria.ru/20251005/postavki-2046458437.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 5 окт – РИА Новости. За последние два года поставки индонезийского кофе в Россию выросли многократно, заявил в интервью РИА Новости министр торговли Индонезии Буди Сантосо. \"За последние два",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 72,
+        "title": "Самарские учёные усилили металлы для аэрокосмической техники",
+        "url": "https://www.ferra.ru/news/v-rossii/samarskie-uchyonye-usilili-metally-dlya-aerokosmicheskoi-tekhniki-02-10-2025.htm",
+        "source": "www.ferra.ru",
+        "content_preview": "В России Опубликовано 02 октября 2025, 18:32 1 мин. a A Самарские учёные усилили металлы для аэрокосмической техники Новая лазерная технология повышает прочность материалов Учёные Самарского университ",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 74,
+        "title": "В ОП предложили маркировать чипсы и газировку как опасные для здоровья",
+        "url": "https://tass.ru/obschestvo/25258009",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество В ОП предложили маркировать чипсы и газировку как опасные для здоровья Продукт не рекомендован к ежедневному употреблению, особенно детям, такую надпись на упаковке  продуктов выдвину",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 75,
+        "title": "Трамп призвал ускориться с реализацией его плана по урегулированию конфликта в Газе",
+        "url": "https://www.interfax.ru/world/1050977",
+        "source": "www.interfax.ru",
+        "content_preview": "Трамп призвал ускориться с реализацией его плана по урегулированию конфликта в Газе Москва. 6 октября. INTERFAX.RU - Президент США Дональд Трамп считает успешным ход урегулирования конфликта Израиля и",
+        "published_at": "2025-10-06T02:05:00",
+        "language": "ru"
+      },
+      {
+        "id": 76,
+        "title": "Актер Казаков сообщил, что его сын проживает с ним по решению суда",
+        "url": "https://ria.ru/20251006/syn-2046562457.html",
+        "source": "ria.ru",
+        "content_preview": "Шоубиз 05:47 06.10.2025 (обновлено: 05:51 06.10.2025) https://ria.ru/20251006/syn-2046562457.html Актер \"Папиных дочек\" сообщил, что его сын проживает с ним по решению суда Актер \"Папиных дочек\" сообщ",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 77,
+        "title": "Ученый Семенов: обнаруженные в Якутии древние захоронения представляют интерес для науки",
+        "url": "https://tass.ru/nauka/25258049",
+        "source": "tass.ru",
+        "content_preview": "Главная Наука Ученый Семенов: обнаруженные в Якутии древние захоронения представляют интерес для науки Редакция сайта ТАСС 03:02 ЯКУТСК, 6 октября. /ТАСС/. Несколько захоронений, случайно обнаруженных",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 78,
+        "title": "Ким Чен Ын подчеркнул важность развития военно-морских сил КНДР",
+        "url": "https://www.interfax.ru/world/1050979",
+        "source": "www.interfax.ru",
+        "content_preview": "Ким Чен Ын подчеркнул важность развития военно-морских сил КНДР Москва. 6 октября. INTERFAX.RU - Лидер КНДР Ким Чен Ын заявил, что в нынешних условиях большое значение для защиты суверенитета и безопа",
+        "published_at": "2025-10-06T03:31:00",
+        "language": "ru"
+      },
+      {
+        "id": 83,
+        "title": "ТАСС: В Купянске ВСУ отправляют танкистов на штурмы из-за больших потерь",
+        "url": "https://rg.ru/2025/10/06/tass-v-kupianske-vsu-otpravliaiut-tankistov-na-shturmy-iz-za-bolshih-poter.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:37 Власть изменить размер шрифт",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 84,
+        "title": "ВСУ применили запрещённые боеприпасы с фосфором на красноармейском направлении",
+        "url": "https://ria.ru/20251006/vsu-2046563338.html",
+        "source": "ria.ru",
+        "content_preview": "Специальная военная операция на Украине 06:01 06.10.2025 https://ria.ru/20251006/vsu-2046563338.html ВСУ применили запрещённые боеприпасы на красноармейском направлении ВСУ применили запрещённые боепр",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 85,
+        "title": "Десять ощутимых землетрясений произошли за неделю на Камчатке",
+        "url": "https://www.interfax.ru/russia/1050980",
+        "source": "www.interfax.ru",
+        "content_preview": "Десять ощутимых землетрясений произошли за неделю на Камчатке Москва. 6 октября. INTERFAX.RU - Афтершоки продолжаются у берегов Камчатки после мощного землетрясения, которое случилось 30 июля, за неде",
+        "published_at": "2025-10-06T03:34:00",
+        "language": "ru"
+      },
+      {
+        "id": 87,
+        "title": "ХАМАС опровергает сообщения о готовности сложить оружие в рамках плана Трампа по Газе",
+        "url": "https://www.interfax.ru/world/1050981",
+        "source": "www.interfax.ru",
+        "content_preview": "ХАМАС опровергает сообщения о готовности сложить оружие в рамках плана Трампа по Газе Москва. 6 октября. INTERFAX.RU - Движение ХАМАС опровергает ранее появившиеся сообщения о его готовности к разоруж",
+        "published_at": "2025-10-06T04:35:00",
+        "language": "ru"
+      },
+      {
+        "id": 89,
+        "title": "ВМС Ирана готовы дать мощный отпор противнику на море",
+        "url": "https://www.interfax.ru/world/1050983",
+        "source": "www.interfax.ru",
+        "content_preview": "ВМС Ирана готовы дать мощный отпор противнику на море Москва. 6 октября. INTERFAX.RU - Командующий Корпусом стражей исламской революции (КСИР) Мохаммад Пакпур в ходе инспекции подразделений военно-мор",
+        "published_at": "2025-10-06T04:37:00",
+        "language": "ru"
+      },
+      {
+        "id": 90,
+        "title": "Соскин: рост инцидентов с БПЛА в Европе ослабит желание помогать Киеву",
+        "url": "https://ria.ru/20251006/ukraina-2046562283.html",
+        "source": "ria.ru",
+        "content_preview": "05:46 06.10.2025 https://ria.ru/20251006/ukraina-2046562283.html \"Выиграть время\": в Киеве обратились к Зеленскому после инцидента с БПЛА \"Выиграть время\": в Киеве обратились к Зеленскому после инциде",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 91,
+        "title": "РИА Новости: Земфира следит за статусом своего ИП в РФ",
+        "url": "https://rg.ru/2025/10/06/ria-novosti-zemfira-sledit-za-statusom-svoego-ip-v-rf.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:47 Общество изменить размер шри",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 92,
+        "title": "Собянин: силы ПВО сбили летевший на Москву беспилотник",
+        "url": "https://tass.ru/proisshestviya/25258067",
+        "source": "tass.ru",
+        "content_preview": "Главная Происшествия Собянин: силы ПВО сбили летевший на Москву беспилотник Редакция сайта ТАСС 02:58 обновлено 03:03 Мэр Москвы Сергей Собянин © Александр Щербак/ ТАСС МОСКВА, 6 октября. /ТАСС/. Силы",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 93,
+        "title": "Площадь источника задымления на полигоне ТБО составляет 3,5 тысячи \"квадратов\"",
+        "url": "https://ria.ru/20251006/poligon-2046562631.html",
+        "source": "ria.ru",
+        "content_preview": "05:49 06.10.2025 https://ria.ru/20251006/poligon-2046562631.html Во Владивостоке оценили площадь источника задымления на полигоне ТБО Во Владивостоке оценили площадь источника задымления на полигоне Т",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 94,
+        "title": "В Воронеже и нескольких районах отменили угрозу непосредственного удара БПЛА",
+        "url": "https://tass.ru/proisshestviya/25258025",
+        "source": "tass.ru",
+        "content_preview": "Главная Происшествия В Воронеже и нескольких районах отменили угрозу непосредственного удара БПЛА Режим опасности атаки беспилотных летательных аппаратов в регионе сохраняется Редакция сайта ТАСС 02:4",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 96,
+        "title": "Одесситы начали вооружаться холодным оружием против ТЦК",
+        "url": "https://ria.ru/20251006/odessa-2046562913.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 6 окт - РИА Новости. Мужское население Одессы призывного возраста готово оказывать сопротивление сотрудникам ТЦК (территориальный центр комплектования и социальной поддержки, так на Украине на",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 97,
+        "title": "Аэропорты Ярославля и Калуги приостановили работу",
+        "url": "https://www.interfax.ru/russia/1050982",
+        "source": "www.interfax.ru",
+        "content_preview": "Аэропорты Ярославля и Калуги приостановили работу Москва. 6 октября. INTERFAX.RU - Ограничения на полеты временно введены в аэропорту Ярославля, сообщил представитель Росавиации Артем Кореняко. \"Аэроп",
+        "published_at": "2025-10-06T04:36:00",
+        "language": "ru"
+      },
+      {
+        "id": 98,
+        "title": "Российские военные за сутки уничтожили 53 пункта управления беспилотной авиацией ВСУ",
+        "url": "https://www.interfax.ru/russia/1050984",
+        "source": "www.interfax.ru",
+        "content_preview": "Российские военные за сутки уничтожили 53 пункта управления беспилотной авиацией ВСУ Москва. 6 октября. INTERFAX.RU - Российские военнослужащие за минувшие сутки уничтожили в зоне проведения специальн",
+        "published_at": "2025-10-06T05:05:00",
+        "language": "ru"
+      },
+      {
+        "id": 99,
+        "title": "Собянин: силы ПВО сбили беспилотник, летевший на Москву",
+        "url": "https://ria.ru/20251006/besilotnik-2046563206.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 6 окт - РИА Новости. Сбит беспилотник, летевший на Москву, сообщил мэр столицы Сергей Собянин. \"Силами ПВО Минобороны сбит один беспилотник, летевший на Москву . На месте падения обломков рабо",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 100,
+        "title": "Краснодарский аэропорт временно не принимает и не отправляет рейсы",
+        "url": "https://www.interfax.ru/russia/1050978",
+        "source": "www.interfax.ru",
+        "content_preview": "Краснодарский аэропорт временно не принимает и не отправляет рейсы Есть обновление от 04:36 → Аэропорты Ярославля и Калуги приостановили работу Москва. 6 октября. INTERFAX.RU - Временные ограничения в",
+        "published_at": "2025-10-06T02:15:00",
+        "language": "ru"
+      },
+      {
+        "id": 107,
+        "title": "В трех регионах Украины вновь объявили воздушную тревогу",
+        "url": "https://tass.ru/proisshestviya/25258037",
+        "source": "tass.ru",
+        "content_preview": "В трех регионах Украины вновь объявили воздушную тревогу\n\nОна объявлена в Полтавской, Сумской и Харьковской областях\n\nРедакция сайта ТАСС\n\nМОСКВА, 6 октября. /ТАСС/. Воздушная тревога повторно объявле",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 111,
+        "title": "Группа солдат ВСУ сдалась в плен в Днепропетровской области",
+        "url": "https://rg.ru/2025/10/06/tass-gruppa-soldat-vsu-sdalas-v-plen-v-dnepropetrovskoj-oblasti.html",
+        "source": "rg.ru",
+        "content_preview": "Отмечается, что в числе сдавшихся инвалиды, а также командир взвода технического обслуживания танкового батальона, который принимал участие в боях за Купянск.\n\nАгентство добавляет, что ВСУ предприняли",
+        "published_at": "2025-10-06T00:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 112,
+        "title": "МВД: мошенники стали использовать интеграцию платежных систем Telegram-ботов",
+        "url": "https://tass.ru/obschestvo/25257955",
+        "source": "tass.ru",
+        "content_preview": "МВД: мошенники стали использовать интеграцию платежных систем Telegram-ботов\n\nИнтерес злоумышленников к ним обусловлен высокой доступностью и простотой создания, пояснили в ведомстве\n\nРедакция сайта Т",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 113,
+        "title": "В Марокко открылся Международный фестиваль транссахарского кино с участием РФ",
+        "url": "https://tass.ru/kultura/25257553",
+        "source": "tass.ru",
+        "content_preview": "В Марокко открылся Международный фестиваль транссахарского кино с участием РФ\n\nВ конкурсной программе короткометражных фильмов Россию представляет работа \"Я не помню\", срежиссированная Евгением Цыгано",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 114,
+        "title": "Белорусский дирижер попал под атаку дронов в Донецке",
+        "url": "https://www.vedomosti.ru/society/news/2025/10/05/1144448-belorusskii-popal",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Согласно данным Минобороны России, с 15:00 до 17:00 мск силы ПВО уничтожили 31 украинский беспилотник в небе над российскими регионами. В Белгородской области было сбито 27 БПЛА, в Смоленской – три. Е",
+        "published_at": "2025-10-05T00:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 116,
+        "title": "Трутнев: турнир имени Охлопкова важен для выполнения боевых задач",
+        "url": "https://tass.ru/obschestvo/25258043",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество Трутнев: турнир имени Охлопкова важен для выполнения боевых задач Редакция сайта ТАСС 03:04 Зампред правительства РФ - полномочный представитель президента РФ в ДФО Юрий Трутнев © Юри",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 117,
+        "title": "\"Работа.ру\": треть россиян получили повышение зарплаты в этом году",
+        "url": "https://tass.ru/obschestvo/25258101",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество \"Работа.ру\": треть россиян получили повышение зарплаты в этом году У большей части она выросла на 10-30%, об этом свидетельствуют результаты исследования сервиса Редакция сайта ТАСС 0",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 118,
+        "title": "В Москве прогнозируют дождь и до 14 градусов тепла",
+        "url": "https://tass.ru/obschestvo/25258083",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество В Москве прогнозируют дождь и до 14 градусов тепла Однако в ночь на вторник температура воздуха может опуститься до плюс 7 градусов Редакция сайта ТАСС 03:06 МОСКВА, 6 октября. /ТАСС/",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "type:logistics": [
+      {
+        "id": 15,
+        "title": "Redis Streams в PHP с backpressure: устойчивые consumer-группы + повторная доставка",
+        "url": "https://habr.com/ru/companies/otus/articles/951508/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", !\r\nRedis Streams     CLI .   PHP :   .  Amp   I/O ,  Swoole  .    : consumer, ack, claim , backpressure, . \r\n: . orders:events XADD  .  consumer orders:cg XREADGROUP   , XACK, «»   XAUTOCLAIM.   or…",
+        "published_at": "2025-10-03T07:07:59",
+        "language": "ru"
+      },
+      {
+        "id": 71,
+        "title": "Поставки кофе из Индонезии в Россию выросли многократно за два года",
+        "url": "https://ria.ru/20251005/postavki-2046458437.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 5 окт – РИА Новости. За последние два года поставки индонезийского кофе в Россию выросли многократно, заявил в интервью РИА Новости министр торговли Индонезии Буди Сантосо. \"За последние два",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 90,
+        "title": "Соскин: рост инцидентов с БПЛА в Европе ослабит желание помогать Киеву",
+        "url": "https://ria.ru/20251006/ukraina-2046562283.html",
+        "source": "ria.ru",
+        "content_preview": "05:46 06.10.2025 https://ria.ru/20251006/ukraina-2046562283.html \"Выиграть время\": в Киеве обратились к Зеленскому после инцидента с БПЛА \"Выиграть время\": в Киеве обратились к Зеленскому после инциде",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 119,
+        "title": "WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть",
+        "url": "https://tass.ru/mezhdunarodnaya-panorama/25258073",
+        "source": "tass.ru",
+        "content_preview": "Главная В мире WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть Газета пишет, что исламская республика также использует доходы от продажи нефти для покупки напрямую китайских товаро",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "material:precious": [
+      {
+        "id": 16,
+        "title": "Lexar представила защищенные карты памяти SD в корпусах из нержавеющей стали",
+        "url": "https://overclockers.ru/blog/Global_Chronicles/show/240134/Lexar-predstavila-zaschischennye-karty-pamyati-SD-iz-nerzhavejuschej-stali",
+        "source": "Overclockers.ru",
+        "content_preview": "Lexar . . \r\n ARMOR GOLD SDXC ARMOR SILVER PRO SDXC. 1 6K. , .\r\n37 . IP68 . , , .\r\nV60 6K . 280 / . , RAW, .\r\n, Lexar, , , . 1 , .\r\n ARMOR GOLD SDXC 369,99 . ARMOR SILVER PRO SDXC , 364,99 ( 29747). U…",
+        "published_at": "2025-10-02T15:46:13",
+        "language": "ru"
+      },
+      {
+        "id": 64,
+        "title": "Аналитик Черновол: спрос на золото в мире может превысить 5 тыс тонн в 2025 году",
+        "url": "https://ria.ru/20251004/zoloto-2046327159.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Мировой спрос на золото может превысить рекордную отметку в 5 тысяч тонн драгметалла по итогам года, считают опрошенные РИА Новости эксперты. \"Стоит ожидать роста спроса н",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "type:production": [
+      {
+        "id": 18,
+        "title": "Выпуск OpenSSL 3.6.0 с поддержкой EVP_SKEY и устранением переполнения буфера",
+        "url": "https://www.opennet.ru/opennews/art.shtml?num=63979",
+        "source": "Opennet.ru",
+        "content_preview": "OpenSSL 3.6.0, SSL/TLS . OpenSSL 3.6 , 13 . OpenSSL 3.5 LTS, 3.4, 3.3, 3.2 3.0 LTS 2030 , 2026 , 2026 , 2025 2026 . Apache 2.0. \r\n: \r\n<ul><li>EVP_SKEY (Symmetric KEY) (opaque) . raw-, , EVP_SKEY . EV…",
+        "published_at": "2025-10-02T07:00:09",
+        "language": "ru"
+      },
+      {
+        "id": 24,
+        "title": "Снижаем стоимость инференса. Часть 2. IBM KServe ModelMesh, vLLM Production Stack и что внутри у нашего решения",
+        "url": "https://habr.com/ru/companies/cloud_ru/articles/949352/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": ", ! , DevOps- Evolution ML Inference Cloud.ru. \r\n  , , GPU. , . \r\n - , KServe ModelMesh vLLM Production Stack, , , Cloud.ru Shared GPU , . \r\nML-, DevOps MLOps-, , . , , «», . \r\n, \r\n : SMS MMS. , GPU …",
+        "published_at": "2025-10-03T14:00:12",
+        "language": "ru"
+      },
+      {
+        "id": 29,
+        "title": "Завершены съемки пилота комедии \"Старая закалка\" с Гришаевой и Вдовиченковым",
+        "url": "https://rg.ru/2025/10/02/zaversheny-semki-pilota-komedii-staraia-zakalka-s-grishaevoj-i-vdovichenkovym.html",
+        "source": "Rg.ru",
+        "content_preview": "- \" \" , Lazy Dog Production 5.\r\n - , : \" \" , . \r\n: , , , , , , . \r\n, .\r\n\"&gt;",
+        "published_at": "2025-10-02T15:12:07",
+        "language": "ru"
+      },
+      {
+        "id": 31,
+        "title": "У жителя Подмосковье за сутки 13 раз останавливалось сердце",
+        "url": "https://lenta.ru/news/2025/10/01/u-zhitelya-podmoskovie-za-sutki-13-raz-ostanavlivalos-serdtse/",
+        "source": "Lenta",
+        "content_preview": ": Y production / Shutterstock / Fotodom",
+        "published_at": "2025-10-01T14:42:34",
+        "language": "ru"
+      },
+      {
+        "id": 43,
+        "title": "Известный 23 летний скалолаз погиб после падения с Эль-Капитана в национальном парке Йосемити",
+        "url": "https://www.bbc.com/russian/articles/cwywee0lgpko",
+        "source": "BBC News",
+        "content_preview": ", Dylan Miller via AP\r\n, « » .\r\n- - , .\r\n23- TikTok . .\r\n , , - : « . , . . ».\r\n , , , AFP, « » 2400 (730 ) , , .\r\n . \r\n, , . , , .\r\n« , , , , . », Facebook, . \r\n .\r\n . , Slovak Direct -. Instagram ,…",
+        "published_at": "2025-10-04T03:31:24",
+        "language": "ru"
+      },
+      {
+        "id": 60,
+        "title": "Власти Бийска объяснили отсутствие бензина всплеском покупательской активности",
+        "url": "https://ria.ru/20251004/vlasti-2046362284.html",
+        "source": "ria.ru",
+        "content_preview": "НОВОСИБИРСК, 4 окт – РИА Новости. Власти Бийска объяснили отсутствие бензина на ряде автозаправок города повышенным всплеском покупательской активности и заверили, что уже выработаны решения по воспол",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 68,
+        "title": "Продажи Lada Iskra в РФ в сентябре выросли в 7 раз по сравнению с августом",
+        "url": "https://ria.ru/20251004/lada--2046337087.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Продажи новой модели \"АвтоВАЗа\" Lada Iskra в России по итогам сентября этого года выросли в 7 раз по сравнению с августом и составили 94 автомобиля, следует из собственных",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 97,
+        "title": "Аэропорты Ярославля и Калуги приостановили работу",
+        "url": "https://www.interfax.ru/russia/1050982",
+        "source": "www.interfax.ru",
+        "content_preview": "Аэропорты Ярославля и Калуги приостановили работу Москва. 6 октября. INTERFAX.RU - Ограничения на полеты временно введены в аэропорту Ярославля, сообщил представитель Росавиации Артем Кореняко. \"Аэроп",
+        "published_at": "2025-10-06T04:36:00",
+        "language": "ru"
+      },
+      {
+        "id": 100,
+        "title": "Краснодарский аэропорт временно не принимает и не отправляет рейсы",
+        "url": "https://www.interfax.ru/russia/1050978",
+        "source": "www.interfax.ru",
+        "content_preview": "Краснодарский аэропорт временно не принимает и не отправляет рейсы Есть обновление от 04:36 → Аэропорты Ярославля и Калуги приостановили работу Москва. 6 октября. INTERFAX.RU - Временные ограничения в",
+        "published_at": "2025-10-06T02:15:00",
+        "language": "ru"
+      },
+      {
+        "id": 103,
+        "title": "В аэропорту Нижневартовска задержали два рейса более чем на 14 часов",
+        "url": "https://tass.ru/proisshestviya/25257961",
+        "source": "tass.ru",
+        "content_preview": "В аэропорту Нижневартовска задержали два рейса более чем на 14 часов\n\nПассажиры ждут прибытия самолета из Баку, а также вылета в Сочи и Уфу\n\nРедакция сайта ТАСС\n\nХАНТЫ-МАНСИЙСК, 6 октября. /ТАСС/. Выл",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 104,
+        "title": "Омск вносит вклад в развитие металлургической отрасли России",
+        "url": "https://rg.ru/2025/09/16/reg-sibfo/omsk-vnosit-vklad-v-razvitie-metallurgicheskoj-otrasli-rossii.html",
+        "source": "rg.ru",
+        "content_preview": "В настоящее время предприятие увеличило в два раза объемы производства и поставок гидравлических масел для металлургической отрасли, чтобы обеспечить продукцией все крупнейшие холдинги черной металлур",
+        "published_at": "2025-09-16T00:00:00",
+        "language": "ru"
+      }
+    ],
+    "region:america": [
+      {
+        "id": 34,
+        "title": "В США захотели выпустить монеты с изображением Трампа",
+        "url": "https://lenta.ru/news/2025/10/03/v-ssha-zahoteli-vypustit-monety-s-izobrazheniem-trampa/",
+        "source": "Lenta",
+        "content_preview": ": Mattie Neretin - CNP / Consolidated News Photos / Global Look Press",
+        "published_at": "2025-10-03T18:49:00",
+        "language": "ru"
+      },
+      {
+        "id": 36,
+        "title": "Американский ТикТок берут под контроль",
+        "url": "https://colonelcassad.livejournal.com/10088029.html",
+        "source": "Livejournal.com",
+        "content_preview": "TikTok: \r\n. , ( ) - .\r\n. , TikTok ByteDance , 20%. (https://www.reuters.com/sustainability/boards-policy-regulation/americans-get-6-7-board-seats-tiktoks-us-operations-says-white-house-2025-09-20/)\r\n…",
+        "published_at": "2025-09-23T16:07:33",
+        "language": "ru"
+      },
+      {
+        "id": 40,
+        "title": "Репер P. Diddy получил приговор суда в США",
+        "url": "https://korrespondent.net/showbiz/4820980-reper-P-Diddy-poluchyl-pryhovor-suda-v-ssha",
+        "source": "Korrespondent.net",
+        "content_preview": "P. Diddy ( ) . , NBC News.\r\nP. Diddy 500 - .\r\n11 .\r\n.\r\nP. Diddy 2024 , , .\r\n, , \" \".\r\n, .\r\n\" , ... \", P.Diddy , .\r\n, P. Diddy .\r\n, P. Diddy $1 .\r\n .net Telegram WhatsApp. https://t.me/korrespondentne…",
+        "published_at": "2025-10-04T05:35:00",
+        "language": "ru"
+      },
+      {
+        "id": 41,
+        "title": "CBS News: США станут давать мигрантам-подросткам по $2500 за самодепортацию",
+        "url": "https://news.mail.ru/society/68173202/",
+        "source": "Mail.ru",
+        "content_preview": "-     14  .",
+        "published_at": "2025-10-04T05:27:09",
+        "language": "ru"
+      },
+      {
+        "id": 44,
+        "title": "NBC News: США рискуют в начале 2026 года потерять статус страны, победившей корь",
+        "url": "https://tass.ru/obschestvo/25248785",
+        "source": "Tass.ru",
+        "content_preview": ", \r\n-, 4 . //. , , . NBC News.\r\n 2000 , 2025 (CDC) 1 544 . 21 .\r\nNBC News, .\r\n - . , . - . , , . .",
+        "published_at": "2025-10-04T00:56:06",
+        "language": "ru"
+      },
+      {
+        "id": 45,
+        "title": "В США забеспокоились из-за исчерпания средств на контроль за ядерным арсеналом",
+        "url": "https://lenta.ru/news/2025/10/04/v-ssha-zabespokoilis-iz-za-ischerpaniya-sredstv-na-kontrol-za-yadernym-arsenalom/",
+        "source": "Lenta",
+        "content_preview": ", , , . , Fox News.\r\n« , , , , 8 », . , .\r\n .",
+        "published_at": "2025-10-04T00:12:54",
+        "language": "ru"
+      },
+      {
+        "id": 46,
+        "title": "В США на фоне шатдауна заканчиваются средства на контроль ядерного арсенала",
+        "url": "https://news.mail.ru/politics/68171953/",
+        "source": "Mail.ru",
+        "content_preview": ", ,     .   -  ,  ,   .     . ,   54 ,  — 44. , (46 «», 52 — «»).   60 .",
+        "published_at": "2025-10-04T00:08:10",
+        "language": "ru"
+      },
+      {
+        "id": 47,
+        "title": "В США на фоне шатдауна заканчиваются средства на контроль ядерного арсенала",
+        "url": "https://life.ru/p/1795595",
+        "source": "Life.ru",
+        "content_preview": "Fox News , , . \r\n , , , , . . , . \r\n, , . - , , . . , 54 , 44. , (46 «», 52 «»). 60 .\r\n « » Life.ru.",
+        "published_at": "2025-10-04T00:06:28",
+        "language": "ru"
+      },
+      {
+        "id": 48,
+        "title": "Глава Минэнерго Райт: у США заканчиваются деньги на контроль за ЯО",
+        "url": "https://news.mail.ru/society/68171904/",
+        "source": "Mail.ru",
+        "content_preview": "«    , ,     , ,    ,   », —    Fox News.",
+        "published_at": "2025-10-03T23:50:20",
+        "language": "ru"
+      },
+      {
+        "id": 55,
+        "title": "McLaren потребовал от Алекса Палоу вернуть 21 млн долларов США",
+        "url": "https://autosport.com.ru/f1/100444-mclaren-potreboval-ot-aleksa-palou-vernut-21-mln-dollarov-ssha#article",
+        "source": "Autosport.com.ru",
+        "content_preview": "IndyCar , McLaren Driver Development Programme, 21 . McLaren , McLaren 2024 , Chip Ganassi Racing.\r\n McLaren Racing Arrow McLaren IndyCar Chip Ganassi Racing. , , McLaren 1 .\r\nThe Wiltshire Gazette a…",
+        "published_at": "2025-10-03T07:11:12",
+        "language": "ru"
+      },
+      {
+        "id": 64,
+        "title": "Аналитик Черновол: спрос на золото в мире может превысить 5 тыс тонн в 2025 году",
+        "url": "https://ria.ru/20251004/zoloto-2046327159.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Мировой спрос на золото может превысить рекордную отметку в 5 тысяч тонн драгметалла по итогам года, считают опрошенные РИА Новости эксперты. \"Стоит ожидать роста спроса н",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 69,
+        "title": "Американский бренд Polo зарегистрировал товарный знак в России",
+        "url": "https://ria.ru/20251004/polo--2046376490.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Американский бренд Polo зарегистрировал товарный знак в России для продажи косметической продукции, выяснило РИА Новости, изучив электронную базу Роспатента. Согласно доку",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 71,
+        "title": "Поставки кофе из Индонезии в Россию выросли многократно за два года",
+        "url": "https://ria.ru/20251005/postavki-2046458437.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 5 окт – РИА Новости. За последние два года поставки индонезийского кофе в Россию выросли многократно, заявил в интервью РИА Новости министр торговли Индонезии Буди Сантосо. \"За последние два",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 75,
+        "title": "Трамп призвал ускориться с реализацией его плана по урегулированию конфликта в Газе",
+        "url": "https://www.interfax.ru/world/1050977",
+        "source": "www.interfax.ru",
+        "content_preview": "Трамп призвал ускориться с реализацией его плана по урегулированию конфликта в Газе Москва. 6 октября. INTERFAX.RU - Президент США Дональд Трамп считает успешным ход урегулирования конфликта Израиля и",
+        "published_at": "2025-10-06T02:05:00",
+        "language": "ru"
+      },
+      {
+        "id": 79,
+        "title": "«Хамас» опроверг сообщения о намерении сложить оружие",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144466-hamas-oproverg-soobscheniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Палестинская группировка «Хамас» официально опровергла ",
+        "published_at": "2025-10-05T22:15:18.050000",
+        "language": "ru"
+      },
+      {
+        "id": 87,
+        "title": "ХАМАС опровергает сообщения о готовности сложить оружие в рамках плана Трампа по Газе",
+        "url": "https://www.interfax.ru/world/1050981",
+        "source": "www.interfax.ru",
+        "content_preview": "ХАМАС опровергает сообщения о готовности сложить оружие в рамках плана Трампа по Газе Москва. 6 октября. INTERFAX.RU - Движение ХАМАС опровергает ранее появившиеся сообщения о его готовности к разоруж",
+        "published_at": "2025-10-06T04:35:00",
+        "language": "ru"
+      },
+      {
+        "id": 88,
+        "title": "«Хамас» готов передать всех живых израильских заложников в один этап",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144445-hamas-gotov",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Палестинская группировка «Хамас» может передать всех жи",
+        "published_at": "2025-10-05T19:53:47.761000",
+        "language": "ru"
+      },
+      {
+        "id": 89,
+        "title": "ВМС Ирана готовы дать мощный отпор противнику на море",
+        "url": "https://www.interfax.ru/world/1050983",
+        "source": "www.interfax.ru",
+        "content_preview": "ВМС Ирана готовы дать мощный отпор противнику на море Москва. 6 октября. INTERFAX.RU - Командующий Корпусом стражей исламской революции (КСИР) Мохаммад Пакпур в ходе инспекции подразделений военно-мор",
+        "published_at": "2025-10-06T04:37:00",
+        "language": "ru"
+      },
+      {
+        "id": 109,
+        "title": "Дмитриев: США с большой вероятностью поддержат предложение Путина по ДСНВ",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144470-ssha-podderzhat-predlozhenie",
+        "source": "www.vedomosti.ru",
+        "content_preview": "22 сентября президент России Владимир Путин на совещании с Советом безопасности сообщил о готовности Москвы в течение еще одного года после истечения срока действия ДСНВ соблюдать установленные догово",
+        "published_at": "2025-10-05T00:00:00",
+        "language": "ru"
+      }
+    ],
+    "type:policy": [
+      {
+        "id": 36,
+        "title": "Американский ТикТок берут под контроль",
+        "url": "https://colonelcassad.livejournal.com/10088029.html",
+        "source": "Livejournal.com",
+        "content_preview": "TikTok: \r\n. , ( ) - .\r\n. , TikTok ByteDance , 20%. (https://www.reuters.com/sustainability/boards-policy-regulation/americans-get-6-7-board-seats-tiktoks-us-operations-says-white-house-2025-09-20/)\r\n…",
+        "published_at": "2025-09-23T16:07:33",
+        "language": "ru"
+      },
+      {
+        "id": 49,
+        "title": "Вооруженное ограбление закончилось смертью телеведущей в Нигерии",
+        "url": "https://news.mail.ru/society/68171849/",
+        "source": "Mail.ru",
+        "content_preview": ",      .   , . ,  ,  , ,   ,   Arise News, The Sun.",
+        "published_at": "2025-10-03T23:30:21",
+        "language": "ru"
+      },
+      {
+        "id": 63,
+        "title": "Правительство РФ установило временную экспортную пошлину на масличный лён",
+        "url": "https://ria.ru/20251004/poshlina-2046350774.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Правительство установило временную экспортную пошлину на масличный лён и утвердило региональные квоты на вывоз кукурузы, сообщила пресс-служба кабмина. \"Правительство ввел",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 70,
+        "title": "Гендир \"Рольфа\" Виноградова: изменение утильсбора отразится на серых дилерах",
+        "url": "https://ria.ru/20251004/utilsbor-2046323022.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Масштаб влияния изменений в механизме утилизационного сбора, которые предлагает Минпромторг РФ, сильно преувеличен, в основном это коснется \"серых\" дилеров, которые исполь",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 73,
+        "title": "ЕС отверг обвинения во вмешательстве в выборы в Грузии",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144453-es-otverg-obvineniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Европейский союз (ЕС) «решительно отвергает и осуждает ",
+        "published_at": "2025-10-05T20:30:56.462000",
+        "language": "ru"
+      },
+      {
+        "id": 74,
+        "title": "В ОП предложили маркировать чипсы и газировку как опасные для здоровья",
+        "url": "https://tass.ru/obschestvo/25258009",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество В ОП предложили маркировать чипсы и газировку как опасные для здоровья Продукт не рекомендован к ежедневному употреблению, особенно детям, такую надпись на упаковке  продуктов выдвину",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 79,
+        "title": "«Хамас» опроверг сообщения о намерении сложить оружие",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144466-hamas-oproverg-soobscheniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Палестинская группировка «Хамас» официально опровергла ",
+        "published_at": "2025-10-05T22:15:18.050000",
+        "language": "ru"
+      },
+      {
+        "id": 81,
+        "title": "Президент Чехии призвал не торопиться с формированием нового правительства",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144460-prezident-chehii-prizval",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Президент Чехии Петр Павел заявил, что еще рано поручат",
+        "published_at": "2025-10-05T21:17:58.529000",
+        "language": "ru"
+      },
+      {
+        "id": 88,
+        "title": "«Хамас» готов передать всех живых израильских заложников в один этап",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144445-hamas-gotov",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Палестинская группировка «Хамас» может передать всех жи",
+        "published_at": "2025-10-05T19:53:47.761000",
+        "language": "ru"
+      },
+      {
+        "id": 91,
+        "title": "РИА Новости: Земфира следит за статусом своего ИП в РФ",
+        "url": "https://rg.ru/2025/10/06/ria-novosti-zemfira-sledit-za-statusom-svoego-ip-v-rf.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:47 Общество изменить размер шри",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 93,
+        "title": "Площадь источника задымления на полигоне ТБО составляет 3,5 тысячи \"квадратов\"",
+        "url": "https://ria.ru/20251006/poligon-2046562631.html",
+        "source": "ria.ru",
+        "content_preview": "05:49 06.10.2025 https://ria.ru/20251006/poligon-2046562631.html Во Владивостоке оценили площадь источника задымления на полигоне ТБО Во Владивостоке оценили площадь источника задымления на полигоне Т",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "material:scrap": [
+      {
+        "id": 45,
+        "title": "В США забеспокоились из-за исчерпания средств на контроль за ядерным арсеналом",
+        "url": "https://lenta.ru/news/2025/10/04/v-ssha-zabespokoilis-iz-za-ischerpaniya-sredstv-na-kontrol-za-yadernym-arsenalom/",
+        "source": "Lenta",
+        "content_preview": ", , , . , Fox News.\r\n« , , , , 8 », . , .\r\n .",
+        "published_at": "2025-10-04T00:12:54",
+        "language": "ru"
+      },
+      {
+        "id": 50,
+        "title": "Заметки по результатам участия в круглом столе «Современные вызовы в безопасности AI и пути их решения» на KDW — 2025",
+        "url": "https://habr.com/ru/articles/953374/#post-content-body",
+        "source": "Habr.com",
+        "content_preview": "! , ..-.., , UDV Group ( ).\r\n17-19 AI , Kazan Digital Week - 2025 . «», «», « », , «» «» . , (). - , , .\r\n: , , , ?\r\n, . , . , . , , . \r\n - : , , , . , , OSINT , , . OWASP Top 10 LLM « » , (LLM).\r\n« …",
+        "published_at": "2025-10-04T06:16:46",
+        "language": "ru"
+      },
+      {
+        "id": 65,
+        "title": "Финансист Шнейдерман: на валютном рынке РФ воцарилась относительная стабильность",
+        "url": "https://ria.ru/20251004/rossiya-2046304151.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт — РИА Новости. Укрепление рубля на уходящей неделе связано с пересмотром ожиданий по ключевой ставке и слабостью доллара. Но этот тренд может быть переломлен, рассказал агентству “Прайм”",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 70,
+        "title": "Гендир \"Рольфа\" Виноградова: изменение утильсбора отразится на серых дилерах",
+        "url": "https://ria.ru/20251004/utilsbor-2046323022.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Масштаб влияния изменений в механизме утилизационного сбора, которые предлагает Минпромторг РФ, сильно преувеличен, в основном это коснется \"серых\" дилеров, которые исполь",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 73,
+        "title": "ЕС отверг обвинения во вмешательстве в выборы в Грузии",
+        "url": "https://www.vedomosti.ru/politics/news/2025/10/05/1144453-es-otverg-obvineniya",
+        "source": "www.vedomosti.ru",
+        "content_preview": "Бизнес Экономика Финансы Инвестиции Технологии Медиа Недвижимость Политика Победа-80 Общество Менеджмент Стиль жизни Интервью Мнения Фотогалереи Европейский союз (ЕС) «решительно отвергает и осуждает ",
+        "published_at": "2025-10-05T20:30:56.462000",
+        "language": "ru"
+      },
+      {
+        "id": 80,
+        "title": "На поиски пропавшей в тайге под Красноярском семьи вышли кинологи",
+        "url": "https://rg.ru/2025/10/06/reg-sibfo/na-poiski-propavshej-v-tajge-pod-krasnoiarskom-semi-vyshli-kinologi.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:32 Происшествия изменить размер",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 92,
+        "title": "Собянин: силы ПВО сбили летевший на Москву беспилотник",
+        "url": "https://tass.ru/proisshestviya/25258067",
+        "source": "tass.ru",
+        "content_preview": "Главная Происшествия Собянин: силы ПВО сбили летевший на Москву беспилотник Редакция сайта ТАСС 02:58 обновлено 03:03 Мэр Москвы Сергей Собянин © Александр Щербак/ ТАСС МОСКВА, 6 октября. /ТАСС/. Силы",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 99,
+        "title": "Собянин: силы ПВО сбили беспилотник, летевший на Москву",
+        "url": "https://ria.ru/20251006/besilotnik-2046563206.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 6 окт - РИА Новости. Сбит беспилотник, летевший на Москву, сообщил мэр столицы Сергей Собянин. \"Силами ПВО Минобороны сбит один беспилотник, летевший на Москву . На месте падения обломков рабо",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 101,
+        "title": "Группировку для поисков семьи в Красноярском крае увеличили до 356 человек",
+        "url": "https://ria.ru/20251006/poiski-2046563050.html",
+        "source": "ria.ru",
+        "content_preview": "КРАСНОЯРСК, 6 окт – РИА Новости. Свыше 350 человек принимают участие в поиске пропавшей неделю назад в турпоходе семьи, состоящей из двух взрослых и пятилетней девочки, в Красноярском крае, сообщает Г",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 106,
+        "title": "Тысячи домов остались без света из-за снегопада в Иркутской области",
+        "url": "https://rg.ru/2025/10/06/reg-sibfo/tysiachi-domov-ostalis-bez-sveta-iz-za-snegopada-v-irkutskoj-oblasti.html",
+        "source": "rg.ru",
+        "content_preview": "С утра на магистралях работает дорожная техника. На трассе Р-258 \"Байкал\" с 45 по 100 километр введены ограничения для грузовиков и автобусов. Обработка против гололеда и прочие работы проводятся такж",
+        "published_at": "2025-10-06T00:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 113,
+        "title": "В Марокко открылся Международный фестиваль транссахарского кино с участием РФ",
+        "url": "https://tass.ru/kultura/25257553",
+        "source": "tass.ru",
+        "content_preview": "В Марокко открылся Международный фестиваль транссахарского кино с участием РФ\n\nВ конкурсной программе короткометражных фильмов Россию представляет работа \"Я не помню\", срежиссированная Евгением Цыгано",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 115,
+        "title": "Амурчанин залез в чужой дом и срезал провода с бытовых приборов",
+        "url": "https://rg.ru/2025/10/06/reg-dfo/amurchanin-zalez-v-chuzhoj-dom-i-srezal-provoda-s-bytovyh-priborov.html",
+        "source": "rg.ru",
+        "content_preview": "В июле пьяный амурчанин проник в один из пустующих домов в Благовещенске. Ножом он срезал провода со стиральной машины, электропечи, утюгов, чайников, обогревателя, перфоратора, а также телевизионного",
+        "published_at": "2025-10-06T00:00:00",
+        "language": "ru"
+      },
+      {
+        "id": 116,
+        "title": "Трутнев: турнир имени Охлопкова важен для выполнения боевых задач",
+        "url": "https://tass.ru/obschestvo/25258043",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество Трутнев: турнир имени Охлопкова важен для выполнения боевых задач Редакция сайта ТАСС 03:04 Зампред правительства РФ - полномочный представитель президента РФ в ДФО Юрий Трутнев © Юри",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 119,
+        "title": "WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть",
+        "url": "https://tass.ru/mezhdunarodnaya-panorama/25258073",
+        "source": "tass.ru",
+        "content_preview": "Главная В мире WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть Газета пишет, что исламская республика также использует доходы от продажи нефти для покупки напрямую китайских товаро",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "type:market_analysis": [
+      {
+        "id": 61,
+        "title": "В ФАС заявили, что не допустят необоснованного роста платы за электричество",
+        "url": "https://ria.ru/20251003/fas-2046284141.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 3 окт - РИА Новости. Федеральная антимонопольная служба (ФАС) России проконтролирует, чтобы для граждан не было необоснованного роста платы за электроэнергию, сообщили РИА Новости в ведомстве.",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 63,
+        "title": "Правительство РФ установило временную экспортную пошлину на масличный лён",
+        "url": "https://ria.ru/20251004/poshlina-2046350774.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Правительство установило временную экспортную пошлину на масличный лён и утвердило региональные квоты на вывоз кукурузы, сообщила пресс-служба кабмина. \"Правительство ввел",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 64,
+        "title": "Аналитик Черновол: спрос на золото в мире может превысить 5 тыс тонн в 2025 году",
+        "url": "https://ria.ru/20251004/zoloto-2046327159.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Мировой спрос на золото может превысить рекордную отметку в 5 тысяч тонн драгметалла по итогам года, считают опрошенные РИА Новости эксперты. \"Стоит ожидать роста спроса н",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 91,
+        "title": "РИА Новости: Земфира следит за статусом своего ИП в РФ",
+        "url": "https://rg.ru/2025/10/06/ria-novosti-zemfira-sledit-za-statusom-svoego-ip-v-rf.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:47 Общество изменить размер шри",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 101,
+        "title": "Группировку для поисков семьи в Красноярском крае увеличили до 356 человек",
+        "url": "https://ria.ru/20251006/poiski-2046563050.html",
+        "source": "ria.ru",
+        "content_preview": "КРАСНОЯРСК, 6 окт – РИА Новости. Свыше 350 человек принимают участие в поиске пропавшей неделю назад в турпоходе семьи, состоящей из двух взрослых и пятилетней девочки, в Красноярском крае, сообщает Г",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 118,
+        "title": "В Москве прогнозируют дождь и до 14 градусов тепла",
+        "url": "https://tass.ru/obschestvo/25258083",
+        "source": "tass.ru",
+        "content_preview": "Главная Общество В Москве прогнозируют дождь и до 14 градусов тепла Однако в ночь на вторник температура воздуха может опуститься до плюс 7 градусов Редакция сайта ТАСС 03:06 МОСКВА, 6 октября. /ТАСС/",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "type:trade": [
+      {
+        "id": 62,
+        "title": "Сантосо: переориентация экспорта нефти из РФ открывает возможности для Индонезии",
+        "url": "https://ria.ru/20251004/indonezija-2046322750.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 4 окт – РИА Новости. Переориентация экспорта российских нефтепродуктов в Азию открывает возможности для более тесного сотрудничества России и Индонезии, заявил в интервью РИА Новости министр",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 63,
+        "title": "Правительство РФ установило временную экспортную пошлину на масличный лён",
+        "url": "https://ria.ru/20251004/poshlina-2046350774.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт - РИА Новости. Правительство установило временную экспортную пошлину на масличный лён и утвердило региональные квоты на вывоз кукурузы, сообщила пресс-служба кабмина. \"Правительство ввел",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 65,
+        "title": "Финансист Шнейдерман: на валютном рынке РФ воцарилась относительная стабильность",
+        "url": "https://ria.ru/20251004/rossiya-2046304151.html",
+        "source": "ria.ru",
+        "content_preview": "МОСКВА, 4 окт — РИА Новости. Укрепление рубля на уходящей неделе связано с пересмотром ожиданий по ключевой ставке и слабостью доллара. Но этот тренд может быть переломлен, рассказал агентству “Прайм”",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 71,
+        "title": "Поставки кофе из Индонезии в Россию выросли многократно за два года",
+        "url": "https://ria.ru/20251005/postavki-2046458437.html",
+        "source": "ria.ru",
+        "content_preview": "ДЖАКАРТА, 5 окт – РИА Новости. За последние два года поставки индонезийского кофе в Россию выросли многократно, заявил в интервью РИА Новости министр торговли Индонезии Буди Сантосо. \"За последние два",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 90,
+        "title": "Соскин: рост инцидентов с БПЛА в Европе ослабит желание помогать Киеву",
+        "url": "https://ria.ru/20251006/ukraina-2046562283.html",
+        "source": "ria.ru",
+        "content_preview": "05:46 06.10.2025 https://ria.ru/20251006/ukraina-2046562283.html \"Выиграть время\": в Киеве обратились к Зеленскому после инцидента с БПЛА \"Выиграть время\": в Киеве обратились к Зеленскому после инциде",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 91,
+        "title": "РИА Новости: Земфира следит за статусом своего ИП в РФ",
+        "url": "https://rg.ru/2025/10/06/ria-novosti-zemfira-sledit-za-statusom-svoego-ip-v-rf.html",
+        "source": "rg.ru",
+        "content_preview": "Наши проекты Свежий номер РГ-Неделя Родина Тематические приложения Союз Свежий номер Подписка на издание Подписаться на новости Войти добавить в избранное 06.10.2025 05:47 Общество изменить размер шри",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 119,
+        "title": "WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть",
+        "url": "https://tass.ru/mezhdunarodnaya-panorama/25258073",
+        "source": "tass.ru",
+        "content_preview": "Главная В мире WSJ: Китай строит для Ирана объекты инфраструктуры в обмен на нефть Газета пишет, что исламская республика также использует доходы от продажи нефти для покупки напрямую китайских товаро",
+        "published_at": null,
+        "language": "ru"
+      }
+    ],
+    "material:non_ferrous": [
+      {
+        "id": 72,
+        "title": "Самарские учёные усилили металлы для аэрокосмической техники",
+        "url": "https://www.ferra.ru/news/v-rossii/samarskie-uchyonye-usilili-metally-dlya-aerokosmicheskoi-tekhniki-02-10-2025.htm",
+        "source": "www.ferra.ru",
+        "content_preview": "В России Опубликовано 02 октября 2025, 18:32 1 мин. a A Самарские учёные усилили металлы для аэрокосмической техники Новая лазерная технология повышает прочность материалов Учёные Самарского университ",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 115,
+        "title": "Амурчанин залез в чужой дом и срезал провода с бытовых приборов",
+        "url": "https://rg.ru/2025/10/06/reg-dfo/amurchanin-zalez-v-chuzhoj-dom-i-srezal-provoda-s-bytovyh-priborov.html",
+        "source": "rg.ru",
+        "content_preview": "В июле пьяный амурчанин проник в один из пустующих домов в Благовещенске. Ножом он срезал провода со стиральной машины, электропечи, утюгов, чайников, обогревателя, перфоратора, а также телевизионного",
+        "published_at": "2025-10-06T00:00:00",
+        "language": "ru"
+      }
+    ],
+    "type:technology": [
+      {
+        "id": 72,
+        "title": "Самарские учёные усилили металлы для аэрокосмической техники",
+        "url": "https://www.ferra.ru/news/v-rossii/samarskie-uchyonye-usilili-metally-dlya-aerokosmicheskoi-tekhniki-02-10-2025.htm",
+        "source": "www.ferra.ru",
+        "content_preview": "В России Опубликовано 02 октября 2025, 18:32 1 мин. a A Самарские учёные усилили металлы для аэрокосмической техники Новая лазерная технология повышает прочность материалов Учёные Самарского университ",
+        "published_at": null,
+        "language": "ru"
+      },
+      {
+        "id": 112,
+        "title": "МВД: мошенники стали использовать интеграцию платежных систем Telegram-ботов",
+        "url": "https://tass.ru/obschestvo/25257955",
+        "source": "tass.ru",
+        "content_preview": "МВД: мошенники стали использовать интеграцию платежных систем Telegram-ботов\n\nИнтерес злоумышленников к ним обусловлен высокой доступностью и простотой создания, пояснили в ведомстве\n\nРедакция сайта Т",
+        "published_at": null,
+        "language": "ru"
+      }
+    ]
+  },
+  "uncategorized": []
+}

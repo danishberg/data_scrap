@@ -1,0 +1,33 @@
+{
+  "stage": 1,
+  "language": "ru",
+  "total_urls": 10,
+  "target_limit": 20,
+  "collection_time_seconds": 36.309474,
+  "collected_at": "2025-10-06T12:00:52.283766",
+  "sources": {
+    "newsapi": 0,
+    "rss": 10,
+    "metallurgy": 0,
+    "business": 0
+  },
+  "urls": [
+    "https://ria.ru/20251006/turtsiya-2046564893.html",
+    "https://ria.ru/20251006/nauka-2046237699.html",
+    "https://tass.ru/mezhdunarodnaya-panorama/24134665",
+    "https://tass.ru/ekonomika/24134627",
+    "https://ria.ru/20251006/bespilotniki-2046564623.html",
+    "https://ria.ru/20251006/germaniya-2046565024.html",
+    "https://tass.ru/politika/24134697",
+    "https://tass.ru/obschestvo/24134589",
+    "https://ria.ru/20251006/indoneziya-2046564776.html",
+    "https://tass.ru/obschestvo/24134601"
+  ],
+  "quality_metrics": {
+    "relevance_filtering_applied": true,
+    "duplicates_removed": 0,
+    "quality_threshold_used": true,
+    "parallel_collection": true,
+    "average_urls_per_minute": 10.0
+  }
+}

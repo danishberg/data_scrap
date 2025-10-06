@@ -1,0 +1,25 @@
+{
+  "stage": 1,
+  "language": "ru",
+  "total_urls": 2,
+  "target_limit": 20,
+  "collection_time_seconds": 188.536632,
+  "collected_at": "2025-10-06T11:50:32.868620",
+  "sources": {
+    "newsapi": 0,
+    "rss": 0,
+    "metallurgy": 2,
+    "business": 3
+  },
+  "urls": [
+    "https://www.metalinfo.ru/ru/news/ferrous",
+    "https://www.metallplace.ru/news/"
+  ],
+  "quality_metrics": {
+    "relevance_filtering_applied": true,
+    "duplicates_removed": 3,
+    "quality_threshold_used": true,
+    "parallel_collection": true,
+    "average_urls_per_minute": 0.6364810844822983
+  }
+}

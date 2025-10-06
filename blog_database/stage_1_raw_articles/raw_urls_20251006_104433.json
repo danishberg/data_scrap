@@ -1,0 +1,33 @@
+{
+  "stage": 1,
+  "language": "ru",
+  "total_urls": 0,
+  "collected_at": "2025-10-06T10:44:33.875309",
+  "sources": {
+    "newsapi": 0,
+    "industry": 0,
+    "rss": 0,
+    "free": 0
+  },
+  "urls": [],
+  "quality_metrics": {
+    "duplicates_removed": 0,
+    "relevance_filtering_applied": true,
+    "metal_keywords_used": [
+      "metal",
+      "steel",
+      "scrap",
+      "металл",
+      "сталь",
+      "лом",
+      "mining",
+      "metallurgy",
+      "production",
+      "industry",
+      "горнодобыч",
+      "металлург",
+      "производств",
+      "промышленност"
+    ]
+  }
+}

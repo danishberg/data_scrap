@@ -1,0 +1,102 @@
+{
+  "stage": 2,
+  "language": "ru",
+  "total_articles_parsed": 10,
+  "total_articles_saved": 10,
+  "total_articles_processed": 9,
+  "segmented_at": "2025-10-06T12:03:34.327879",
+  "from_stage1": "raw_urls_production_20251006_120052.json",
+  "parsing_stats": {
+    "rss": 5,
+    "industry": 2,
+    "newspaper": 3
+  },
+  "category_distribution": {
+    "region:russia": 6,
+    "region:europe": 3,
+    "type:technology": 1,
+    "region:america": 2,
+    "type:prices": 1,
+    "type:policy": 2,
+    "type:environment": 2,
+    "type:other": 1,
+    "material:scrap": 1,
+    "type:trade": 1,
+    "type:logistics": 1,
+    "type:market_analysis": 2
+  },
+  "sample_articles": [
+    {
+      "id": 2,
+      "title": "Ученые выяснили, через сколько часов \"портятся\" тромбоциты",
+      "url": "https://ria.ru/20251006/nauka-2046237699.html",
+      "categories": "region:russia, region:europe, type:technology",
+      "source": "ria.ru",
+      "is_processed": true
+    },
+    {
+      "id": 3,
+      "title": "Глава МИД Ирана: сделки с США не будет без условия сохранения обогащения урана",
+      "url": "https://tass.ru/mezhdunarodnaya-panorama/24134665",
+      "categories": "region:america, type:prices",
+      "source": "tass.ru",
+      "is_processed": true
+    },
+    {
+      "id": 4,
+      "title": "Нижегородская область и ЦБ будут сотрудничать в сфере повышения финансовой грамотности",
+      "url": "https://tass.ru/ekonomika/24134627",
+      "categories": "region:russia, type:policy, type:environment",
+      "source": "tass.ru",
+      "is_processed": true
+    },
+    {
+      "id": 5,
+      "title": "Силы ПВО ночью уничтожили восемь беспилотников над Тульской областью",
+      "url": "https://ria.ru/20251006/bespilotniki-2046564623.html",
+      "categories": "region:russia, type:policy",
+      "source": "ria.ru",
+      "is_processed": true
+    },
+    {
+      "id": 6,
+      "title": "Меркель назвала Польшу и страны Прибалтики косвенными виновниками СВО",
+      "url": "https://ria.ru/20251006/germaniya-2046565024.html",
+      "categories": "region:russia, region:europe, region:america, type:environment",
+      "source": "ria.ru",
+      "is_processed": true
+    },
+    {
+      "id": 7,
+      "title": "Detik: число погибших под завалами школы-интерната в Индонезии выросло до 52",
+      "url": "https://ria.ru/20251006/indoneziya-2046564776.html",
+      "categories": "type:other",
+      "source": "ria.ru",
+      "is_processed": true
+    },
+    {
+      "id": 8,
+      "title": "МИД: РФ приняла к сведению слова Вучича о ревизии военного сотрудничества",
+      "url": "https://tass.ru/politika/24134697",
+      "categories": "material:scrap, region:russia, region:europe, type:trade, type:logistics",
+      "source": "tass.ru",
+      "is_processed": true
+    },
+    {
+      "id": 9,
+      "title": "На арктическом форуме в Архангельске обсудят развитие автотуризма",
+      "url": "https://tass.ru/obschestvo/24134589",
+      "categories": "region:russia, type:market_analysis",
+      "source": "tass.ru",
+      "is_processed": true
+    },
+    {
+      "id": 10,
+      "title": "В Магаданской области объявили чрезвычайную пожарную опасность",
+      "url": "https://tass.ru/obschestvo/24134601",
+      "categories": "type:market_analysis",
+      "source": "tass.ru",
+      "is_processed": true
+    }
+  ]
+}

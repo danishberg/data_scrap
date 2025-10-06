@@ -1,0 +1,42 @@
+{
+  "stage": 1,
+  "language": "ru",
+  "total_urls": 19,
+  "target_limit": 100,
+  "collection_time_seconds": 54.368076,
+  "collected_at": "2025-10-06T13:53:01.233602",
+  "sources": {
+    "newsapi": 0,
+    "rss": 4,
+    "metallurgy": 16,
+    "business": 0
+  },
+  "urls": [
+    "https://rg.ru/2025/10/06/reg-ufo/v-feodosii-perekryto-dvizhenie-transporta.html",
+    "https://rg.ru/2025/10/06/reg-cfo/poiavilos-foto-s-mesta-dtp-v-belgorodskoj-oblasti-gde-pogibli-troe-podrostkov.html",
+    "https://rg.ru/2025/10/06/reg-sibfo/sk-propavshuiu-pod-krasnoiarskom-semiu-videli-v-tajge.html",
+    "https://www.wsj.com/articles/rwanda-backed-rebels-enter-congo-safe-haven-city-aid-hub-09fdccb8",
+    "https://www.metalinfo.ru/ru/news/ferrous",
+    "https://www.metalinfo.ru/ru/news/ferrous/russia",
+    "https://www.metalinfo.ru/ru/news/ferrous/abroad",
+    "https://www.metalinfo.ru/ru/news/nonferrous",
+    "https://www.metalinfo.ru/ru/news/nonferrous/russia",
+    "https://www.metalinfo.ru/ru/news/nonferrous/abroad",
+    "https://www.metalinfo.ru/ru/news/construction",
+    "https://www.metalinfo.ru/ru/news/consumer",
+    "https://www.steelland.ru/news/",
+    "https://www.steelland.ru/news/metallurgy/",
+    "https://www.steelland.ru/news/nonferrousmetallurgy/",
+    "https://www.steelland.ru/news/engineering/",
+    "https://www.steelland.ru/news/mining/",
+    "https://www.steelland.ru/news/business/",
+    "https://www.steelland.ru/news/lenta/"
+  ],
+  "quality_metrics": {
+    "relevance_filtering_applied": true,
+    "duplicates_removed": 1,
+    "quality_threshold_used": true,
+    "parallel_collection": true,
+    "average_urls_per_minute": 19.0
+  }
+}

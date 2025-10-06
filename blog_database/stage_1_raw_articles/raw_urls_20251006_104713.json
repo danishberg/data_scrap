@@ -1,0 +1,35 @@
+{
+  "stage": 1,
+  "language": "ru",
+  "total_urls": 1,
+  "collected_at": "2025-10-06T10:47:13.657320",
+  "sources": {
+    "newsapi": 1,
+    "industry": 0,
+    "rss": 0,
+    "free": 0
+  },
+  "urls": [
+    "https://gagadget.com/ru/676726-prodaj-metallolom-po-tsene-zolota-polskie-razrabotchiki-gotovyat-satiricheskij-simulyator-perekupschika-avtomobilej-totally-legit-wheeler-dealer/"
+  ],
+  "quality_metrics": {
+    "duplicates_removed": 0,
+    "relevance_filtering_applied": true,
+    "metal_keywords_used": [
+      "metal",
+      "steel",
+      "scrap",
+      "металл",
+      "сталь",
+      "лом",
+      "mining",
+      "metallurgy",
+      "production",
+      "industry",
+      "горнодобыч",
+      "металлург",
+      "производств",
+      "промышленност"
+    ]
+  }
+}

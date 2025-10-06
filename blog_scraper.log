@@ -1,0 +1,923 @@
+2025-10-06 10:46:48,991 - parsers.news_api_collector - INFO - Сбор новостей металлургической отрасли (limit: 10)
+2025-10-06 10:46:54,800 - parsers.news_api_collector - INFO - NewsAPI собрал 10 уникальных статей
+2025-10-06 10:46:54,800 - parsers.news_api_collector - INFO - NewsAPI собрал 10 URL металлургической отрасли
+2025-10-06 10:46:54,800 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 5 отраслевых источников
+2025-10-06 10:46:56,511 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.kommersant.ru/themes/business: 404 Client Error: Not Found for url: https://www.kommersant.ru/themes/business
+2025-10-06 10:46:58,701 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.kommersant.ru/themes/business: 404 Client Error: Not Found for url: https://www.kommersant.ru/themes/business
+2025-10-06 10:47:00,403 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.kommersant.ru/themes/business: 404 Client Error: Not Found for url: https://www.kommersant.ru/themes/business
+2025-10-06 10:47:00,403 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 0 URL
+2025-10-06 10:47:03,428 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 10:47:04,597 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 10:47:06,876 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 10:47:08,588 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 10:47:08,588 - parsers.industry_web_scraper - INFO - Всего собрано 3 уникальных URL новостей
+2025-10-06 10:47:08,588 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 10:47:08,588 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 10:47:09,428 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 10:47:09,428 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 10:47:10,524 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 10:47:10,524 - parsers.rss_parser - INFO - Парсинг RSS: https://www.interfax.ru/rss.asp
+2025-10-06 10:47:11,287 - parsers.rss_parser - INFO - Получено 5 URL из https://www.interfax.ru/rss.asp
+2025-10-06 10:47:11,287 - parsers.rss_parser - INFO - Парсинг RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 10:47:12,909 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 10:47:12,909 - parsers.rss_parser - INFO - Парсинг RSS: https://www.vedomosti.ru/rss/news
+2025-10-06 10:47:13,655 - parsers.rss_parser - INFO - Получено 5 URL из https://www.vedomosti.ru/rss/news
+2025-10-06 10:47:13,656 - parsers.rss_parser - INFO - RSS парсер нашел 19 уникальных URL
+2025-10-06 11:34:19,483 - parsers.news_api_collector - INFO - Сбор новостей металлургической отрасли (limit: 10, queries: 7, per_query: 5)
+2025-10-06 11:34:20,522 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C+OR+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%8F+OR+steel+industry&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:20,777 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C+OR+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%8F+OR+steel+industry&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:21,032 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C+OR+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%8F+OR+steel+industry&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:22,286 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+%D1%86%D0%B2%D0%B5%D1%82%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+ferrous+OR+non-ferrous&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:22,542 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+%D1%86%D0%B2%D0%B5%D1%82%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+ferrous+OR+non-ferrous&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:22,803 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+%D1%86%D0%B2%D0%B5%D1%82%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+ferrous+OR+non-ferrous&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:24,059 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D1%81%D1%82%D0%B0%D0%BB%D1%8C+OR+steel+production+OR+%D1%81%D1%82%D0%B0%D0%BB%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:24,322 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D1%81%D1%82%D0%B0%D0%BB%D1%8C+OR+steel+production+OR+%D1%81%D1%82%D0%B0%D0%BB%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:24,581 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D1%81%D1%82%D0%B0%D0%BB%D1%8C+OR+steel+production+OR+%D1%81%D1%82%D0%B0%D0%BB%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:25,838 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BB%D0%BE%D0%BC+OR+scrap+metal+OR+metal+recycling&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:26,092 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BB%D0%BE%D0%BC+OR+scrap+metal+OR+metal+recycling&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:26,351 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BB%D0%BE%D0%BC+OR+scrap+metal+OR+metal+recycling&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:27,604 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+aluminum+OR+%D0%BC%D0%B5%D0%B4%D1%8C+OR+copper+OR+mining+OR+%D1%80%D1%83%D0%B4%D0%B0&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:27,866 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+aluminum+OR+%D0%BC%D0%B5%D0%B4%D1%8C+OR+copper+OR+mining+OR+%D1%80%D1%83%D0%B4%D0%B0&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:28,125 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+aluminum+OR+%D0%BC%D0%B5%D0%B4%D1%8C+OR+copper+OR+mining+OR+%D1%80%D1%83%D0%B4%D0%B0&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:29,394 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0+OR+metal+processing+OR+metallurgical+plant&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:29,648 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0+OR+metal+processing+OR+metallurgical+plant&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:29,902 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0+OR+metal+processing+OR+metallurgical+plant&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:31,162 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D1%86%D0%B5%D0%BD%D1%8B+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+metal+prices+OR+metal+market&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:31,416 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D1%86%D0%B5%D0%BD%D1%8B+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+metal+prices+OR+metal+market&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:31,676 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D1%86%D0%B5%D0%BD%D1%8B+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%8B+OR+metal+prices+OR+metal+market&language=ru&sortBy=publishedAt&pageSize=5&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 11:34:32,678 - parsers.news_api_collector - INFO - NewsAPI собрал 0 уникальных статей
+2025-10-06 11:34:32,678 - parsers.news_api_collector - INFO - NewsAPI собрал 0 URL металлургической отрасли
+2025-10-06 11:34:32,678 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:34:32,678 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:34:34,207 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:34:34,207 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:34:36,157 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:34:36,157 - parsers.rss_parser - INFO - Парсинг RSS: https://www.interfax.ru/rss.asp
+2025-10-06 11:34:37,545 - parsers.rss_parser - INFO - Получено 5 URL из https://www.interfax.ru/rss.asp
+2025-10-06 11:34:37,545 - parsers.rss_parser - INFO - Парсинг RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 11:34:38,675 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 11:34:38,675 - parsers.rss_parser - INFO - Парсинг RSS: https://www.vedomosti.ru/rss/news
+2025-10-06 11:34:41,081 - parsers.rss_parser - INFO - Получено 5 URL из https://www.vedomosti.ru/rss/news
+2025-10-06 11:34:41,081 - parsers.rss_parser - INFO - Парсинг RSS: https://rg.ru/xml/index.xml
+2025-10-06 11:34:42,869 - parsers.rss_parser - INFO - Получено 5 URL из https://rg.ru/xml/index.xml
+2025-10-06 11:34:42,869 - parsers.rss_parser - INFO - RSS парсер нашел 25 уникальных URL
+2025-10-06 11:34:42,875 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:34:42,875 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:34:42,880 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:34:42,880 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:34:44,131 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:34:44,285 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:34:44,323 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:34:44,422 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:34:47,584 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:34:47,599 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:34:47,734 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:34:47,865 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:34:49,277 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:34:49,457 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:34:49,458 - parsers.industry_web_scraper - INFO - Всего собрано 6 уникальных URL новостей
+2025-10-06 11:34:49,719 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:34:49,836 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:34:49,836 - parsers.industry_web_scraper - INFO - Всего собрано 6 уникальных URL новостей
+2025-10-06 11:34:51,304 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:34:51,969 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:34:53,251 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:34:53,660 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:34:54,776 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 2 URL
+2025-10-06 11:34:54,936 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 2 URL
+2025-10-06 11:34:56,697 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:34:56,697 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:34:56,746 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:34:56,747 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:35:07,219 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:07,220 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:17,467 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:17,467 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:27,707 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:27,708 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:27,708 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:35:27,708 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:35:38,412 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:38,428 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:48,647 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:48,677 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:52,708 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 5 URL
+2025-10-06 11:35:52,708 - parsers.industry_web_scraper - INFO - Всего собрано 10 уникальных URL новостей
+2025-10-06 11:35:58,924 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:35:58,924 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:36:09,546 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:36:19,804 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:36:30,048 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:36:30,048 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:36:34,348 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:36:38,174 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:36:42,004 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:36:42,004 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:36:50,739 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:36:58,928 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:37:07,087 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:37:07,087 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:37:09,358 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:37:10,433 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:37:21,052 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:37:21,052 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:37:24,302 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:37:25,520 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:37:27,056 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:37:27,056 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:37:28,427 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:37:39,092 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:37:49,318 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:37:59,545 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:37:59,545 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:37:59,545 - parsers.industry_web_scraper - INFO - Всего собрано 8 уникальных URL новостей
+2025-10-06 11:38:49,035 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:38:49,035 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:38:50,617 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:38:50,617 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:38:52,648 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:38:52,648 - parsers.rss_parser - INFO - Парсинг RSS: https://www.interfax.ru/rss.asp
+2025-10-06 11:38:53,579 - parsers.rss_parser - INFO - Получено 5 URL из https://www.interfax.ru/rss.asp
+2025-10-06 11:38:53,579 - parsers.rss_parser - INFO - Парсинг RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 11:38:54,489 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 11:38:54,489 - parsers.rss_parser - INFO - Парсинг RSS: https://www.vedomosti.ru/rss/news
+2025-10-06 11:38:56,304 - parsers.rss_parser - INFO - Получено 5 URL из https://www.vedomosti.ru/rss/news
+2025-10-06 11:38:56,304 - parsers.rss_parser - INFO - Парсинг RSS: https://rg.ru/xml/index.xml
+2025-10-06 11:38:58,200 - parsers.rss_parser - INFO - Получено 5 URL из https://rg.ru/xml/index.xml
+2025-10-06 11:38:58,200 - parsers.rss_parser - INFO - RSS парсер нашел 25 уникальных URL
+2025-10-06 11:38:58,200 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:38:58,200 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:38:58,222 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:38:58,226 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:38:59,903 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:39:00,112 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:39:00,155 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:39:00,157 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:39:02,323 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:39:02,443 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:39:02,740 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:39:03,287 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:39:04,652 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:39:04,661 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:39:04,662 - parsers.industry_web_scraper - INFO - Всего собрано 6 уникальных URL новостей
+2025-10-06 11:39:05,124 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:39:05,125 - parsers.industry_web_scraper - INFO - Всего собрано 6 уникальных URL новостей
+2025-10-06 11:39:05,510 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:39:07,296 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:39:08,099 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:39:09,160 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:39:09,789 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:39:10,647 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 2 URL
+2025-10-06 11:39:11,380 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 2 URL
+2025-10-06 11:39:13,435 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:39:13,435 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:39:13,630 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:39:13,630 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:39:23,719 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:23,890 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:33,990 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:34,131 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:44,253 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:44,253 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:39:44,373 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:44,373 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:39:54,491 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:39:54,616 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:04,739 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:04,865 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:11,208 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 5 URL
+2025-10-06 11:40:11,208 - parsers.industry_web_scraper - INFO - Всего собрано 10 уникальных URL новостей
+2025-10-06 11:40:15,180 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:15,181 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:40:25,476 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:35,732 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:45,973 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:40:45,973 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:40:49,779 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:40:53,607 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:40:57,412 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:40:57,412 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:41:05,615 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:41:13,810 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:41:22,000 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:41:22,000 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:41:24,213 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:41:34,817 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:41:45,429 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:41:45,429 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:41:47,866 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:41:49,385 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:41:50,709 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:41:50,709 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:41:51,716 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:42:01,972 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:42:12,217 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:42:22,453 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:42:22,453 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:42:22,453 - parsers.industry_web_scraper - INFO - Всего собрано 8 уникальных URL новостей
+2025-10-06 11:42:58,610 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:42:58,610 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:43:00,597 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:43:00,597 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:43:02,541 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:43:02,541 - parsers.rss_parser - INFO - RSS парсер нашел 10 уникальных URL
+2025-10-06 11:43:02,544 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:43:02,545 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:43:02,552 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:43:02,564 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:43:04,381 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:43:04,486 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:43:04,520 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:43:04,623 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 5 URL
+2025-10-06 11:43:07,334 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:43:07,352 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:43:08,347 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:43:08,347 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:43:09,507 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:43:09,521 - parsers.industry_web_scraper - INFO - Всего собрано 6 уникальных URL новостей
+2025-10-06 11:43:09,580 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:43:09,735 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:43:10,320 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 5 URL
+2025-10-06 11:43:10,320 - parsers.industry_web_scraper - INFO - Всего собрано 6 уникальных URL новостей
+2025-10-06 11:43:12,205 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:43:12,694 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:43:14,538 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:43:14,736 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:43:16,124 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 2 URL
+2025-10-06 11:43:16,385 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 2 URL
+2025-10-06 11:43:18,159 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:43:18,160 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:43:18,198 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:43:18,199 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:43:28,457 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:28,481 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:38,730 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:38,731 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:48,990 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:48,990 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:48,990 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:43:48,990 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:43:59,265 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:43:59,265 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:09,525 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:09,527 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:19,834 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:19,834 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:44:19,835 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:19,835 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:44:30,356 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:30,356 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:40,618 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:40,618 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:50,933 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:50,933 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:44:50,948 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:44:50,948 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:44:54,888 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:44:54,931 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:44:58,768 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:44:58,834 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:03,029 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:03,029 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:45:03,786 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:03,787 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:45:15,529 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:15,529 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:23,843 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:23,875 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:32,051 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:32,051 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:45:32,278 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:45:32,278 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:45:42,287 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:45:42,525 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:45:44,180 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:45:53,901 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:45:54,836 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:45:54,836 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:45:57,151 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:45:58,737 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:46:00,053 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:46:00,053 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:46:01,078 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:46:04,528 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:04,528 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:46:07,198 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:46:08,784 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:46:09,937 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:46:09,939 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:46:11,104 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:46:11,334 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:21,343 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:21,624 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:31,600 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:31,884 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:31,885 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:46:31,885 - parsers.industry_web_scraper - INFO - Всего собрано 8 уникальных URL новостей
+2025-10-06 11:46:41,895 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:46:41,896 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:46:41,896 - parsers.industry_web_scraper - INFO - Всего собрано 8 уникальных URL новостей
+2025-10-06 11:47:24,333 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:47:24,333 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:47:26,079 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:47:26,079 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:47:28,232 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:47:28,232 - parsers.rss_parser - INFO - RSS парсер нашел 10 уникальных URL
+2025-10-06 11:47:28,235 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:47:28,236 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:47:28,244 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:47:28,244 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:47:30,093 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:47:30,191 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:47:30,535 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:47:30,618 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:47:33,286 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:47:33,384 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:47:33,470 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:47:34,571 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:47:34,990 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:47:35,155 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:47:35,307 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:47:36,454 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:47:37,361 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:47:37,414 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:47:38,342 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:47:38,706 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:47:39,358 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:47:39,486 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:47:39,882 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:47:40,487 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:47:41,203 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:47:41,214 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:47:41,403 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:47:42,026 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:47:43,792 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:47:43,803 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:47:43,803 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:47:43,803 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:47:44,166 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:47:44,166 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:47:44,392 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:47:44,392 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:47:45,437 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 1 URL
+2025-10-06 11:47:45,954 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 1 URL
+2025-10-06 11:47:46,009 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 1 URL
+2025-10-06 11:47:46,147 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 1 URL
+2025-10-06 11:47:55,959 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:47:56,194 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:47:56,260 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:47:56,393 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:47:59,676 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 1 URL
+2025-10-06 11:48:06,199 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:06,435 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:06,652 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:09,940 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:16,627 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:16,628 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:48:16,844 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:16,844 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:48:17,045 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:17,045 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:48:20,198 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:26,887 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:27,096 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:27,303 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:30,457 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:30,457 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:48:34,355 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:37,162 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:37,330 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:37,580 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:38,180 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:41,993 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:41,993 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:48:47,439 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:47,440 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:48:47,572 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:47,573 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:48:47,840 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:48:47,840 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:48:50,189 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:51,277 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:51,394 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:51,663 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:55,085 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:55,229 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:55,557 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:58,350 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:58,957 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:58,957 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:48:59,070 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:59,070 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:48:59,434 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:48:59,435 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:49:06,580 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:06,581 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:49:07,146 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:07,259 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:07,597 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:15,317 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:15,515 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:15,784 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:16,834 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:19,096 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:49:23,474 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:23,474 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:49:23,708 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:23,708 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:49:23,967 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:49:23,968 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:49:29,694 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:29,695 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:49:31,943 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:33,199 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:33,756 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:34,276 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:34,277 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:49:35,115 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:35,265 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:49:35,358 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:36,265 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:49:36,474 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:49:37,345 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:49:37,345 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:49:39,319 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:40,348 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:41,376 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:41,376 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:49:42,413 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:49:45,169 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:46,009 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:47,090 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:47,090 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:49:50,165 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:51,026 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:52,142 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:52,142 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:49:52,659 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:53,148 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:49:55,777 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:55,777 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:49:56,251 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:49:58,458 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:49:59,751 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:50:01,083 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:50:01,083 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:50:02,100 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:50:02,936 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:03,407 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:06,493 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:06,493 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:50:06,493 - parsers.industry_web_scraper - INFO - Всего собрано 5 уникальных URL новостей
+2025-10-06 11:50:12,354 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:13,182 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:13,182 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:50:13,183 - parsers.industry_web_scraper - INFO - Всего собрано 4 уникальных URL новостей
+2025-10-06 11:50:13,717 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:22,614 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:23,976 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:23,978 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:50:23,978 - parsers.industry_web_scraper - INFO - Всего собрано 4 уникальных URL новостей
+2025-10-06 11:50:32,866 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:50:32,866 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:50:32,867 - parsers.industry_web_scraper - INFO - Всего собрано 4 уникальных URL новостей
+2025-10-06 11:51:13,450 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:51:13,450 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:51:14,927 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:51:14,927 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:51:16,959 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:51:16,959 - parsers.rss_parser - INFO - RSS парсер нашел 10 уникальных URL
+2025-10-06 11:51:16,959 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:51:16,959 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:51:16,973 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:51:16,974 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:51:18,808 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:51:18,839 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:51:18,847 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:51:18,951 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:51:21,387 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:51:21,602 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:51:21,707 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:51:21,849 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:51:23,296 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:51:23,412 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:51:23,582 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:51:23,786 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:51:25,506 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:51:25,529 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:51:25,647 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:51:26,006 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:51:27,149 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:51:27,287 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:51:27,771 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:51:28,602 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:51:28,803 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:51:28,817 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:51:29,538 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:51:30,100 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:51:30,572 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:51:30,599 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:51:30,611 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:51:30,613 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:51:31,176 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:51:31,176 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:51:32,054 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:51:32,054 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:51:40,849 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:40,881 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:41,411 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:42,286 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:51,101 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:51,117 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:51,655 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:51:52,538 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:01,361 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:01,362 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:52:01,376 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:01,376 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:52:01,896 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:01,896 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:52:02,788 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:02,788 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 0 URL
+2025-10-06 11:52:11,608 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:11,621 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:12,146 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:13,036 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:21,846 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:21,866 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:22,394 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:23,288 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:32,072 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:32,073 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:52:32,121 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:32,121 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:52:32,639 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:32,639 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:52:33,534 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:33,534 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:52:42,567 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:42,567 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:42,864 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:43,765 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:52,834 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:52,834 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:53,109 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:52:54,021 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:03,068 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:03,068 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:03,068 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:53:03,068 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:53:03,334 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:03,334 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:53:04,287 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:04,287 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:53:06,932 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:06,973 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:07,230 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:08,204 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:10,755 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:10,819 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:11,099 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:12,008 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:14,567 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:14,567 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:53:14,679 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:14,679 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:53:14,929 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:14,929 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:53:15,814 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:15,814 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:53:18,949 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:18,949 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:19,003 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:19,870 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:23,007 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:23,007 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:23,049 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:23,905 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:27,050 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:27,050 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:53:27,074 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:27,075 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:53:27,088 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:27,088 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:53:27,961 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:53:27,961 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:53:29,808 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:53:37,739 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:37,739 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:38,833 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:39,918 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:53:40,408 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:41,489 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:53:41,489 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:53:43,987 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:53:45,404 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:53:47,161 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:53:47,161 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:53:47,991 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:48,146 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:53:49,095 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:50,511 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:50,511 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:53:52,955 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:53:54,271 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:53:55,615 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:53:55,616 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:53:56,591 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:53:58,216 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='www.severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:58,216 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:53:58,383 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:59,718 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:53:59,718 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:54:00,223 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:54:01,994 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:54:02,340 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:54:02,861 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:54:02,861 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:54:04,061 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:54:04,120 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:54:05,295 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:54:05,295 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:54:06,852 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:54:06,856 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:08,624 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:14,312 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:17,097 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:17,097 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:18,894 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:18,894 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:54:18,894 - parsers.industry_web_scraper - INFO - Всего собрано 3 уникальных URL новостей
+2025-10-06 11:54:24,566 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:27,357 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:27,358 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:27,358 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:54:27,361 - parsers.industry_web_scraper - INFO - Всего собрано 3 уникальных URL новостей
+2025-10-06 11:54:34,833 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:34,833 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:54:34,833 - parsers.industry_web_scraper - INFO - Всего собрано 3 уникальных URL новостей
+2025-10-06 11:54:37,616 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:54:37,616 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:54:37,617 - parsers.industry_web_scraper - INFO - Всего собрано 3 уникальных URL новостей
+2025-10-06 11:55:23,548 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:55:23,549 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:55:25,238 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:55:25,238 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:55:27,478 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:55:27,478 - parsers.rss_parser - INFO - RSS парсер нашел 10 уникальных URL
+2025-10-06 11:55:27,494 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:55:27,494 - parsers.industry_web_scraper - INFO - Начинаем скрапинг 17 отраслевых источников
+2025-10-06 11:55:30,368 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:55:30,720 - parsers.industry_web_scraper - INFO - Скрапинг kommersant: 1 URL
+2025-10-06 11:55:34,523 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:55:34,535 - parsers.industry_web_scraper - INFO - Скрапинг vedomosti: 0 URL
+2025-10-06 11:55:36,598 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:55:36,722 - parsers.industry_web_scraper - INFO - Скрапинг ria_economy: 1 URL
+2025-10-06 11:55:37,790 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:55:37,821 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:55:38,918 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:55:39,219 - parsers.industry_web_scraper - INFO - Скрапинг tass_economy: 0 URL
+2025-10-06 11:55:40,901 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:55:41,078 - parsers.industry_web_scraper - INFO - Скрапинг rbc_business: 0 URL
+2025-10-06 11:55:42,212 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:55:42,348 - parsers.industry_web_scraper - INFO - Скрапинг interfax_business: 1 URL
+2025-10-06 11:55:44,045 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:55:44,046 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:55:44,238 - parsers.industry_web_scraper - INFO - Скрапинг rg_economy: 0 URL
+2025-10-06 11:55:44,238 - parsers.industry_web_scraper - INFO - Скрапинг metallurg_news: 0 URL
+2025-10-06 11:55:48,063 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:55:54,281 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:55:54,504 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:55:55,927 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 1 URL
+2025-10-06 11:55:56,264 - parsers.industry_web_scraper - INFO - Скрапинг metalinfo: 1 URL
+2025-10-06 11:55:58,316 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:06,197 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:06,497 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:16,455 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:16,772 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:26,689 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:26,689 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:56:26,999 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:26,999 - parsers.industry_web_scraper - INFO - Скрапинг metallplace: 0 URL
+2025-10-06 11:56:36,959 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:37,271 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:47,199 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:47,498 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:57,446 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:57,446 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:56:57,747 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://rusmet.ru/novosti/: HTTPSConnectionPool(host='rusmet.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:56:57,747 - parsers.industry_web_scraper - INFO - Скрапинг rusmet: 0 URL
+2025-10-06 11:57:01,311 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:01,587 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:05,636 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:06,222 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:10,216 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:10,216 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:57:10,240 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://metallportal.ru/news/: HTTPSConnectionPool(host='metallportal.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:10,240 - parsers.industry_web_scraper - INFO - Скрапинг metallportal: 0 URL
+2025-10-06 11:57:14,336 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:14,346 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:18,393 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:18,425 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:22,564 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:22,565 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:57:22,604 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.steel-express.ru/news/: HTTPSConnectionPool(host='www.steel-express.ru', port=443): Max retries exceeded with url: /news/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-10-06 11:57:22,604 - parsers.industry_web_scraper - INFO - Скрапинг steel_express: 0 URL
+2025-10-06 11:57:24,630 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:57:24,683 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:57:25,770 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:57:25,829 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Max retries exceeded with url: /rus/investoram/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-10-06 11:57:36,443 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:57:36,443 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:57:36,520 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.severstal.com/rus/investoram/news/: HTTPSConnectionPool(host='severstal.com', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:57:36,521 - parsers.industry_web_scraper - INFO - Скрапинг severstal_news: 0 URL
+2025-10-06 11:57:39,498 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:57:39,499 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:57:41,449 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:57:41,449 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:57:42,735 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:57:42,736 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:57:42,786 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.nornickel.ru/about/news/: 404 Client Error: Not Found for url: https://nornickel.ru/about/news/
+2025-10-06 11:57:42,787 - parsers.industry_web_scraper - INFO - Скрапинг nornikel_news: 0 URL
+2025-10-06 11:57:44,059 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:57:44,060 - parsers.industry_web_scraper - INFO - Скрапинг evraz_news: 0 URL
+2025-10-06 11:57:54,319 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:57:54,320 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:58:04,569 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:58:04,569 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:58:14,810 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:58:14,810 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:58:14,810 - parsers.industry_web_scraper - INFO - Всего собрано 4 уникальных URL новостей
+2025-10-06 11:58:14,812 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.mmk.ru/ru/media-center/news/: HTTPSConnectionPool(host='www.mmk.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:58:14,812 - parsers.industry_web_scraper - INFO - Скрапинг mmk_news: 0 URL
+2025-10-06 11:58:14,812 - parsers.industry_web_scraper - INFO - Всего собрано 4 уникальных URL новостей
+2025-10-06 11:58:59,816 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 11:58:59,816 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:59:01,193 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 11:59:01,193 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 11:59:03,365 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 11:59:03,365 - parsers.rss_parser - INFO - RSS парсер нашел 10 уникальных URL
+2025-10-06 11:59:13,645 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:59:13,645 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:59:23,904 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:59:23,904 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:59:34,133 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 11:59:34,134 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:00:15,988 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 12:00:15,988 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 12:00:19,098 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 12:00:19,098 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 12:00:21,520 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 12:00:21,520 - parsers.rss_parser - INFO - RSS парсер нашел 10 уникальных URL
+2025-10-06 12:00:31,798 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:00:31,798 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:00:42,025 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:00:42,025 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:00:52,282 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:00:52,282 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:01:51,364 - parsers.free_news_aggregator - INFO - Агрегатор обработал 3 статей
+2025-10-06 12:03:19,306 - parsers.free_news_aggregator - INFO - Агрегатор обработал 3 статей
+2025-10-06 12:03:20,860 - pymorphy3.opencorpora_dict.wrapper - INFO - Loading dictionaries from C:\Users\daniy\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymorphy3_dicts_ru\data
+2025-10-06 12:03:20,917 - pymorphy3.opencorpora_dict.wrapper - INFO - format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2025-10-06 12:03:22,770 - processors.content_processor - INFO - spaCy модель загружена успешно
+2025-10-06 12:03:23,210 - processors.content_processor - INFO - Статья 2 успешно обработана: категории ['region:russia', 'region:europe', 'type:technology']
+2025-10-06 12:03:23,655 - processors.content_processor - INFO - Статья 3 успешно обработана: категории ['region:america', 'type:prices']
+2025-10-06 12:03:24,117 - processors.content_processor - INFO - Статья 4 успешно обработана: категории ['region:russia', 'type:policy', 'type:environment']
+2025-10-06 12:03:24,459 - processors.content_processor - INFO - Статья 5 успешно обработана: категории ['region:russia', 'type:policy']
+2025-10-06 12:03:24,927 - processors.content_processor - INFO - Статья 6 успешно обработана: категории ['region:russia', 'region:europe', 'region:america', 'type:environment']
+2025-10-06 12:03:25,153 - processors.content_processor - INFO - Статья 7 успешно обработана: категории ['type:other']
+2025-10-06 12:03:25,614 - processors.content_processor - INFO - Статья 8 успешно обработана: категории ['material:scrap', 'region:russia', 'region:europe', 'type:trade', 'type:logistics']
+2025-10-06 12:03:25,957 - processors.content_processor - INFO - Статья 9 успешно обработана: категории ['region:russia', 'type:market_analysis']
+2025-10-06 12:03:26,139 - processors.content_processor - INFO - Статья 10 успешно обработана: категории ['type:market_analysis']
+2025-10-06 12:03:26,157 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-06 12:03:26,157 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-06 12:03:33,110 - core.vector_segmentation - INFO - Модель all-MiniLM-L6-v2 загружена успешно
+2025-10-06 12:03:33,169 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-06 12:03:33,643 - core.vector_segmentation - INFO - ChromaDB инициализирован
+2025-10-06 12:03:33,643 - core.vector_segmentation - INFO - Генерация эмбеддингов для 9 статей...
+2025-10-06 12:03:34,326 - core.vector_segmentation - INFO - Добавлено 9 статей в векторную БД
+2025-10-06 12:04:07,771 - processors.content_generator - INFO - OpenAI API настроен успешно
+2025-10-06 12:04:10,876 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:04:53,060 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:05:23,502 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:05:26,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:05:42,242 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:06:19,845 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:06:22,290 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:06:37,579 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:07:07,571 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:07:10,530 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:07:38,072 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:08:04,569 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:08:06,702 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:08:18,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:08:44,592 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:09:00,413 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 12:15:34,131 - parsers.rss_parser - INFO - Парсинг 6 RSS-лент для языка ru
+2025-10-06 12:15:34,140 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 12:15:35,281 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB+OR+steel+OR+metal+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+copper&language=ru&sortBy=publishedAt&pageSize=6&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 12:15:35,530 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB+OR+steel+OR+metal+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+copper&language=ru&sortBy=publishedAt&pageSize=6&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 12:15:35,783 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB+OR+steel+OR+metal+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+copper&language=ru&sortBy=publishedAt&pageSize=6&apiKey=69440137cd9348df91fbca2eb9aa5eb0
+2025-10-06 12:15:35,867 - parsers.rss_parser - INFO - Получено 5 URL из https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 12:15:35,867 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 12:15:37,903 - parsers.rss_parser - INFO - Получено 5 URL из https://tass.ru/rss/v2.xml
+2025-10-06 12:15:37,903 - parsers.rss_parser - INFO - Парсинг RSS: https://www.interfax.ru/rss.asp
+2025-10-06 12:15:39,068 - parsers.rss_parser - INFO - Получено 5 URL из https://www.interfax.ru/rss.asp
+2025-10-06 12:15:39,068 - parsers.rss_parser - INFO - RSS парсер нашел 15 уникальных URL
+2025-10-06 12:15:49,329 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:15:49,329 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:15:59,598 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:16:09,920 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Read timed out. (read timeout=10)
+2025-10-06 12:17:30,911 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/personal/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:18:01,207 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/personal/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:18:31,480 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/personal/news/: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:19:01,724 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/?tags[]=mmk: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:19:31,984 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/?tags[]=mmk: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:20:02,226 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/?tags[]=mmk: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:20:32,504 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/?tags[]=rossiya: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:21:02,764 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metallplace.ru/news/?tags[]=rossiya: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:21:33,074 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metallplace.ru/news/?tags[]=rossiya: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:22:03,317 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metallplace.ru/news/?tags[]=yakutiya: HTTPSConnectionPool(host='www.metallplace.ru', port=443): Read timed out. (read timeout=30)
+2025-10-06 12:22:11,004 - parsers.free_news_aggregator - INFO - Агрегатор обработал 2 статей
+2025-10-06 12:22:12,518 - pymorphy3.opencorpora_dict.wrapper - INFO - Loading dictionaries from C:\Users\daniy\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymorphy3_dicts_ru\data
+2025-10-06 12:22:12,560 - pymorphy3.opencorpora_dict.wrapper - INFO - format: 2.4, revision: 417150, updated: 2022-01-08T22:09:24.565962
+2025-10-06 12:22:13,820 - processors.content_processor - INFO - spaCy модель загружена успешно
+2025-10-06 12:22:13,974 - processors.content_processor - INFO - Статья 11 успешно обработана: категории ['region:russia', 'type:logistics']
+2025-10-06 12:22:14,087 - processors.content_processor - INFO - Статья 12 успешно обработана: категории ['region:russia', 'type:environment']
+2025-10-06 12:22:14,362 - processors.content_processor - INFO - Статья 13 успешно обработана: категории ['material:ferrous', 'region:russia']
+2025-10-06 12:22:14,702 - processors.content_processor - INFO - Статья 14 успешно обработана: категории ['region:russia', 'type:production', 'type:policy']
+2025-10-06 12:22:14,882 - processors.content_processor - INFO - Статья 15 успешно обработана: категории ['region:russia']
+2025-10-06 12:22:15,015 - processors.content_processor - INFO - Статья 16 успешно обработана: категории ['region:russia', 'type:policy']
+2025-10-06 12:22:15,267 - processors.content_processor - INFO - Статья 17 успешно обработана: категории ['region:russia']
+2025-10-06 12:22:15,363 - processors.content_processor - INFO - Статья 18 успешно обработана: категории ['region:russia']
+2025-10-06 12:22:15,565 - processors.content_processor - INFO - Статья 19 успешно обработана: категории ['region:russia', 'type:market_analysis']
+2025-10-06 12:22:15,924 - processors.content_processor - INFO - Статья 20 успешно обработана: категории ['region:russia', 'region:america', 'type:prices', 'type:trade', 'type:policy', 'type:environment', 'type:market_analysis']
+2025-10-06 12:22:16,072 - processors.content_processor - INFO - Статья 21 успешно обработана: категории ['region:russia', 'type:production']
+2025-10-06 12:22:16,395 - processors.content_processor - INFO - Статья 22 успешно обработана: категории ['region:russia', 'region:europe', 'region:asia', 'region:america', 'type:trade', 'type:market_analysis']
+2025-10-06 12:22:16,785 - processors.content_processor - INFO - Статья 23 успешно обработана: категории ['type:policy']
+2025-10-06 12:22:16,961 - processors.content_processor - INFO - Статья 24 успешно обработана: категории ['type:other']
+2025-10-06 12:22:16,968 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-06 12:22:16,968 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-06 12:22:23,136 - core.vector_segmentation - INFO - Модель all-MiniLM-L6-v2 загружена успешно
+2025-10-06 12:22:23,168 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-06 12:22:23,328 - core.vector_segmentation - INFO - ChromaDB инициализирован
+2025-10-06 12:22:23,328 - core.vector_segmentation - INFO - Генерация эмбеддингов для 23 статей...
+2025-10-06 12:22:24,243 - core.vector_segmentation - INFO - Добавлено 23 статей в векторную БД
+2025-10-06 12:31:25,119 - parsers.rss_parser - INFO - Парсинг 13 RSS-лент для языка ru
+2025-10-06 12:31:25,121 - parsers.rss_parser - INFO - Парсинг RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 12:31:28,589 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://ria.ru/export/rss2/archive/index.xml
+2025-10-06 12:31:28,589 - parsers.rss_parser - INFO - Парсинг RSS: https://tass.ru/rss/v2.xml
+2025-10-06 12:31:32,085 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://tass.ru/rss/v2.xml
+2025-10-06 12:31:32,085 - parsers.rss_parser - INFO - Парсинг RSS: https://www.interfax.ru/rss.asp
+2025-10-06 12:31:35,048 - parsers.news_api_collector - WARNING - Попытка 1 failed for https://newsapi.org/v2/everything: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB+OR+steel+OR+metal+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+copper&language=ru&sortBy=publishedAt&pageSize=8&apiKey=69440137cd9348df91fbca2eb9aa5eb0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B0473B8BC0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-10-06 12:31:35,584 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.interfax.ru/rss.asp
+2025-10-06 12:31:35,584 - parsers.rss_parser - INFO - Парсинг RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 12:31:39,106 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.kommersant.ru/rss/regions.xml
+2025-10-06 12:31:39,107 - parsers.rss_parser - INFO - Парсинг RSS: https://www.vedomosti.ru/rss/news
+2025-10-06 12:31:42,689 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.vedomosti.ru/rss/news
+2025-10-06 12:31:42,689 - parsers.rss_parser - INFO - Парсинг RSS: https://rg.ru/xml/index.xml
+2025-10-06 12:31:44,656 - parsers.news_api_collector - WARNING - Попытка 2 failed for https://newsapi.org/v2/everything: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB+OR+steel+OR+metal+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+copper&language=ru&sortBy=publishedAt&pageSize=8&apiKey=69440137cd9348df91fbca2eb9aa5eb0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B049043FE0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-10-06 12:31:45,923 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://rg.ru/xml/index.xml
+2025-10-06 12:31:45,923 - parsers.rss_parser - INFO - Парсинг RSS: https://www.rbc.ru/rss.xml
+2025-10-06 12:31:49,422 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.rbc.ru/rss.xml
+2025-10-06 12:31:49,422 - parsers.rss_parser - INFO - Парсинг RSS: https://www.metallurg.ru/rss/
+2025-10-06 12:31:53,114 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.metallurg.ru/rss/
+2025-10-06 12:31:53,115 - parsers.rss_parser - INFO - Парсинг RSS: https://www.metalinfo.ru/rss.xml
+2025-10-06 12:31:54,180 - parsers.news_api_collector - WARNING - Попытка 3 failed for https://newsapi.org/v2/everything: HTTPSConnectionPool(host='newsapi.org', port=443): Max retries exceeded with url: /v2/everything?q=%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB+OR+steel+OR+metal+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+copper&language=ru&sortBy=publishedAt&pageSize=8&apiKey=69440137cd9348df91fbca2eb9aa5eb0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B0490A58E0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-10-06 12:31:56,346 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.metalinfo.ru/rss.xml
+2025-10-06 12:31:56,346 - parsers.rss_parser - INFO - Парсинг RSS: https://metallportal.ru/rss.xml
+2025-10-06 12:31:59,565 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://metallportal.ru/rss.xml
+2025-10-06 12:31:59,565 - parsers.rss_parser - INFO - Парсинг RSS: https://www.severstal.com/rss/news/
+2025-10-06 12:32:03,174 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.severstal.com/rss/news/
+2025-10-06 12:32:03,174 - parsers.rss_parser - INFO - Парсинг RSS: https://www.evraz.com/rss/news/
+2025-10-06 12:32:06,770 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.evraz.com/rss/news/
+2025-10-06 12:32:06,770 - parsers.rss_parser - INFO - Парсинг RSS: https://www.mmk.ru/rss/news/
+2025-10-06 12:32:10,424 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.mmk.ru/rss/news/
+2025-10-06 12:32:10,424 - parsers.rss_parser - INFO - RSS парсер нашел 0 уникальных URL
+2025-10-06 12:32:10,424 - parsers.rss_parser - INFO - Парсинг 11 RSS-лент для языка en
+2025-10-06 12:32:10,424 - parsers.rss_parser - INFO - Парсинг RSS: https://feeds.reuters.com/Reuters/worldNews
+2025-10-06 12:32:21,839 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://feeds.reuters.com/Reuters/worldNews
+2025-10-06 12:32:21,839 - parsers.rss_parser - INFO - Парсинг RSS: https://feeds.bloomberg.com/bloomberg/markets/news.rss
+2025-10-06 12:32:31,642 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://feeds.bloomberg.com/bloomberg/markets/news.rss
+2025-10-06 12:32:31,642 - parsers.rss_parser - INFO - Парсинг RSS: https://feeds.a.dj.com/rss/RSSWorldNews.xml
+2025-10-06 12:32:44,911 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://feeds.a.dj.com/rss/RSSWorldNews.xml
+2025-10-06 12:32:44,911 - parsers.rss_parser - INFO - Парсинг RSS: https://www.ft.com/rss/home/uk
+2025-10-06 12:32:57,943 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.ft.com/rss/home/uk
+2025-10-06 12:32:57,943 - parsers.rss_parser - INFO - Парсинг RSS: http://feeds.bbci.co.uk/news/rss.xml
+2025-10-06 12:33:01,401 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: http://feeds.bbci.co.uk/news/rss.xml
+2025-10-06 12:33:01,401 - parsers.rss_parser - INFO - Парсинг RSS: https://feeds.reuters.com/reuters/businessNews
+2025-10-06 12:33:12,770 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://feeds.reuters.com/reuters/businessNews
+2025-10-06 12:33:12,770 - parsers.rss_parser - INFO - Парсинг RSS: https://www.mining.com/feed/
+2025-10-06 12:33:19,475 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.mining.com/feed/
+2025-10-06 12:33:19,475 - parsers.rss_parser - INFO - Парсинг RSS: https://www.steelguru.com/rss.xml
+2025-10-06 12:33:26,152 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.steelguru.com/rss.xml
+2025-10-06 12:33:26,152 - parsers.rss_parser - INFO - Парсинг RSS: https://www.metalbulletin.com/rss.xml
+2025-10-06 12:33:29,633 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.metalbulletin.com/rss.xml
+2025-10-06 12:33:29,633 - parsers.rss_parser - INFO - Парсинг RSS: https://www.fastmarkets.com/rss.xml
+2025-10-06 12:33:42,721 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.fastmarkets.com/rss.xml
+2025-10-06 12:33:42,721 - parsers.rss_parser - INFO - Парсинг RSS: https://www.kitco.com/rss.xml
+2025-10-06 12:33:46,184 - parsers.rss_parser - WARNING - Не удалось загрузить RSS: https://www.kitco.com/rss.xml
+2025-10-06 12:33:46,184 - parsers.rss_parser - INFO - RSS парсер нашел 0 уникальных URL
+2025-10-06 12:33:49,392 - parsers.industry_web_scraper - WARNING - Попытка 1 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Max retries exceeded with url: /ru/news (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B0490D4D10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-10-06 12:33:52,592 - parsers.industry_web_scraper - WARNING - Попытка 2 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Max retries exceeded with url: /ru/news (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B0490A7E30>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-10-06 12:33:55,773 - parsers.industry_web_scraper - WARNING - Попытка 3 failed for https://www.metalinfo.ru/ru/news: HTTPSConnectionPool(host='www.metalinfo.ru', port=443): Max retries exceeded with url: /ru/news (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001B0490A6480>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))

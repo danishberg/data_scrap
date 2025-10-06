@@ -1,0 +1,15 @@
+# Пример файла .env для системы блога Scraptraffic
+# Скопируйте этот файл в .env и заполните реальные значения
+
+# API ключи
+NEWS_API_KEY=your_newsapi_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Настройки базы данных
+DATABASE_URL=sqlite:///blog_scraper.db
+
+# Настройки отладки
+DEBUG=false
+
+# Настройки основного сайта
+MAIN_SITE_API_KEY=your_main_site_api_key_here
