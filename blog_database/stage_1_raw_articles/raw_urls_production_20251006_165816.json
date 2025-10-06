@@ -1,0 +1,46 @@
+{
+  "stage": 1,
+  "language": "en",
+  "total_urls": 24,
+  "target_limit": 200,
+  "collection_time_seconds": 54.509229,
+  "collected_at": "2025-10-06T16:58:16.784054",
+  "sources": {
+    "newsapi": 7,
+    "rss": 4,
+    "metallurgy": 18,
+    "business": 0
+  },
+  "urls": [
+    "https://www.fastmarkets.com/metals-and-mining/",
+    "https://www.fastmarkets.com/products/price-data/metals-and-mining-prices/",
+    "https://www.etfdailynews.com/2025/10/05/gfl-environ-ts-cvegfl-receives-average-recommendation-of-buy-from-brokerages/",
+    "https://www.etfdailynews.com/2025/10/05/commercial-metals-company-cmc-shares-bought-by-public-employees-retirement-system-of-ohio/",
+    "https://www.fastmarkets.com/insights/chinese-cobalt-refiners-shift-to-metal-dissolution-amid-drc-quotas/",
+    "https://www.aluminum.org/news/aluminum-week-september-12",
+    "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/vedanta-extends-deadline-for-demerger-to-march-next-year/articleshow/124310389.cms",
+    "https://www.fastmarkets.com/products/forecasting-analysis/metals-and-mining/",
+    "https://www.fastmarkets.com/insights/delayed-publication-of-copper-concentrates-indices-and-coefficients/",
+    "https://www.aluminum.org/news/aluminum-week-september-26",
+    "https://www.fastmarkets.com/insights/us-scrap-trends-outlook-october-2025-2/",
+    "https://www.etfdailynews.com/2025/10/05/canada-one-mining-cvecone-stock-price-up-25-should-you-buy/",
+    "https://www.fastmarkets.com/products/news-market-analysis/metals-and-mining/",
+    "https://www.aluminum.org/news-0",
+    "https://www.fastmarkets.com/methodology/metals/",
+    "https://www.fastmarkets.com/metals-and-mining/steel-and-steel-raw-materials/",
+    "https://www.fastmarkets.com/insights/vitol-copper-trading-expansion/",
+    "https://www.fastmarkets.com/metals-and-mining/minor-metals/",
+    "https://www.fastmarkets.com/metals-and-mining/base-metals/",
+    "https://www.aluminum.org/news/#main-content",
+    "https://www.aluminum.org/news/north-american-aluminum-demand-down-44-through-first-half-2025",
+    "https://www.etfdailynews.com/2025/10/05/commercial-metals-nysecmc-stock-rating-lowered-by-wall-street-zen/",
+    "https://www.fastmarkets.com/our-events/metals-events/",
+    "https://www.etfdailynews.com/2025/10/05/montero-mining-and-exploration-cvemon-trading-89-5-higher-still-a-buy/"
+  ],
+  "quality_metrics": {
+    "relevance_filtering_applied": true,
+    "duplicates_removed": 3,
+    "parallel_collection": true,
+    "average_urls_per_minute": 26.417544816126462
+  }
+}

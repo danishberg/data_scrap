@@ -44,6 +44,17 @@ class VectorSegmentation:
             self.client = None
             self.collection = None
 
+    def segment_content(self, content: str) -> List[str]:
+        """
+        Simple content segmentation - split into paragraphs
+        """
+        if not content:
+            return []
+
+        # Split by double newlines (paragraphs) and filter out short segments
+        segments = [s.strip() for s in content.split('\n\n') if s.strip() and len(s.strip()) > 50]
+        return segments[:10]  # Limit to 10 segments
+
     def add_articles_to_vector_db(self, articles: List[Article]) -> int:
         """
         Добавление статей в векторную базу данных

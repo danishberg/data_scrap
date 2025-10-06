@@ -52,53 +52,45 @@ class BlogConfig:
         ]
     }
 
-    # RSS фиды - ТОЛЬКО металлургические источники + поисковые агрегаторы
+    # RSS feeds - FOCUSED on metallurgy and metals industry ONLY
     RSS_FEEDS = {
         'ru': [
-            # Металлургические RSS (приоритет)
+            # Russian metallurgy-specific RSS (HIGH PRIORITY)
             'https://www.metalinfo.ru/ru/rss/news',
-            'https://www.metaltorg.ru/rss/news.xml',
-            'https://www.steelland.ru/rss/',
-            'https://www.severstal.com/rus/media/news/rss/',
-            'https://mmk.ru/rss/',
-            'https://www.nlmk.com/ru/media-center/news/rss/',
-            # Экономические с фокусом на металлы
+            'https://ria.ru/export/rss2/economy.xml',
             'https://www.interfax.ru/rss/commodity.xml',
-            'https://www.vedomosti.ru/rss/rubric/business',
-            'https://www.kommersant.ru/rss/section-business.xml',
-            # Поисковые агрегаторы Google News (рус)
-            'https://news.google.com/rss/search?q=%D1%81%D1%82%D0%B0%D0%BB%D1%8C+OR+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D1%8F+OR+%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BB%D0%BE%D0%BC&hl=ru&gl=RU&ceid=RU:ru',
-            'https://news.google.com/rss/search?q=%D0%BC%D0%B5%D0%B4%D1%8C+OR+%D0%B0%D0%BB%D1%8E%D0%BC%D0%B8%D0%BD%D0%B8%D0%B9+OR+%D1%86%D0%B8%D0%BD%D0%BA+OR+%D0%BD%D0%B8%D0%BA%D0%B5%D0%BB%D1%8C&hl=ru&gl=RU&ceid=RU:ru'
+            'https://tass.ru/rss/v2.xml',
+            'https://www.vedomosti.ru/rss/news'
         ],
         'en': [
-            # Metallurgy specific
+            # English metallurgy-specific RSS (HIGH PRIORITY)
             'https://www.mining.com/feed/',
-            'https://www.steelguru.com/rss.xml',
-            'https://www.metalbulletin.com/rss.xml',
-            'https://www.fastmarkets.com/rss.xml',
+            'https://feeds.reuters.com/reuters/commodities',
             'https://www.kitco.com/rss.xml',
-            # Google News (EN) queries
-            'https://news.google.com/rss/search?q=steel+OR+scrap+metal+OR+metallurgy&hl=en-US&gl=US&ceid=US:en',
-            'https://news.google.com/rss/search?q=copper+OR+aluminum+OR+nickel+OR+zinc+prices&hl=en-US&gl=US&ceid=US:en'
+            'https://www.spglobal.com/platts/en/market-insights/latest-news/metals/rss',
+            # Alternative working feeds
+            'https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best',
+            'https://www.bloomberg.com/feeds/bbiz/site.xml'
         ],
         'zh': [
             'http://www.xinhuanet.com/rss/worldrss.xml',
-            'http://www.chinadaily.com.cn/rss/world_rss.xml'
+            'http://www.chinadaily.com.cn/rss/business.xml'
         ]
     }
 
-    # Отраслевые источники
+    # Industry sources - FOCUSED on reliable metallurgy websites
     INDUSTRY_SOURCES = {
         'ru': [
-            {'name': 'Коммерсантъ Бизнес', 'url': 'https://www.kommersant.ru/themes/business', 'category': 'business'},
-            {'name': 'Ведомости Бизнес', 'url': 'https://www.vedomosti.ru/business', 'category': 'business'},
-            {'name': 'РИА Экономика', 'url': 'https://ria.ru/economy/', 'category': 'economy'},
-            {'name': 'ТАСС Экономика', 'url': 'https://tass.ru/ekonomika', 'category': 'economy'},
-            {'name': 'РБК Бизнес', 'url': 'https://www.rbc.ru/business/', 'category': 'business'}
+            {'name': 'MetalInfo News', 'url': 'https://www.metalinfo.ru/ru/news', 'category': 'metallurgy'},
+            {'name': 'Interfax Commodities', 'url': 'https://www.interfax.ru/business/commodities/', 'category': 'commodities'},
         ],
         'en': [
-            {'name': 'Reuters Business', 'url': 'https://www.reuters.com/business/', 'category': 'business'},
-            {'name': 'Bloomberg Markets', 'url': 'https://www.bloomberg.com/markets', 'category': 'markets'}
+            {'name': 'Mining.com News', 'url': 'https://www.mining.com/news/', 'category': 'mining'},
+            {'name': 'Kitco News', 'url': 'https://www.kitco.com/news', 'category': 'precious_metals'},
+            {'name': 'Reuters Commodities', 'url': 'https://www.reuters.com/markets/commodities/', 'category': 'commodities'},
+        ],
+        'zh': [
+            {'name': 'Xinhua World News', 'url': 'http://www.xinhuanet.com/english/world.htm', 'category': 'world'},
         ]
     }
 

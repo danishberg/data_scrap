@@ -27,6 +27,30 @@ class ContentProcessor:
             self.logger.warning(f"Не удалось загрузить spaCy модель: {e}")
             self.nlp = None
 
+    def process_url(self, url: str) -> Optional[Dict[str, Any]]:
+        """Process a URL and extract article content"""
+        try:
+            import newspaper
+            article = newspaper.Article(url)
+            article.download()
+            article.parse()
+
+            if not article.title or not article.text:
+                return None
+
+            return {
+                'title': article.title,
+                'content': article.text,
+                'url': url,
+                'summary': article.summary if hasattr(article, 'summary') else '',
+                'authors': article.authors,
+                'publish_date': article.publish_date.isoformat() if article.publish_date else None,
+                'processed_at': datetime.now().isoformat()
+            }
+        except Exception as e:
+            self.logger.warning(f"Failed to process URL {url}: {e}")
+            return None
+
     def process_article(self, article) -> bool:
         """Полная обработка статьи"""
         try:

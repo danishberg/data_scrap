@@ -4,33 +4,45 @@
    Complete pipeline for collecting, processing, and generating metal industry content
 """
 
-
 import sys
 import os
 import logging
-from datetime import datetime, timedelta
-from typing import List, Dict, Any, Optional
+from datetime import datetime
+from typing import List, Dict, Any
 import argparse
 import json
-import glob
+import asyncio
+import concurrent.futures
 
 # Add current directory to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from database.models import db_manager, Article, Category, Digest, ProcessingLog
 from core.config import BlogConfig
 from parsers.news_api_collector import NewsAPICollector
 from parsers.rss_parser import RSSNewsParser
 from parsers.industry_web_scraper import IndustryWebScraper
-from parsers.free_news_aggregator import FreeNewsAggregator
 from parsers.metallurgy_collector import MetallurgyCollector
-from processors.content_processor import ContentProcessor
-from processors.content_generator import ContentGenerator
-from core.vector_segmentation import VectorSegmentation
-from core.data_exporter import DataExporter
+
+# Global configuration
+MAX_RETRIES = 3
+RETRY_DELAY = 1.0
+
+def async_retry(max_retries: int = MAX_RETRIES, delay: float = RETRY_DELAY):
+    """Decorator for async function retries"""
+    def decorator(func):
+        async def wrapper(*args, **kwargs):
+            for attempt in range(max_retries):
+                try:
+                    return await func(*args, **kwargs)
+                except Exception as e:
+                    if attempt == max_retries - 1:
+                        raise
+                    await asyncio.sleep(delay * (2 ** attempt))
+            return None
+        return wrapper
+    return decorator
 
 def setup_logging():
-    """ """
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -39,42 +51,6 @@ def setup_logging():
             logging.StreamHandler()
         ]
     )
-
-def init_database():
-    """  """
-    print("  ...")
-
-    try:
-        #    
-        db_manager.create_tables()
-
-        #   
-        session = db_manager.get_session()
-
-        base_categories = [
-            'ferrous', 'non_ferrous', 'precious', 'scrap',
-            'prices', 'production', 'trade', 'policy',
-            'companies', 'technology', 'environment',
-            'market_analysis', 'logistics', 'other'
-        ]
-
-        for cat_name in base_categories:
-            category = Category(
-                name=cat_name,
-                slug=cat_name.lower().replace(' ', '-')
-            )
-            session.add(category)
-
-        session.commit()
-        print(f"  {len(base_categories)}  ")
-
-        session.close()
-        print("   ")
-        return True
-
-    except Exception as e:
-        print(f"    : {e}")
-        return False
 
 def scrape_news(language: str = 'ru', limit: int = 50, use_api: bool = True):
     """ """
@@ -281,16 +257,41 @@ def process_articles(limit: int = 10):
     finally:
         session.close()
 
+def async_retry(max_retries: int = MAX_RETRIES, delay: float = RETRY_DELAY):
+    """Decorator for async function retries"""
+    def decorator(func):
+        async def wrapper(*args, **kwargs):
+            for attempt in range(max_retries):
+                try:
+                    return await func(*args, **kwargs)
+                except Exception as e:
+                    if attempt == max_retries - 1:
+                        raise
+                    await asyncio.sleep(delay * (2 ** attempt) + random.uniform(0, 0.1))
+            return None
+        return wrapper
+    return decorator
+
+def sync_retry(max_retries: int = MAX_RETRIES, delay: float = RETRY_DELAY):
+    """Decorator for sync function retries"""
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for attempt in range(max_retries):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    if attempt == max_retries - 1:
+                        raise
+                    time.sleep(delay * (2 ** attempt) + random.uniform(0, 0.1))
+            return None
+        return wrapper
+    return decorator
+
 def stage_1_data_collection(language: str, articles_limit: int) -> int:
     """Stage 1: Production-Ready Collection of Metallurgy URLs"""
     print("=" * 80)
     print("STAGE 1: PRODUCTION-READY METALLURGY URL COLLECTION")
     print("=" * 80)
-
-    import asyncio
-    import aiohttp
-    import concurrent.futures
-    from urllib.parse import urlparse
 
     # Create directory for Stage 1
     stage1_dir = os.path.join("blog_database", "stage_1_raw_articles")
@@ -406,37 +407,40 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
         url_lower = url.lower()
         score = calculate_relevance_score(url)
 
-        # STRICT thresholds - only accept real metallurgy content
+        # More permissive thresholds for production volume
         thresholds = {
-            'metallurgy_focused': 20,   # HIGH threshold even for specialized sources
-            'newsapi': 25,              # Very high for API
-            'business_news': 25,        # Very high for business news
-            'general': 30,              # Extremely high for general sources
-            'rss': 22                   # High for RSS
+            'metallurgy_focused': 10,   # Lower threshold for specialized sources
+            'newsapi': 15,              # Lower for API
+            'business_news': 15,        # Lower for business news
+            'general': 20,              # Lower for general sources
+            'rss': 12                   # Lower for RSS
         }
 
-        threshold = thresholds.get(source_type, 25)  # Default high threshold
+        threshold = thresholds.get(source_type, 15)  # Default moderate threshold
 
-        # MUST have explicit metallurgy terms - NO exceptions
+        # More flexible required terms - allow broader industry content
         required_terms = [
             'металл', 'metal', 'сталь', 'steel', 'лом', 'scrap',
             'алюмини', 'aluminum', 'медь', 'copper', 'железо', 'iron',
-            'metallurg', 'металлург', 'metalinfo', 'metaltorg', 'steelland'
+            'metallurg', 'металлург', 'mining', 'горнодобыча', 'commodity', 'сырье',
+            'ore', 'руда', 'завод', 'plant', 'производство', 'production'
         ]
-        
+
         has_required_term = any(term in url_lower for term in required_terms)
 
-        # BOTH conditions must be true - score AND metallurgy term
-        return score >= threshold and has_required_term
+        # Accept if score is good OR has metallurgy term
+        return score >= threshold or has_required_term
 
     async def collect_all_sources():
         """Main async function for parallel collection"""
+        
+        @async_retry(max_retries=2, delay=1.0)
         async def collect_from_newsapi():
             """Fast NewsAPI collection with proper filtering"""
             try:
                 print("  [1/4] Collecting from NewsAPI...")
-                news_api = NewsAPICollector(language)
-                urls = news_api.get_news_urls(limit=min(max(5, articles_limit // 5), 20))
+        news_api = NewsAPICollector(language)
+                urls = news_api.get_news_urls(limit=min(max(10, articles_limit // 3), 50))
 
                 filtered_urls = []
                 for url in urls:
@@ -445,17 +449,18 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
 
                 print(f"    NewsAPI: {len(filtered_urls)} quality URLs from {len(urls)} collected")
                 return filtered_urls
-            except Exception as e:
+    except Exception as e:
                 print(f"    NewsAPI failed: {e}")
                 return []
 
+        @async_retry(max_retries=2, delay=1.0)
         async def collect_from_rss():
             """RSS collection with content-aware filtering"""
             try:
                 print("  [2/4] Collecting from RSS feeds...")
                 rss_parser = RSSNewsParser(language)
                 # Get entries with titles to improve filtering
-                entries = rss_parser.get_news_entries(limit=min(articles_limit // 2, 100))
+                entries = rss_parser.get_news_entries(limit=min(articles_limit, 200))
 
                 def is_entry_relevant(entry: Dict[str, Any]) -> bool:
                     url = (entry.get('url') or '').lower()
@@ -493,10 +498,11 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
 
                 print(f"    RSS: {len(filtered_urls)} quality URLs from {len(entries)} entries")
                 return filtered_urls
-            except Exception as e:
+        except Exception as e:
                 print(f"    RSS failed: {e}")
                 return []
 
+        @async_retry(max_retries=2, delay=1.0)
         async def collect_from_metallurgy_sources():
             """Targeted collection from metallurgy-specific sources"""
             try:
@@ -508,7 +514,7 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
                     try:
                         collector = MetallurgyCollector(language)
                         # Collect URLs from real metallurgy sites
-                        urls = collector.collect_metallurgy_urls(limit=min(50, articles_limit // 2))
+                        urls = collector.collect_metallurgy_urls(limit=min(100, articles_limit))
                         
                         # Filter for relevance
                         filtered_urls = []
@@ -517,7 +523,7 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
                                 filtered_urls.append(url)
                         
                         return filtered_urls
-                    except Exception as e:
+        except Exception as e:
                         print(f"    Metallurgy collector error: {e}")
                         return []
 
@@ -532,6 +538,7 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
                 print(f"    Metallurgy sources failed: {e}")
                 return []
 
+        @async_retry(max_retries=2, delay=1.0)
         async def collect_from_business_sources():
             """Skip business sources to avoid off-topic URLs"""
             print("  [4/4] Skipping business sources for relevance")
@@ -541,6 +548,7 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
         print(f"Target: {articles_limit} high-quality metallurgy URLs")
         print("Starting parallel collection from 4 sources...")
 
+        @async_retry(max_retries=2, delay=1.0)
         async def collect_from_newsapi_limited():
             try:
                 print("  [1/4] Collecting from NewsAPI (limited)...")
@@ -574,11 +582,42 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
                 print(f"    NewsAPI limited failed: {e}")
                 return []
 
+        @async_retry(max_retries=2, delay=1.0)
+        async def collect_from_industry_scraper():
+            """Additional collection from industry web scraper"""
+            try:
+                print("  [5/5] Collecting from industry web scraper...")
+                def scrape_industry_sync():
+                    try:
+                        scraper = IndustryWebScraper(language)
+                        urls = scraper.get_news_urls(limit=min(80, articles_limit // 2))
+
+                        filtered_urls = []
+                        for url in urls:
+                            if is_relevant_metallurgy_url(url, 'metallurgy_focused'):
+                                filtered_urls.append(url)
+
+                        return filtered_urls
+        except Exception as e:
+                        print(f"    Industry scraper error: {e}")
+                        return []
+
+                loop = asyncio.get_event_loop()
+                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                    urls = await loop.run_in_executor(executor, scrape_industry_sync)
+
+                print(f"    Industry scraper: {len(urls)} quality URLs collected")
+                return urls
+            except Exception as e:
+                print(f"    Industry scraper failed: {e}")
+                return []
+
         tasks = [
             collect_from_newsapi_limited(),
             collect_from_rss(),
             collect_from_metallurgy_sources(),
-            collect_from_business_sources()
+            collect_from_business_sources(),
+            collect_from_industry_scraper()
         ]
 
         results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -611,30 +650,30 @@ def stage_1_data_collection(language: str, articles_limit: int) -> int:
         collection_time = datetime.now() - start_time
 
         # Create comprehensive report
-        stage1_data = {
-            'stage': 1,
-            'language': language,
+    stage1_data = {
+        'stage': 1,
+        'language': language,
             'total_urls': len(final_urls),
             'target_limit': articles_limit,
             'collection_time_seconds': collection_time.total_seconds(),
-            'collected_at': datetime.now().isoformat(),
-            'sources': sources_stats,
+        'collected_at': datetime.now().isoformat(),
+        'sources': sources_stats,
             'urls': final_urls,
-            'quality_metrics': {
-                'relevance_filtering_applied': True,
+        'quality_metrics': {
+            'relevance_filtering_applied': True,
                 'duplicates_removed': len(all_collected_urls) - len(unique_urls),
                 'quality_threshold_used': True,
                 'parallel_collection': True,
                 'average_urls_per_minute': len(final_urls) / max(collection_time.total_seconds() / 60, 1)
-            }
         }
+    }
 
         # Save JSON file
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         json_path = os.path.join(stage1_dir, f"raw_urls_production_{timestamp}.json")
 
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(stage1_data, f, ensure_ascii=False, indent=2)
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(stage1_data, f, ensure_ascii=False, indent=2)
 
         print("=" * 80)
         print("STAGE 1 COMPLETED SUCCESSFULLY!")

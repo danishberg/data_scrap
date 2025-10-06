@@ -225,6 +225,19 @@ class IndustryWebScraper(BaseNewsParser):
             }
         })
 
+        # Paywalled domains to exclude
+        self.PAYWALLED_DOMAINS = {
+            'wsj.com', 'ft.com', 'bloomberg.com', 'economist.com',
+            'nytimes.com', 'washingtonpost.com', 'theguardian.com'
+        }
+        
+        # Category page indicators to filter out
+        self.CATEGORY_INDICATORS = {
+            '/category/', '/section/', '/rubric/', '/tag/',
+            '/archive/', '/search/', '/?s=', '&s=',
+            '/news/', '/articles/'  # These are ambiguous, need careful handling
+        }
+
         return selectors
 
     def get_news_urls(self, limit: int = 50) -> List[str]:
@@ -290,7 +303,11 @@ class IndustryWebScraper(BaseNewsParser):
             if href:
                 # Преобразуем относительные ссылки в абсолютные
                 full_url = urljoin(base_url, href)
-                urls.append(full_url)
+                # Validate URL before adding
+                if self._is_valid_article_url(full_url):
+                    urls.append(full_url)
+                else:
+                    self.logger.debug(f"Skipping invalid URL: {full_url}")
 
         return urls
 
@@ -473,6 +490,41 @@ class IndustryWebScraper(BaseNewsParser):
             return parsed.netloc
         except:
             return url
+
+    def _is_valid_article_url(self, url: str) -> bool:
+        """
+        Validate if URL is likely to be an actual article page
+        """
+        from urllib.parse import urlparse
+        
+        # Check if URL is from paywalled domain
+        parsed_url = urlparse(url)
+        domain = parsed_url.netloc.lower()
+        
+        for paywalled_domain in self.PAYWALLED_DOMAINS:
+            if paywalled_domain in domain:
+                self.logger.debug(f"Skipping paywalled domain: {domain}")
+                return False
+        
+        # Check for category/page indicators (but be careful with legitimate article URLs)
+        path = parsed_url.path.lower()
+        query = parsed_url.query.lower()
+        
+        # Some legitimate article URLs contain '/news/' or '/articles/', 
+        # so we need more sophisticated checks
+        if any(indicator in path for indicator in ['/category/', '/section/', '/rubric/', '/tag/', '/archive/']):
+            return False
+            
+        if any(indicator in query for indicator in ['?s=', '&s=', 'search=']):
+            return False
+            
+        # Check for numeric/article IDs which are good indicators
+        if any(pattern in path for pattern in ['/article/', '/story/', '/news/', '/202', '/20']):
+            # Likely an article if it has these patterns AND doesn't have category indicators
+            return True
+            
+        # Default to true for now, but we'll add more sophisticated validation
+        return True
 
     def get_sources_info(self) -> Dict[str, Any]:
         """Информация об источниках"""

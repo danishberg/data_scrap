@@ -49,16 +49,24 @@ class NewsAPICollector:
         except Exception:
             pass
 
-        # Оптимизированные запросы для металлургической тематики (меньше запросов для избежания rate limiting)
+        # Расширенные запросы для металлургической тематики (больше запросов для большего покрытия)
         self.metal_queries = [
-            # Основные металлургические запросы (более targeted)
+            # Основные металлургические запросы
             'металлургическая промышленность OR металлургия OR steel industry',
             'металлы OR черные металлы OR цветные металлы OR ferrous OR non-ferrous',
             'сталь OR steel production OR сталелитейная промышленность',
             'металлолом OR scrap metal OR metal recycling',
             'алюминий OR aluminum OR медь OR copper OR mining OR руда',
             'металлообработка OR metal processing OR metallurgical plant',
-            'цены на металлы OR metal prices OR metal market'
+            'цены на металлы OR metal prices OR metal market',
+            # Дополнительные запросы для большего покрытия
+            'железо OR iron OR цинк OR zinc OR никель OR nickel',
+            'титан OR titanium OR магний OR magnesium OR латунь OR brass',
+            'комбинат OR plant OR завод OR mill OR производство OR production',
+            'экспорт металлов OR импорт металлов OR metal trade OR metal export',
+            'mining company OR металлургическая компания OR steel company',
+            'commodities OR сырьевые товары OR metal commodities',
+            'ore deposits OR месторождения руды OR mineral resources'
         ]
 
     def _make_request(self, url: str, params: dict = None, timeout: int = 30) -> Optional[requests.Response]:

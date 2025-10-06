@@ -1,0 +1,48 @@
+{
+  "stage": 1,
+  "language": "en",
+  "total_urls": 26,
+  "target_limit": 500,
+  "collection_time_seconds": 41.854594,
+  "collected_at": "2025-10-06T17:02:45.236565",
+  "sources": {
+    "newsapi": 12,
+    "rss": 4,
+    "metallurgy": 18,
+    "business": 0
+  },
+  "urls": [
+    "https://www.fastmarkets.com/metals-and-mining/minor-metals/",
+    "https://www.fastmarkets.com/products/news-market-analysis/metals-and-mining/",
+    "https://www.etfdailynews.com/2025/10/05/gfl-environ-ts-cvegfl-receives-average-recommendation-of-buy-from-brokerages/",
+    "https://www.etfdailynews.com/2025/10/05/canada-one-mining-cvecone-stock-price-up-25-should-you-buy/",
+    "https://www.aluminum.org/news/aluminum-week-september-26",
+    "https://www.aluminum.org/news/#main-content",
+    "https://www.aluminum.org/news/aluminum-week-september-12",
+    "https://www.fastmarkets.com/metals-and-mining/base-metals/",
+    "https://www.fastmarkets.com/insights/us-scrap-trends-outlook-october-2025-2/",
+    "https://www.fastmarkets.com/insights/delayed-publication-of-copper-concentrates-indices-and-coefficients/",
+    "https://www.etfdailynews.com/2025/10/05/montero-mining-and-exploration-cvemon-trading-89-5-higher-still-a-buy/",
+    "https://www.fastmarkets.com/products/forecasting-analysis/metals-and-mining/",
+    "https://www.etfdailynews.com/2025/10/05/commercial-metals-nysecmc-stock-rating-lowered-by-wall-street-zen/",
+    "https://www.aluminum.org/news-0",
+    "https://www.etfdailynews.com/2025/10/05/commercial-metals-company-cmc-shares-bought-by-public-employees-retirement-system-of-ohio/",
+    "https://www.aluminum.org/news/north-american-aluminum-demand-down-44-through-first-half-2025",
+    "https://www.fastmarkets.com/methodology/metals/",
+    "https://www.fastmarkets.com/insights/chinese-cobalt-refiners-shift-to-metal-dissolution-amid-drc-quotas/",
+    "https://www.fastmarkets.com/insights/vitol-copper-trading-expansion/",
+    "https://www.etfdailynews.com/2025/10/03/fifth-third-bancorp-sells-327-shares-of-commercial-metals-company-cmc/",
+    "https://www.fastmarkets.com/metals-and-mining/steel-and-steel-raw-materials/",
+    "https://www.fastmarkets.com/our-events/metals-events/",
+    "https://www.fastmarkets.com/metals-and-mining/",
+    "https://www.fastmarkets.com/products/price-data/metals-and-mining-prices/",
+    "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/vedanta-extends-deadline-for-demerger-to-march-next-year/articleshow/124310389.cms",
+    "https://www.etfdailynews.com/2025/10/04/zijin-mining-group-company-limited-otcmktszijmy-sees-large-increase-in-short-interest/"
+  ],
+  "quality_metrics": {
+    "relevance_filtering_applied": true,
+    "duplicates_removed": 6,
+    "parallel_collection": true,
+    "average_urls_per_minute": 37.27189421548325
+  }
+}
